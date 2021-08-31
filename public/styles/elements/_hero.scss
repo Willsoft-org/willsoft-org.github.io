@@ -18,13 +18,23 @@
 			font-size: 62px;
 			line-height: 71px;
 			font-weight: 500;
+			align-self: center;
 
 			&:after {
+				/*
 				content: "―――";
 				display: block;
 				line-height: 0;
 				margin-bottom: 10px;
 				font-weight: 100;
+				*/
+				content: "";
+				display: block;
+				padding-bottom: 8px;
+				margin-bottom: 10px;
+				border-bottom: solid 3px;
+				width: 50%;
+				margin-left: 25%;
 			}
 		}
 

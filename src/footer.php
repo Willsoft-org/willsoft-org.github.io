@@ -64,7 +64,7 @@ function footerElement() {
 	</div>
 	</div>
 	<div class="base container">
-		&copy; Willsoft 2021. All rights reserved.
+		&copy; Willsoft <?php echo date("Y"); ?>. All rights reserved.
 	</div>
 	</div>
 </footer>
