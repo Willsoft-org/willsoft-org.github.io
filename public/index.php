@@ -1,7 +1,7 @@
 <?php
-	require_once('../elements/head.php');
-	require_once('../elements/header.php');
-	require_once('../elements/footer.php');
+	require_once('../src/head.php');
+	require_once('../src/header.php');
+	require_once('../src/footer.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +36,6 @@
 	</main>
 	<?php footerElement(); ?>
 </body>
-<?php require('../elements/scripts.php'); ?>
+<?php require('../src/scripts.php'); ?>
 
 </html>
