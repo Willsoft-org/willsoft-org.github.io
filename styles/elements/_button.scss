@@ -1,0 +1,43 @@
+.btn {
+	display: inline-block;
+	width: auto;
+	font-family: "Segoe UI Semibold",
+		"Segoe UI",
+		Helvetica,
+		Arial,
+		sans-serif;
+	transition: background-color .15s ease-in-out,
+		transform .15s ease-in-out;
+
+	.btn:not(:disabled):not(.disabled) {
+		cursor: pointer;
+	}
+
+	&:hover {
+		animation: pulse;
+		/* referring directly to the animation's @keyframe declaration */
+		animation-duration: .4s;
+		/* don't forget to set a duration! */
+	}
+
+	&-white {
+		color: #422bca !important;
+		background-color: #fff;
+		border-color: transparent;
+	}
+
+	&-purple {
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+		border: solid 1px;
+	}
+
+	&-lg,
+	&-group-lg>.btn {
+		padding: .5rem 1rem;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		border-radius: 0;
+	}
+}

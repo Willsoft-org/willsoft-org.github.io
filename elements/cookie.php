@@ -19,7 +19,7 @@ function cookiesElement() {
 			</p>
 		</div>
 		<div class="right flex row">
-			<button id="acceptCookiesBtn">Godkänn alla</button>
+			<button id="acceptCookiesBtn">Accept all</button>
 			<!--<button>Hantera cookies</button>-->
 		</div>
 	</div>

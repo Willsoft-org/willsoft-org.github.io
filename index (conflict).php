@@ -12,17 +12,15 @@
 	<?php headerElement(); ?>
 	<div class="hero tech-bg">
 		<div class="container hero-content">
-			<h1 class="hero-title">Software</h1> <!-- Welcome to the Home Page -->
+			<h1 class="hero-title">Software</h1> <!-- Welcome to the Home Page, Software&#x2A1F; -->
 			<p class="hero-lead">
-				Cross-platform, Customized<br /> and Tailored High-end products.
+				Cross-platform, Customized and Tailored High-end products.<br />
+				A developer service for building all your apps and websites.
 			</p>
-			<p class="center m0">
+			<p class="center">
 				<a class="btn btn-white btn-lg btn-scale" href="/learn/dotnet/hello-world-tutorial/intro">Get
 					Started</a>
 				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight" href="/download">Download</a>
-			</p>
-			<p>
-				The IT company to build all your apps and websites with.
 			</p>
 		</div>
 	</div>

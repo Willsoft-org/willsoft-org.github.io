@@ -45,6 +45,8 @@ function footerElement() {
 					<li><a href="">Channel 9</a></li>
 					<li><a href="">Microsoft 365 Dev Center</a></li>
 					<li><a href="">Microsoft 365 Developer Program</a></li>
+					<li><a href="" onClick="document.cookie = 'cookiesAccepted=false; path=/'">Disable cookies</a>
+					</li>
 				</ul>
 			</div>
 			<div class="section">

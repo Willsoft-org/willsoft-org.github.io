@@ -1,7 +1,8 @@
+@charset "UTF-8";
 header {
-  position: sticky;
   width: 100%;
   border-bottom: solid 1px #a6a6a6;
+  background-color: #fff;
 }
 
 nav {
@@ -61,6 +62,87 @@ footer .base {
   color: #616161;
   padding: 30px 5% 16px;
   align-items: center;
+}
+
+.hero {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.hero.tech-bg {
+  background: #422bca;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #422bca 30.12%, #0093E9 192.47%);
+}
+
+.hero .hero-content {
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
+.hero .hero-content .hero-title {
+  font-size: 62px;
+  line-height: 71px;
+  font-weight: 500;
+}
+
+.hero .hero-content .hero-title:after {
+  content: "―――";
+  display: block;
+  line-height: 0;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.hero .hero-content .hero-lead {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero .hero-content .btn {
+  min-width: 180px;
+  margin: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  font-family: "Segoe UI Semibold", "Segoe UI", Helvetica, Arial, sans-serif;
+  transition: background-color .15s ease-in-out, transform .15s ease-in-out;
+}
+
+.btn .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn:hover {
+  animation: pulse;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: .4s;
+  /* don't forget to set a duration! */
+}
+
+.btn-white {
+  color: #422bca !important;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  border: solid 1px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0;
 }
 
 ul.links {
@@ -183,6 +265,24 @@ a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
 }
 
 .willsoft {
