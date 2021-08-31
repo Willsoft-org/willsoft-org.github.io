@@ -8,4 +8,5 @@ function acceptCookies() {
 	}, 400);
 }
 
-document.getElementById("acceptCookiesBtn").onclick = acceptCookies;
+const btn = document.getElementById("acceptCookiesBtn")
+if (btn) btn.onclick = acceptCookies;

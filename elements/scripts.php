@@ -1,1 +1,1 @@
-<script src="scripts/cookies.js"></script>
+<script src="../scripts/cookies.js"></script>

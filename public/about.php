@@ -1,7 +1,7 @@
 <?php
-	require_once('elements/head.php');
-	require_once('elements/header.php');
-	require_once('elements/footer.php');
+	require_once('../elements/head.php');
+	require_once('../elements/header.php');
+	require_once('../elements/footer.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,9 +17,8 @@
 				Cross-platform, Customized<br /> and Tailored High-end products.
 			</p>
 			<p class="center m0">
-				<a class="btn btn-white btn-lg btn-scale" href="/learn/dotnet/hello-world-tutorial/intro">Get
-					Started</a>
-				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight" href="/download">Download</a>
+				<a class="btn btn-white btn-lg btn-scale" href="/service-guide">Get Started</a>
+				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight" href="/services">All services</a>
 			</p>
 			<p>
 				The IT company to build all your apps and websites with.

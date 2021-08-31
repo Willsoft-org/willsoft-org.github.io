@@ -10,6 +10,7 @@ function navElement() {
 				<li><a href="services.php">Services</a></li>
 				<li><a href="projects.php">Projects</a></li>
 				<li><a href="products.php">Products</a></li>
+				<li><a href="open-source.php">Open-source</a></li>
 				<li><a href="about.php">About</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
