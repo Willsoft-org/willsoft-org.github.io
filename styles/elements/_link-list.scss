@@ -1,0 +1,24 @@
+ul.links {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+
+		a {
+			color: #5d5d5d;
+			display: inline-block;
+			padding: 0 8px;
+		}
+	}
+
+	&.column {
+		flex-direction: column;
+
+		li a {
+			padding: 8px 0;
+		}
+	}
+}
