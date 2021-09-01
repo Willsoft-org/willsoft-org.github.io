@@ -1,6 +1,4 @@
 <?php
-require_once("cookie.php");
-require_once("nav.php");
 
 function headElement($pageTitle) {
 	?>
