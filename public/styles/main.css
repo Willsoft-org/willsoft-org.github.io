@@ -108,6 +108,12 @@ footer .base {
   background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #caa02b 30%, #ca832b 130%);
 }
 
+.hero.contact {
+  background: #559e11;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #559e11 30%, #136b3a 130%);
+}
+
 .hero.services {
   background: #2b72ca;
   background-image: url(../assets/tech-bg.svg);
@@ -117,7 +123,19 @@ footer .base {
 .hero.projects {
   background: #17a07a;
   background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da253 30%, #29a9af 130%);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+}
+
+.hero.products {
+  background: #b14116;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #b14116 30%, #af6729 130%);
+}
+
+.hero.open-source {
+  background: #a01717;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #ca3a3a 30%, #730000 130%);
 }
 
 .hero .hero-content {

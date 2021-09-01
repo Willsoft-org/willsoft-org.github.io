@@ -34,25 +34,29 @@
 			We specialize in web development, mobile development, and software consulting.
 		</p>
 
-		<h3><code style="color: #395">// We <span class="typewriter" texts="[
-			'write open-source software',
-			'design static websites',
-			'build full-stack web apps',
-			'build native desktop apps',
-			'build mobile apps',
-			'build API:s',
-			'build secure systems',
-			'write robust software',
-			'write scalable code',
-			'develop embedded systems',
-			'work with relational databases',
-			'work with no-SQL databases',
-			'make PC and mobile games',
-			'are a team of talented programmers',
-			'can make all of your ideas come true',
-			'can build whatever you want',
-			]" in="30" out="60" hold="1800" wait="500" noise="70" offset="500"></span>
-		</code></h3>
+		<h3>
+			<code style="color: #395">
+			// We <span class="typewriter" texts="[
+				'write open-source software',
+				'design static websites',
+				'build full-stack web apps',
+				'build native desktop apps',
+				'build mobile apps',
+				'build API:s',
+				'build secure systems',
+				'write robust software',
+				'write scalable code',
+				'develop embedded systems',
+				'work with relational databases',
+				'work with no-SQL databases',
+				'make PC and mobile games',
+				'are a team of talented programmers',
+				'can make all of your ideas come true',
+				'can build whatever you want',
+				]" in="30" out="60" hold="1800" wait="500" noise="70" offset="500"></span>
+			<br>
+			// <span style="color: #29d; font-style: italic">TODO:</span> Implement features, write code and build software</code>
+		</h3>
 		<br>
 	</main>
 	<?php footerElement(); ?>
