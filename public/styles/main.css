@@ -99,7 +99,7 @@ footer .base {
 .hero.tech-bg {
   background: #422bca;
   background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #422bca 30.12%, #0093E9 192.47%);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #422bca 30%, #0093E9 130%);
 }
 
 .hero .hero-content {
@@ -304,6 +304,30 @@ ul.links.column li a {
 
 .container.row {
   flex-direction: row;
+}
+
+.typing {
+  border-right: solid var(--width) var(--color) !important;
+}
+
+.typewriter {
+  --width: 2px;
+  --color: black;
+  padding-right: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+49% {
+    border-right: solid var(--width) var(--color);
+  }
+  50% {
+    border-right: solid var(--width) transparent;
+  }
+  99% {
+    border-right: solid var(--width) transparent;
+  }
 }
 
 * {

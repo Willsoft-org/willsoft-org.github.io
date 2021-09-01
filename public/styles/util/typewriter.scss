@@ -1,0 +1,26 @@
+.typing {
+	border-right: solid var(--width) var(--color) !important;
+}
+
+.typewriter {
+	--width: 2px;
+	--color: black;
+	padding-right: 2px;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+	0%,
+	49% {
+		border-right: solid var(--width) var(--color);
+	}
+
+	50% {
+		border-right: solid var(--width) transparent;
+	}
+
+	99% {
+		border-right: solid var(--width) transparent;
+	}
+}

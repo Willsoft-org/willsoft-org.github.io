@@ -33,6 +33,22 @@
 			businesses.
 			We specialize in web development, mobile development, and software consulting.
 		</p>
+
+		<br>
+		<h3>We <span class="typewriter" texts="[
+			'write open-source software',
+			'build and design full-stack websites',
+			'build native desktop applications',
+			'build API:s',
+			'make mobile apps',
+			'develop embedded systems',
+			'work with relational databases',
+			'work with no-SQL databases',
+			'make PC and mobile games',
+			'can make all of your ideas',
+			'can do whatever you want',
+			]" in="50" out="80" hold="2000" wait="500" noise="70" offset="500"></span></h3>
+		<br>
 	</main>
 	<?php footerElement(); ?>
 </body>
