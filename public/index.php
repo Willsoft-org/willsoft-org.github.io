@@ -34,20 +34,25 @@
 			We specialize in web development, mobile development, and software consulting.
 		</p>
 
-		<br>
-		<h3>We <span class="typewriter" texts="[
+		<h3><code style="color: #395">// We <span class="typewriter" texts="[
 			'write open-source software',
-			'build and design full-stack websites',
-			'build native desktop applications',
+			'design static websites',
+			'build full-stack web apps',
+			'build native desktop apps',
+			'build mobile apps',
 			'build API:s',
-			'make mobile apps',
+			'build secure systems',
+			'write robust software',
+			'write scalable code',
 			'develop embedded systems',
 			'work with relational databases',
 			'work with no-SQL databases',
 			'make PC and mobile games',
-			'can make all of your ideas',
-			'can do whatever you want',
-			]" in="50" out="80" hold="2000" wait="500" noise="70" offset="500"></span></h3>
+			'are a team of talented programmers',
+			'can make all of your ideas come true',
+			'can build whatever you want',
+			]" in="30" out="60" hold="1800" wait="500" noise="70" offset="500"></span>
+		</code></h3>
 		<br>
 	</main>
 	<?php footerElement(); ?>

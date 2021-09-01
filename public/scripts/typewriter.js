@@ -16,6 +16,14 @@ function LoadTypewriters() {
 		const _wait = Number.parseFloat(writer.getAttribute("wait")) ?? 1000;	// Time to wait before writing a sentence
 		const _noise = Number.parseFloat(writer.getAttribute("noise")) ?? 20;	// Random extra time between keystrokes to remove or print new chracters
 		const _offset = Number.parseFloat(writer.getAttribute("offset")) ?? 0;	// Time to wait before starting to write the first sentence
+		// Clean up
+		writer.removeAttribute("texts");
+		writer.removeAttribute("in");
+		writer.removeAttribute("out");
+		writer.removeAttribute("hold");
+		writer.removeAttribute("wait");
+		writer.removeAttribute("noise");
+		writer.removeAttribute("offset");
 		setTimeout(() => Typewriter(writer, texts, _in, _out, _hold, _wait, _noise), _offset);
 	}
 }
