@@ -9,11 +9,11 @@
 	transition: background-color .15s ease-in-out,
 		transform .15s ease-in-out;
 
-	.btn:not(:disabled):not(.disabled) {
+	&:not(:disabled):not(.disabled) {
 		cursor: pointer;
 	}
 
-	&:hover {
+	&.pulse:hover {
 		animation: pulse;
 		/* referring directly to the animation's @keyframe declaration */
 		animation-duration: .4s;

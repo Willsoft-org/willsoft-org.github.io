@@ -8,6 +8,7 @@ function headerElement() {
 	<?php
 	 	if (!isset($_COOKIE["cookiesAccepted"]) || $_COOKIE["cookiesAccepted"] != "true") { cookiesElement(); }
 		navElement();
+		hamburgerDropdownElement(); // Initially hidden
 	?>
 </header>
 <!-- The element below is hidden an only used for emulating the height of the actual fixed header above. -->

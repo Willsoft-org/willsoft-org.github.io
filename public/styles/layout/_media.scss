@@ -1,0 +1,15 @@
+@media screen and (max-width: 860px) {
+	#navigationHamburger {
+		display: block !important;
+	}
+
+	#navigationLinks {
+		display: none !important;
+	}
+
+	#navigationLogo {
+		width: 100%;
+		text-align: center;
+		margin-left: -60px; // Width of hamburger menu icon
+	}
+}

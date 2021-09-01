@@ -17,8 +17,8 @@
 				Cross-platform, Customized<br /> and Tailored High-end products.
 			</p>
 			<p class="center m0">
-				<a class="btn btn-white btn-lg btn-scale" href="/service-guide">Get Started</a>
-				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight" href="/services">All services</a>
+				<a class="btn btn-white btn-lg btn-scale pulse" href="/service-guide">Get Started</a>
+				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight pulse" href="/services">All services</a>
 			</p>
 			<p>
 				The IT company to build all your apps and websites with.
