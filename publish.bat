@@ -8,3 +8,5 @@ xcopy public\* \\192.168.0.28\william\websites\willsoft.org\public\ /Y /E
 rem Process is done
 echo.
 echo Done!
+
+pause
