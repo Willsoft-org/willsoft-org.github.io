@@ -31,7 +31,7 @@ nav {
 					border-bottom: solid var(--underline-thickness) #ddd;
 					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
 				}
-
+ 
 				&.selected {
 					border-bottom: solid var(--underline-thickness) #aaa; // #428bdd;
 					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));

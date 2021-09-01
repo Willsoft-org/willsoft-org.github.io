@@ -20,13 +20,81 @@
 		</div>
 	</div>
 	<main class="container">
-		<!-- A landing page for a software consulting company. -->
-		<h1>Not much here</h1>
+		<?php
+			if (isset($_GET['sent']) && isset($_GET['message'])) {
+		?>
+		<div class="mail-success">
+			<p class="c-heading-2"><?php echo $_GET['message']; ?></p>
+		</div>
+		<style>
+		.mail-success {
+			background-image: url(assets/contact/check-animation-v2.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position-y: -40px;
+			padding-top: 120px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		</style>
+		<?php
+			} else {
+		?>
+		<h1>We'd love to hear from you!</h1>
 		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde totam magnam tempore minima dignissimos nam
-			iste, eius accusantium, impedit ipsa error beatae id amet temporibus labore ipsum explicabo, debitis
-			ratione!
+			Tell us about your ideas or projects you want to involve us in and we will get back to you as soon as
+			possible.
+			If you have any other questions, comments, or concerns, please fill out the form below.
 		</p>
+		<br>
+		<?php
+			if (isset($_GET['failed'])) {
+		?>
+		<div class="mail-failure">
+			<p class="c-paragraph-1">
+				It seems like we couldn't send your message. Please try again later.
+			</p>
+		</div>
+		<style>
+		.mail-failure {
+			text-align: center;
+		}
+
+		.mail-failure p {
+			color: red;
+			font-weight: bold;
+		}
+		</style>
+		<?php
+			}
+		?>
+		<br><br>
+		<form action="contact-mail.php" method="post">
+			<div class="form-group">
+				<label for="first_name" class="form">First Name</label>
+				<input type="text" class="form-control form" id="first_name" name="first_name"
+					placeholder="Enter your first name" required>
+				<label for="last_name" class="form">Last Name</label>
+				<input type="text" class="form-control form" id="last_name" name="last_name"
+					placeholder="Enter your last name" required>
+			</div>
+			<div class="form-group">
+				<label for="email" class="form">Email</label>
+				<input type="email" class="form-control form" id="email" name="email" placeholder="Enter your email"
+					required>
+			</div>
+			<div class="form-group">
+				<label for="message" class="form">Message</label>
+				<textarea class="form-control form" id="message" name="message" rows="3"
+					placeholder="Enter your message" required></textarea>
+			</div>
+			<button type="submit" name="submit" class="form btn btn-primary">Submit</button>
+		</form>
+		<br><br><br>
+		<?php
+			}
+		?>
 	</main>
 	<?php footerElement(); ?>
 </body>
