@@ -9,7 +9,7 @@
 <?php headElement("Open-Source"); ?>
 
 <body>
-	<?php headerElement(); ?>
+	<?php headerElement("Open-Source"); ?>
 	<div class="hero open-source">
 		<div class="container hero-content">
 			<h1 class="hero-title">Open-Source</h1> <!-- Welcome to the Home Page -->

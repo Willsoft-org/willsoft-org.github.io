@@ -9,7 +9,7 @@
 <?php headElement("Products"); ?>
 
 <body>
-	<?php headerElement(); ?>
+	<?php headerElement("Products"); ?>
 	<div class="hero products">
 		<div class="container hero-content">
 			<h1 class="hero-title">Products</h1> <!-- Welcome to the Home Page -->

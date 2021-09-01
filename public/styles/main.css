@@ -22,6 +22,23 @@ nav .left #navigationLinks {
   display: flex;
 }
 
+nav .left #navigationLinks li a {
+  --underline-padding: 4px;
+  --underline-thickness: 2px;
+  margin: 0 8px;
+  padding: var(--underline-padding) 0;
+}
+
+nav .left #navigationLinks li a:hover {
+  border-bottom: solid var(--underline-thickness) #ddd;
+  padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+}
+
+nav .left #navigationLinks li a.selected {
+  border-bottom: solid var(--underline-thickness) #aaa;
+  padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+}
+
 #hamburgerDropdown {
   border-bottom: solid 2px #888;
 }

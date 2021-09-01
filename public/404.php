@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php headElement("Home"); ?>
+<?php headElement("404"); ?>
 
 <style>
 main {

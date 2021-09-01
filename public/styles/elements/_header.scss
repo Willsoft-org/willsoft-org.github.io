@@ -20,6 +20,23 @@ nav {
 
 		#navigationLinks {
 			display: flex;
+
+			li a {
+				--underline-padding: 4px;
+				--underline-thickness: 2px;
+				margin: 0 8px;
+				padding: var(--underline-padding) 0;
+
+				&:hover {
+					border-bottom: solid var(--underline-thickness) #ddd;
+					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+				}
+
+				&.selected {
+					border-bottom: solid var(--underline-thickness) #aaa; // #428bdd;
+					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+				}
+			}
 		}
 	}
 }
