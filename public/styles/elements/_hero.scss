@@ -2,11 +2,32 @@
 	color: #fff;
 	margin-bottom: 60px;
 
-	&.tech-bg {
+	&.landing {
 		background: #422bca;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
 			linear-gradient(180deg, #422bca 30%, #0093E9 130%);
+	}
+
+	&.about {
+		background: #ca832b;
+		background-image: url(../assets/tech-bg.svg);
+		background-image: url(../assets/tech-bg.svg),
+			linear-gradient(180deg, #caa02b 30%, #ca832b 130%);
+	}
+
+	&.services {
+		background: #2b72ca;
+		background-image: url(../assets/tech-bg.svg);
+		background-image: url(../assets/tech-bg.svg),
+			linear-gradient(180deg, #2ba5ca 30%, #2b8fca 130%);
+	}
+
+	&.projects {
+		background: #17a07a;
+		background-image: url(../assets/tech-bg.svg);
+		background-image: url(../assets/tech-bg.svg),
+			linear-gradient(180deg, #1da253 30%, #29a9af 130%);
 	}
 
 	.hero-content {

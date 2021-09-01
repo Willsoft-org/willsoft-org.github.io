@@ -6,15 +6,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php headElement("About"); ?>
+<?php headElement("Services"); ?>
 
 <body>
 	<?php headerElement(); ?>
-	<div class="hero about">
+	<div class="hero services">
 		<div class="container hero-content">
-			<h1 class="hero-title">About Us</h1> <!-- Welcome to the Home Page -->
+			<h1 class="hero-title">Services</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Company and developer Team
+				Software, web, desktop,<br>
+				mobile development and more
 			</p>
 		</div>
 	</div>
