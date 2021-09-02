@@ -17,10 +17,10 @@
 	}
 
 	&.contact {
-		background: #559e11;
+		background: #6e9a45;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #559e11 30%, #136b3a 130%);
+			linear-gradient(180deg, #6e9a45 30%, #136b3a 130%);
 	}
 
 	&.services {
@@ -38,17 +38,18 @@
 	}
 
 	&.products {
-		background: #b14116;
+		background: #d48a64;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #b14116 30%, #af6729 130%);
+			linear-gradient(180deg, #d48a64 30%, #EA5455 130%);
+
 	}
 
 	&.open-source {
-		background: #a01717;
+		background: #a72c5f;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #ca3a3a 30%, #730000 130%);
+			linear-gradient(180deg, #a72c5f 30%, #bf3649 130%);
 	}
 
 	.hero-content {
