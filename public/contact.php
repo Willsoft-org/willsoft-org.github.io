@@ -85,6 +85,17 @@
 					required>
 			</div>
 			<div class="form-group">
+				<label for="regarding" class="form">Regarding</label>
+				<select name="regarding" id="regarding" class="form" required>
+					<option value="" selected disabled>Select an option</option>
+					<option value="Hiring">Hiring</option>
+					<option value="Project">Project</option>
+					<option value="Consulting">Consulting</option>
+					<option value="Question">Question</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
 				<label for="message" class="form">Message</label>
 				<textarea class="form-control form" id="message" name="message" rows="3"
 					placeholder="Enter your message" required></textarea>

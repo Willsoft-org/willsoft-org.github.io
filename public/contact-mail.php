@@ -5,9 +5,10 @@ if (isset($_POST['submit'])) {
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
+	$regarding = $_POST['regarding'];
     $subject = "Willsoft contact form";
     $subject2 = "Copy of your Willsoft form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\r\n\r\n" . $_POST['message'];
+    $message = $first_name . " " . $last_name . " wrote the following (regarding ". $regarding . "):" . "\r\n\r\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $first_name . ".\r\n\r\n" . $_POST['message'];
 	$message = wordwrap($message, 70, "\r\n");
 	$message2 = wordwrap($message2, 70, "\r\n");
@@ -27,7 +28,7 @@ if (isset($_POST['submit'])) {
 	if ($debug) { echo "Mail sent to: " . $from . " ? " . $mailSent . "<br>"; }
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 	if (!$debug && $mailSent) {
-		header("Location: contact.php?sent&message=".htmlspecialchars("Thank you " . $first_name . ", we will contact you shortly."));
+		header("Location: contact.php?sent&message=".htmlspecialchars("Thank you " . $first_name . ",<br/>we will contact you shortly."));
 		exit();
 	}
 }
