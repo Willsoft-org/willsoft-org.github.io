@@ -32,7 +32,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-position-y: -40px;
+			background-position-y: -50px;
 			padding-top: 120px;
 			margin-bottom: 40px;
 			text-align: center;

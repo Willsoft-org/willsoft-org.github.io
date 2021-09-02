@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
 	if ($debug) { echo "Mail sent to: " . $from . " ? " . $mailSent . "<br>"; }
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 	if (!$debug && $mailSent) {
-		header("Location: contact.php?sent&message=".htmlspecialchars("Thank you " . $first_name . ",<br/>we will contact you shortly."));
+		header("Location: contact.php?sent&message=".htmlspecialchars("Thank you " . $first_name . ",")."<br>".htmlspecialchars("we will contact you shortly."));
 		exit();
 	}
 }
