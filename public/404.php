@@ -11,18 +11,18 @@
 <style>
 main {
 	background: url(<?php
- $errorImages=[ "assets/404/astronaut.png",
-		"assets/404/computer.jpg",
-		"assets/404/cup.png",
-		"assets/404/desert.webp",
-		"assets/404/google.jpg",
-		"assets/404/leaves.png",
-		"assets/404/robot1.png",
-		"assets/404/robot2.png",
-		"assets/404/robot3.png",
-		"assets/404/robot4.png",
-		"assets/404/sad.png"];
-	echo $errorImages[array_rand($errorImages)];
+ $errorImages=[ "astronaut.png",
+		"computer.jpg",
+		"cup.png",
+		"desert.webp",
+		"google.jpg",
+		"leaves.png",
+		"robot1.png",
+		"robot2.png",
+		"robot3.png",
+		"robot4.png",
+		"sad.png"];
+	echo "assets/404/". $errorImages[array_rand($errorImages)];
 	?>),
 	#ffffffed;
 	background-size: contain;
