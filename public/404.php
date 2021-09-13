@@ -33,7 +33,7 @@ main {
 </style>
 
 <body>
-	<?php headerElement(); ?>
+	<?php headerElement("404"); ?>
 	<main class="container align-center pt100 pb150">
 		<h1 class="c-heading-1">404</h1>
 		<h1 class="c-heading-3">We are sorry, the page you requested cannot be found.</h1>
