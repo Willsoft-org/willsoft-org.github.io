@@ -43,6 +43,14 @@ footer {
 			justify-content: space-between;
 			flex-direction: row;
 
+			.follow {
+				padding-right: 10px;
+			}
+			.share {
+				padding-left: 10px;
+				text-align: right;
+			}
+
 			a {
 				vertical-align: middle;
 				font-size: 20px;

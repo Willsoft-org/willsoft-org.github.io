@@ -114,10 +114,19 @@ footer .social .container {
   flex-direction: row;
 }
 
+footer .social .container .follow {
+  padding-right: 10px;
+}
+
+footer .social .container .share {
+  padding-left: 10px;
+  text-align: right;
+}
+
 footer .social .container a {
   vertical-align: middle;
   font-size: 20px;
-  padding: 0 3px;
+  padding: 0 2px;
 }
 
 footer .company {
@@ -428,6 +437,10 @@ h6 {
   margin-bottom: .5rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .m0 {
   margin: 0;
 }
@@ -436,12 +449,20 @@ h6 {
   padding: 0;
 }
 
+.pt6 {
+  padding-top: 6px;
+}
+
 .pt100 {
   padding-top: 100px;
 }
 
 .pt150 {
   padding-top: 150px;
+}
+
+.pb6 {
+  padding-bottom: 6px;
 }
 
 .pb100 {

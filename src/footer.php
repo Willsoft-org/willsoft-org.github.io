@@ -9,22 +9,26 @@ function footerElement() {
 		<div class="container">
 			<div class="follow">
 				Follow us on
-				<!--<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>-->
-				<!--<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>-->
-				<a href="https://twitter.com/intent/follow?screen_name=WilliamRagstad"><i class="fab fa-twitter"></i></a>
-				<!--<a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>-->
+				<div class="inline-block pt6 pb6">
+					<!--<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>-->
+					<!--<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>-->
+					<a href="https://twitter.com/intent/follow?screen_name=WilliamRagstad"><i class="fab fa-twitter"></i></a>
+					<!--<a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>-->
+				</div>
 			</div>
 			<div class="share">
 				Share this page on
-				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link; ?>&amp;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
-				<a href="https://twitter.com/intent/tweet?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
-				<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="https://www.reddit.com/submit?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-reddit"></i></a>
-				<a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-tumblr"></i></a>
-				<!--<a href="https://pinterest.com/pin/create/button/?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-pinterest-square"></i></a>-->
-				<a href="https://www.whatsapp.com/send?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-whatsapp"></i></a>
-				<a href="https://www.telegram.org/sharer.php?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-				<a href="fb-messenger://share/?link=<?php echo $actual_link; ?>&app_id=123456789" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+				<div class="inline-block pt6 pb6">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link; ?>&amp;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/intent/tweet?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.reddit.com/submit?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-reddit"></i></a>
+					<a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-tumblr"></i></a>
+					<!--<a href="https://pinterest.com/pin/create/button/?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-pinterest-square"></i></a>-->
+					<a href="https://www.whatsapp.com/send?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://www.telegram.org/sharer.php?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+					<a href="fb-messenger://share/?link=<?php echo $actual_link; ?>&app_id=123456789" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
