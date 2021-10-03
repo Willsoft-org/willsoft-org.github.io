@@ -1,71 +1,90 @@
 <?php
 
 function footerElement() {
+	$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$actual_link = str_replace("/index.php", "", $actual_link);
 	?>
 <footer>
+	<div class="social">
+		<div class="container">
+			<div class="follow">
+				Follow us on
+				<!--<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>-->
+				<!--<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>-->
+				<a href="https://twitter.com/intent/follow?screen_name=WilliamRagstad"><i class="fab fa-twitter"></i></a>
+				<!--<a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>-->
+			</div>
+			<div class="share">
+				Share this page on
+				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link; ?>&amp;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/intent/tweet?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.reddit.com/submit?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-reddit"></i></a>
+				<a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-tumblr"></i></a>
+				<!--<a href="https://pinterest.com/pin/create/button/?url=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-pinterest-square"></i></a>-->
+				<a href="https://www.whatsapp.com/send?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.telegram.org/sharer.php?text=<?php echo $actual_link; ?>" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+				<a href="fb-messenger://share/?link=<?php echo $actual_link; ?>&app_id=123456789" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="sections">
 			<div class="section">
-				<div class="heading-4">Nyheter</div>
+				<div class="heading-4">News</div>
 				<ul class="links column">
-					<li><a href="https://www.microsoft.com/sv-se/p/surface-laptop-4/946627FB12T1">Surface Laptop
-							4</a>
+					<li><a href="https://www.linkedin.com/company/willsoft-it/" target="_blank">Willsoft On
+							LinkedIn</a>
 					</li>
-					<li><a href="https://www.microsoft.com/sv-se/p/surface-laptop-go/94FC0BDGQ7WV">Surface Laptop
-							Go</a>
-					</li>
-					<li><a href="https://www.microsoft.com/sv-se/p/surface-go-2/8PT3S2VJMDR6">Surface Go 2</a></li>
-					<li><a href="https://www.microsoft.com/sv-se/p/surface-pro-x/8QG3BMRHNWHK">Surface Pro X</a>
-					</li>
-					<li><a href="https://www.microsoft.com/sv-se/p/surface-book-3/8XBW9G3Z71F1">Surface Book 3</a>
-					</li>
-					<li><a href="https://www.microsoft.com/microsoft-365">Microsoft 365</a></li>
-					<li><a href="https://www.microsoft.com/windows/windows-10-apps">Windows 10-appar</a></li>
-					<li><a href="https://www.microsoft.com/sv-se/hololens">HoloLens 2</a></li>
+					<li><a href="">Startup News</a></li>
+					<li><a href="">Company news</a></li>
 				</ul>
 			</div>
 			<div class="section">
-				<div class="heading-4">Utbildning</div>
+				<div class="heading-4">Education and Career</div>
 				<ul class="links column">
-					<li><a href="">Microsoft inom utbildning</a></li>
-					<li><a href="">Office för studenter</a></li>
-					<li><a href="">Office 365 för skolor</a></li>
-					<li><a href="">Erbjudanden för elever och föräldrar</a></li>
-					<li><a href="">Microsoft Azure inom utbildning</a></li>
+					<li><a href="">Research</a></li>
+					<li><a href="">Our courses</a></li>
+					<li><a href="">For students</a></li>
+					<li><a href="">Conferences</a></li>
+					<li><a href="">Internships</a></li>
 				</ul>
 			</div>
 			<div class="section">
-				<div class="heading-4">Utvecklare</div>
+				<div class="heading-4">Developers</div>
 				<ul class="links column">
-					<li><a href="">Utvecklare</a></li>
-					<li><a href="">Microsoft Visual Studio</a></li>
-					<li><a href="">Windows Dev Center</a></li>
-					<li><a href="">Utvecklarcenter</a></li>
-					<li><a href="">Microsoft developer program</a></li>
-					<li><a href="">Channel 9</a></li>
-					<li><a href="">Microsoft 365 Dev Center</a></li>
-					<li><a href="">Microsoft 365 Developer Program</a></li>
+					<li><a href="">Tools</a></li>
+					<li><a href="https://developer.microsoft.com/sv-se/" target="_blank">Developer Center</a></li>
+					<li><a href="">Developer program</a></li>
 					<li><a href="" onClick="document.cookie = 'cookiesAccepted=false; path=/'">Disable cookies</a>
 					</li>
 				</ul>
 			</div>
 			<div class="section">
-				<div class="heading-4">Företag</div>
+				<div class="heading-4">Company</div>
 				<ul class="links column">
-					<li><a href="">Karriärmöjligheter</a></li>
-					<li><a href="">Om Microsoft</a></li>
-					<li><a href="">Företagsnyheter</a></li>
-					<li><a href="">Sekretess på Microsoft</a></li>
-					<li><a href="">Investerare</a></li>
-					<li><a href="">Säkerhet</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="/about.php">About Willsoft</a></li>
+					<li><a href="">Privacy at Microsoft</a></li>
+					<li><a href="">Investors</a></li>
+					<li><a href="">Security</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<div class="company container">
+		<ul class="links row">
+			<li><a href="">Terms of use</a></li>
+			<li><a href="">Privacy</a></li>
+			<li><a href="">Legal</a></li>
+			<li><a href="">Advertising</a></li>
+			<li><a href="">Cookies</a></li>
+			<li><a href="">Trademarks</a></li>
+			<li><a href="">Help</a></li>
+		</ul>
 	</div>
-	<div class="base container">
-		&copy; Willsoft <?php echo date("Y"); ?>. All rights reserved.
-	</div>
+	<div class="copyright container">
+		&copy; Willsoft Copyright <?php echo date("Y"); ?> - All Rights Reserved.
 	</div>
 </footer>
 <?php

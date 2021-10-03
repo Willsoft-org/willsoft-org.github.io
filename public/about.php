@@ -14,7 +14,7 @@
 		<div class="container hero-content">
 			<h1 class="hero-title">About Us</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Company and developer Team
+				Company and Development Team
 			</p>
 		</div>
 	</div>

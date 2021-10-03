@@ -18,8 +18,9 @@
 			</p>
 			<p class="center m0">
 				<a class="btn btn-white btn-lg btn-scale pulse" href="/service-guide.php">Get Started</a>
-				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight pulse" href="/services.php">All services</a>
+				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight pulse" href="/services.php">Our Services</a>
 			</p>
+			<br>
 			<p>
 				The IT company to build all your apps and websites.
 			</p>

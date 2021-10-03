@@ -102,9 +102,31 @@ footer .sections .section .heading-4 {
   color: #616161;
 }
 
-footer .base {
+footer .social {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ebebeb;
+}
+
+footer .social .container {
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer .social .container a {
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 0 3px;
+}
+
+footer .company {
+  padding-top: 10px;
+}
+
+footer .copyright {
   color: #616161;
-  padding: 30px 5% 16px;
+  padding: 16px 5% 20px;
   align-items: center;
 }
 

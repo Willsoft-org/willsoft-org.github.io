@@ -14,8 +14,8 @@
 		<div class="container hero-content">
 			<h1 class="hero-title">Services</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Software, web, desktop,<br>
-				mobile development and more
+				Software, Web, Desktop,<br>
+				Mobile Development and more
 			</p>
 		</div>
 	</div>
