@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
 	$regarding = $_POST['regarding'];
 	$subject = "Willsoft contact form";
 	$subject2 = "Copy of your Willsoft form submission";
-	$safe_message = htmlspecialchars($_POST['message']);
+	$safe_message = addslashes(htmlspecialchars($_POST['message']));
 	$message = $first_name . " " . $last_name . " wrote the following (regarding ". $regarding . "):" . "\r\n\r\n" . $safe_message;
 	$message2 = "Here is a copy of your message " . $first_name . ".\r\n\r\n" . $safe_message;
 	$message = wordwrap($message, 70, "\r\n");
