@@ -11,10 +11,10 @@
 <body>
 	<?php headerElement("Open-Source"); ?>
 	<div class="hero open-source">
-		<div class="container hero-content">
+		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">Open-Source</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Why open-source works
+				Community Presence and Contributions
 			</p>
 		</div>
 	</div>

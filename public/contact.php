@@ -11,7 +11,7 @@
 <body>
 	<?php headerElement("Contact"); ?>
 	<div class="hero contact">
-		<div class="container hero-content">
+		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">Contact us</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
 				Are you interested in building<br>

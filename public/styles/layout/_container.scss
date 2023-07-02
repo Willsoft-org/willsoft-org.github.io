@@ -13,3 +13,22 @@
 		flex-direction: row;
 	}
 }
+
+
+
+.split-container {
+    display: flex;           /* This makes it a flex container */
+	flex-direction: row;
+    justify-content: space-between; /* This spreads the content sections out */
+}
+
+.content-section {
+    flex: 1;                 /* This makes the content sections grow to take up equal space */
+    padding: 10px;           /* This adds some space inside each section */
+    box-sizing: border-box;  /* This makes sure the padding is included in the element's total width, so it doesn't become wider than 50% */
+}
+
+/* If you want a gap between the sections, add a margin to one or both sides */
+.content-section:not(:last-child) {
+    margin-right: 20px;      /* This adds a margin to the right side of every section except the last one */
+}

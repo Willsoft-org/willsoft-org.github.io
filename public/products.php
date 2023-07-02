@@ -11,10 +11,10 @@
 <body>
 	<?php headerElement("Products"); ?>
 	<div class="hero products">
-		<div class="container hero-content">
+		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">Products</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				List of our software products
+				Software and SaaS Products
 			</p>
 		</div>
 	</div>

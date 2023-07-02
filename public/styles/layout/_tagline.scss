@@ -1,0 +1,47 @@
+@import "../util/colors";
+// Colored tagline box with white title and body text
+
+.tagline-box {
+	position: relative;
+	z-index: -1; // to not overlap with the hamburger menu
+	display: flex;
+    flex-direction: column;
+	padding: 16px 24px;
+	// padding: 1rem;
+    color: $color-white;
+    font-size: 1rem;
+	font-family: Segoe UI,
+		SegoeUI,
+		"Helvetica Neue",
+		Helvetica,
+		Arial,
+		sans-serif;
+
+	.title {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.body {
+		font-weight: 400;
+	}
+
+	&::before, &::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	&::before {
+		left: calc(100% - 1px);
+		background: linear-gradient(to top left, transparent 0%, transparent 50%, var(--bg-color) 50%, var(--bg-color) 100%);
+	}
+
+	&::after {
+		right: calc(100% - 1px);
+		background: linear-gradient(to bottom right, transparent 0%, transparent 50%, var(--bg-color) 50%, var(--bg-color) 100%);
+	}
+}

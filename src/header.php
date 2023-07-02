@@ -26,7 +26,7 @@ function navElement($currentPage) {
 				</li>
 				<li><a href="open-source.php"
 						class="<?php echo $currentPage == "Open-Source" ? "selected" : ""; ?>">Open-Source</a></li>
-				<li><a href="about.php" class="<?php echo $currentPage == "About" ? "selected" : ""; ?>">About</a></li>
+				<li><a href="about.php" class="<?php echo $currentPage == "About" ? "selected" : ""; ?>">About Us</a></li>
 				<li><a href="contact.php" class="<?php echo $currentPage == "Contact" ? "selected" : ""; ?>">Contact</a>
 				</li>
 			</ul>
@@ -47,7 +47,7 @@ function hamburgerDropdownElement() {
 			<li><a href="projects.php">Projects</a></li>
 			<li><a href="products.php">Products</a></li>
 			<li><a href="open-source.php">Open-Source</a></li>
-			<li><a href="about.php">About</a></li>
+			<li><a href="about.php">About Us</a></li>
 			<li><a href="contact.php">Contact</a></li>
 		</ul>
 	</div>

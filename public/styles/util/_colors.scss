@@ -1,0 +1,86 @@
+// default colors for the website
+// inspired by Microsofts Fluent Design System
+
+// primary colors
+$color-primary: #0078d7;
+$color-primary-light: #00a8e8;
+$color-primary-dark: #0063b1;
+
+// secondary colors
+$color-secondary: #ffb900;
+$color-secondary-light: #fff100;
+$color-secondary-dark: #e6b800;
+
+// neutral colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #666666;
+$color-white2: #F2F2F2;
+$color-white3: #EBEBEB;
+$color-white4: #DBDBDB;
+$color-white5: #b9b9b9;
+$color-gray-light: #cccccc;
+$color-gray: #616161;
+$color-gray-dark: #333333;
+
+// accent colors
+$color-accent-red: #d13438;
+$color-accent-red-light: #ff4345;
+$color-accent-red-dark: #b30008;
+$color-accent-blue: #422bca;
+$color-accent-blue-light: #0093E9;
+$color-accent-orange: #ca832b;
+$color-accent-orange-light: #caa02b;
+$color-accent-green: #136b3a;
+$color-accent-green-light: #6e9a45;
+
+
+// success colors
+$color-success: #107c10;
+$color-success-light: #2b9348;
+$color-success-dark: #004b23;
+
+.bg-red {
+	--bg-color: $color-accent-red;
+	background-color: $color-accent-red;
+}
+
+.bg-red-light {
+	--bg-color: $color-accent-red-light;
+	background-color: $color-accent-red-light;
+}
+
+.bg-red-dark {
+	--bg-color: $color-accent-red-dark;
+	background-color: $color-accent-red-dark;
+}
+
+.bg-blue {
+	--bg-color: $color-accent-blue;
+	background-color: $color-accent-blue;
+}
+
+.bg-blue-light {
+	--bg-color: $color-accent-blue-light;
+	background-color: $color-accent-blue-light;
+}
+
+.bg-orange {
+	--bg-color: #{$color-accent-orange};
+	background-color: $color-accent-orange;
+}
+
+.bg-orange-light {
+	--bg-color: $color-accent-orange-light;
+	background-color: $color-accent-orange-light;
+}
+
+.bg-green {
+	--bg-color: $color-accent-green;
+	background-color: $color-accent-green;
+}
+
+.bg-green-light {
+	--bg-color: $color-accent-green-light;
+	background-color: $color-accent-green-light;
+}

@@ -1,6 +1,8 @@
+@import "../util/colors";
+
 footer {
-	background: #f2f2f2;
-	margin-top: 48px;
+	background: $color-white2;
+	margin-top: 64px;
 	font-size: 11px;
 	line-height: 16px;
 
@@ -28,7 +30,7 @@ footer {
 				line-height: 20px;
 				padding: 36px 0 4px;
 				font-weight: 600;
-				color: #616161;
+				color: $color-gray;
 			}
 		}
 	}
@@ -37,7 +39,7 @@ footer {
 		font-size: 16px;
 		padding-top: 10px;
     	padding-bottom: 10px;
-    	background: #ebebeb;
+    	background: $color-white3;
 
 		.container {
 			justify-content: space-between;
@@ -64,7 +66,7 @@ footer {
 	}
 
 	.copyright {
-		color: #616161;
+		color: $color-gray;
 		padding: 16px 5% 20px;
 		align-items: center;
 	}

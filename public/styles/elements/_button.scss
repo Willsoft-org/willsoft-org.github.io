@@ -1,3 +1,5 @@
+@import "../util/colors";
+
 .btn {
 	display: inline-block;
 	width: auto;
@@ -21,15 +23,15 @@
 	}
 
 	&-white {
-		color: #422bca !important;
-		background-color: #fff;
+		color: $color-accent-blue !important;
+		background-color: $color-white;
 		border-color: transparent;
 	}
 
 	&-purple {
-		color: #fff;
+		color: $color-white;
 		background-color: transparent;
-		border-color: #fff;
+		border-color: $color-white;
 		border: solid 1px;
 	}
 

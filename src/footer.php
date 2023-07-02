@@ -76,17 +76,21 @@ function footerElement() {
 			</div>
 		</div>
 	</div>
-	<div class="company container">
-		<ul class="links row">
-			<li><a href="">Terms of use</a></li>
-			<li><a href="">Privacy</a></li>
-			<li><a href="">Legal</a></li>
-			<li><a href="">Advertising</a></li>
-			<li><a href="">Cookies</a></li>
-			<li><a href="">Trademarks</a></li>
-			<li><a href="">Help</a></li>
-		</ul>
-	</div>
+	<?php
+		/*
+		<div class="company container">
+			<ul class="links row">
+				<li><a href="">Terms of use</a></li>
+				<li><a href="">Privacy</a></li>
+				<li><a href="">Legal</a></li>
+				<li><a href="">Advertising</a></li>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">Trademarks</a></li>
+				<li><a href="">Help</a></li>
+			</ul>
+		</div>
+		*/
+	?>
 	<div class="copyright container">
 		&copy; Willsoft Copyright <?php echo date("Y"); ?> - All Rights Reserved.
 	</div>

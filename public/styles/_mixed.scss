@@ -29,6 +29,42 @@ h6 {
 	&0 {
 		margin: 0;
 	}
+
+	&t {
+		&5 {
+			margin-top: 5px;
+		}
+
+		&10 {
+			margin-top: 10px;
+		}
+
+		&20 {
+			margin-top: 20px;
+		}
+	}
+
+	&b {
+		&5 {
+			margin-bottom: 5px;
+		}
+
+		&10 {
+			margin-bottom: 10px;
+		}
+
+		&20 {
+			margin-bottom: 20px;
+		}
+
+		&32 {
+			margin-bottom: 30px;
+		}
+
+		&64 {
+			margin-bottom: 64px;
+		}
+	}
 }
 
 .p {

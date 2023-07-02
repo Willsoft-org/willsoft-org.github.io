@@ -1,26 +1,28 @@
+@import "../util/colors";
+
 .hero {
-	color: #fff;
-	margin-bottom: 60px;
+	color: $color-white;
+	margin-bottom: 64px;
 
 	&.landing {
-		background: #422bca;
+		background: $color-accent-blue;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #422bca 30%, #0093E9 130%);
+			linear-gradient(180deg, $color-accent-blue 30%, $color-accent-blue-light 130%);
 	}
 
 	&.about {
-		background: #ca832b;
+		background: $color-accent-orange;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #caa02b 30%, #ca832b 130%);
+			linear-gradient(180deg, $color-accent-orange-light 30%, $color-accent-orange 130%);
 	}
 
 	&.contact {
-		background: #6e9a45;
+		background: $color-accent-green-light;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #6e9a45 30%, #136b3a 130%);
+			linear-gradient(180deg, $color-accent-green-light 30%, $color-accent-green 130%);
 	}
 
 	&.services {
@@ -45,17 +47,38 @@
 
 	}
 
+	// &.open-source {
+	// 	background: #a72c5f;
+	// 	background-image: url(../assets/tech-bg.svg);
+	// 	background-image: url(../assets/tech-bg.svg),
+	// 		linear-gradient(180deg, #a72c5f 30%, #bf3649 130%);
+	// }
 	&.open-source {
-		background: #a72c5f;
+		background: #d36366;
 		background-image: url(../assets/tech-bg.svg);
 		background-image: url(../assets/tech-bg.svg),
-			linear-gradient(180deg, #a72c5f 30%, #bf3649 130%);
+			linear-gradient(180deg, $color-accent-red 30%, #d36366 130%);
 	}
 
 	.hero-content {
 		text-align: center;
 		padding-top: 80px;
 		padding-bottom: 70px;
+
+		&-small {
+			padding-top: 32px !important;
+			padding-bottom: 24px !important;
+
+			.hero-title {
+				font-size: 48px !important;
+				line-height: 48px !important;
+			}
+
+			.hero-lead {
+				font-size: 1.5rem !important;
+				margin-top: 10px !important;
+			}
+		}
 
 		.hero-title {
 			font-size: 62px;
@@ -64,13 +87,6 @@
 			align-self: center;
 
 			&:after {
-				/*
-				content: "―――";
-				display: block;
-				line-height: 0;
-				margin-bottom: 10px;
-				font-weight: 100;
-				*/
 				content: "";
 				display: block;
 				padding-bottom: 8px;

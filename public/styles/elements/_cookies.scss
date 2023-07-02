@@ -1,9 +1,11 @@
+@import "../util/colors";
+
 #cookies {
 	position: relative;
 	display: flex;
 	z-index: 9999;
 	width: 100%;
-	background-color: #F2F2F2;
+	background-color: $color-white2;
 	justify-content: space-between;
 	text-align: left;
 	padding-top: 8px;
@@ -45,12 +47,12 @@
 				sans-serif;
 			font-size: 15px;
 			text-align: center;
-			background-color: #EBEBEB;
+			background-color: $color-white3;
 			border: none;
 
 			&:hover {
-				background-color: #DBDBDB;
-				border: solid 1px #b9b9b9;
+				background-color: $color-white4;
+				border: solid 1px $color-white5;
 			}
 		}
 	}

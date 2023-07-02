@@ -11,10 +11,10 @@
 <body>
 	<?php headerElement("Projects"); ?>
 	<div class="hero projects">
-		<div class="container hero-content">
+		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">Projects</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				A list of projects that we are currently involved in
+				Ongoing Projects and Partnerships
 			</p>
 		</div>
 	</div>
