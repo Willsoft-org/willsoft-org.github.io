@@ -14,7 +14,7 @@ require_once('../src/footer.php');
 		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">About Us</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Company and Team <?php /* Development Team */ ?>
+				Get to know the Company and Team <?php /* Development Team */ ?>
 			</p>
 		</div>
 	</div>
