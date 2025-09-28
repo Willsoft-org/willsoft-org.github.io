@@ -83,7 +83,8 @@
 				{{ range $.Params.heroButtons }}<a class="btn {{ .class }}" href="{{ .href }}">{{ .text }}</a>{{ end }}
 			</p>
 			{{ end }}
-			{{ with $.Params.heroSub }}<p>{{ . | safeHTML }}</p>{{ end }}
+			{{ with $.Params.heroSub }}<br />
+			<p>{{ . | safeHTML }}</p>{{ end }}
 		</div>
 	</div>
 	{{ end }}
