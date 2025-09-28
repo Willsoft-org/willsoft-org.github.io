@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 	{{/* Description fallback: page .Description -> site param description -> cascade description */}}
-	{{ $desc := cond (ne .Description "") .Description (cond (isset .Site.Params "description") .Site.Params.description (.Site.Params.description)) }}
+	{{ $desc := cond (ne .Description "") .Description (cond (isset .Site.Params "description") .Site.Params.description
+	(.Site.Params.description)) }}
 	<meta name="description" content="{{ $desc }}" />
 	{{/* Canonical */}}
 	<link rel="canonical" href="{{ .Permalink }}" />
 	{{/* Open Graph & Twitter (use params if provided) */}}
 	{{ $ogImage := (printf "%simg/lento_preview.png" .Site.BaseURL) }}
 	{{ with .Params.ogImage }}{{ $ogImage = . }}{{ end }}
-	<meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+	<meta property="og:title"
+		content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 	<meta property="og:description" content="{{ $desc }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ .Permalink }}" />
@@ -21,47 +24,49 @@
 	<meta property="og:site_name" content="{{ .Site.Title }}" />
 	<meta property="og:locale" content="en_US" />
 	<meta name="twitter:card" content="summary_large_image" />
-	{{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
-	<meta name="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+	{{ with .Site.Params.twitterHandle }}
+	<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+	<meta name="twitter:title"
+		content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 	<meta name="twitter:description" content="{{ $desc }}" />
 	<meta name="twitter:image" content="{{ $ogImage }}" />
 	<link rel="icon" href="/favicon.ico" />
 	{{/* External CSS libs reused */}}
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Numans&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Numans&family=Roboto:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codolog/form@1.0.0/dist/form.min.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="/css/Semantic-UI-CSS-master/semantic.min.css">
 	<link rel="stylesheet" href="/js/katex/katex.min.css">
 	{{/* Hugo SCSS pipeline */}}
 	{{ $scss := resources.Get "scss/main.scss" }}
 	{{ if $scss }}
-		{{ $css := $scss | toCSS | minify | fingerprint }}
-		<link rel="stylesheet" href="{{ $css.Permalink }}" />
+	{{ $css := $scss | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $css.Permalink }}" />
 	{{ else }}
-		<!-- Warning: assets/scss/main.scss not found -->
+	<!-- Warning: assets/scss/main.scss not found -->
 	{{ end }}
 	{{/* Primary bundled JS */}}
 	{{ $mainJs := resources.Get "js/main.js" }}
 	{{ if $mainJs }}
-		{{ $compiled := $mainJs | minify | fingerprint }}
-		<script defer src="{{ $compiled.Permalink }}"></script>
+	{{ $compiled := $mainJs | minify | fingerprint }}
+	<script defer src="{{ $compiled.Permalink }}"></script>
 	{{ end }}
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="/css/Semantic-UI-CSS-master/semantic.min.js"></script>
 	<script defer src="/js/katex/katex.min.js"></script>
 	<script defer src="/js/katex/contrib/auto-render.min.js"></script>
 	{{ with .Site.Params.googleAnalyticsID }}
 	<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '{{ . }}');
+		function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ . }}');
 	</script>
 	{{ end }}
 	{{ block "head" . }}{{ end }}
 </head>
+
 <body>
 	{{/* Unified header (was willsoft/header and header duplication) */}}
 	{{ partial "header.html" . }}
@@ -74,9 +79,9 @@
 			<h1 class="hero-title">{{ $.Params.heroTitle }}</h1>
 			{{ with $.Params.heroLead }}<p class="hero-lead">{{ . | safeHTML }}</p>{{ end }}
 			{{ if $.Params.heroButtons }}
-				<p class="center m0">
-					{{ range $.Params.heroButtons }}<a class="btn {{ .class }}" href="{{ .href }}">{{ .text }}</a>{{ end }}
-				</p>
+			<p class="center m0">
+				{{ range $.Params.heroButtons }}<a class="btn {{ .class }}" href="{{ .href }}">{{ .text }}</a>{{ end }}
+			</p>
 			{{ end }}
 			{{ with $.Params.heroSub }}<p>{{ . | safeHTML }}</p>{{ end }}
 		</div>
@@ -93,4 +98,5 @@
 	<script src="/js/typewriter.js" defer></script>
 	{{ block "scripts" . }}{{ end }}
 </body>
+
 </html>
