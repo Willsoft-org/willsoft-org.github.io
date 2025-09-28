@@ -39,7 +39,7 @@
 	{{ $scss := resources.Get "scss/main.scss" }}
 	{{ if $scss }}
 		{{ $css := $scss | toCSS | minify | fingerprint }}
-		<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
+		<link rel="stylesheet" href="{{ $css.Permalink }}" />
 	{{ else }}
 		<!-- Warning: assets/scss/main.scss not found -->
 	{{ end }}
@@ -47,7 +47,7 @@
 	{{ $mainJs := resources.Get "js/main.js" }}
 	{{ if $mainJs }}
 		{{ $compiled := $mainJs | minify | fingerprint }}
-		<script defer src="{{ $compiled.Permalink }}" integrity="{{ $compiled.Data.Integrity }}"></script>
+		<script defer src="{{ $compiled.Permalink }}"></script>
 	{{ end }}
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="/css/Semantic-UI-CSS-master/semantic.min.js"></script>
