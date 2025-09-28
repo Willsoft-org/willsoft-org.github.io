@@ -21,12 +21,12 @@
 				IT Consulting and Development
 			</p>
 			<p class="center m0">
-				<a class="btn btn-white btn-lg btn-scale pulse" href="/service-guide.php">Get Started</a>
+				<a class="btn btn-white btn-lg btn-scale pulse" href="/products.php">Our Products</a> <?php // Get Started ?>
 				<a class="btn btn-purple btn-lg btn-scale btn-normal-weight pulse" href="/services.php">Our Services</a>
 			</p>
 			<br>
 			<p>
-				The IT company to build all your apps and websites with.
+				<b>The</b> company to build all your apps and websites with.
 			</p>
 		</div>
 	</div>
@@ -34,60 +34,53 @@
 		<!-- A landing page for a software consulting company. -->
 		<h1 class="willsoft">Welcome to Willso<span>ft</span></h1>
 		<p>
-			We are a software consulting company. We provide software development services to small and medium sized
-			businesses. We specialize in web development, mobile development, and software consulting.
-
-			<br>
-			<br>
-
-			At Willsoft, we excel as a premier software consulting firm, offering tailored development solutions to small and medium-sized enterprises.
-			Our expertise encompasses web and mobile development, fortified by strategic software consulting, enabling businesses to transform their digital landscape.
-
-			<br>
-			<br>
-
-			We are a team of highly skilled software developers, designers, and consultants who are passionate about what we do.
-			We are committed to providing our clients with the best possible service, and we pride ourselves on our ability to deliver high-quality work on time and within budget.
-			Our goal is to help you succeed by providing you with the tools you need to grow your business.
-			We work closely with our clients to understand their needs and develop solutions that will help them achieve their goals.
+			We are a software development and consulting company. We provide tailored solutions and services to small and medium-sized
+			businesses. We specialize in desktop, web and mobile development.
+			Fortified by strategic software consulting, Willsoft enable businesses to transform their digital landscape.
+			We are committed to providing high-quality products and services that help our clients achieve their goals.
+			Understanding the needs of our clients, we deliver innovative solutions that meet their demands.
+		</p>
+		<div id="partners-display">
+			<img src="assets/partners/ms.png" alt="Microsoft Partners">
+			<img src="assets/partners/ibm.png" alt="IBM">
+			<img src="assets/partners/yc.png" alt="Y Combinator">
+			<img src="assets/partners/kth.png" alt="KTH" style="height: 100px; margin: 0 20px;">
+		</div>
+		<div class="tagline-box bg-blue-light adjust-lighter-4 mb20 mt20">
+			<p class="title">Everyting IT<sup class="sup-tm">TM</sup></p>
+			<p class="body">
+				Our wide range of expertise from acedemia and collective professional experience allow us to produce software in any
+				area, field or category. We are dedicated to delivering innovative IT solutions that meet the diverse needs of our clients.
+			</p>
+			<div style="text-align: right">
+				<em>- We can do IT!</em>
+			</div>
+		</div>
+		<div class="split-container mt32 mb32">
+			<div class="content-section">
+				<h3>Our Goal</h3>
+				Our goal is to <b>help you succeed</b> by providing you with best possible service and the tools you need to grow your business.
+				We work closely with our clients to develop solutions that help them achive their goals.
+			</div>
+			<div class="content-section">
+				<h3>Our Expertise</h3>
+				We are a team of <b>highly skilled software developers and designers</b> who are passionate about what we do.
+				We pride ourselves on our ability to deliver high-quality work on time and within budget.
+			</div>
+			<div class="content-section">
+				<h3>Our Craft</h3>
+				As IT solutions provider, Willsoft delivers comprehensive services in software <b>consulting and customized product development</b>.
+				Crafting innovative solutions, designed to empower small and medium-sized enterprises.
+			</div>
+		</div>
+		<p>
 			Whether you are looking for a new website or mobile app, we can help!
 			Contact us today for more information about how we can help you grow your business!
-
-			<br>
-			<br>
-
-			As a distinguished IT solutions provider, Willsoft delivers comprehensive services in software consulting, cybersecurity, and customized product development.
-			We pride ourselves on crafting innovative Software-as-a-Service (SaaS) solutions, designed to empower small and medium-sized enterprises,
-			fortifying their digital presence while ensuring stringent cybersecurity measures.
 		</p>
+		<div class="fg-white mt10">
+			<a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact.php">Contact us!</a>
+		</div>
 
-		<h3>
-			<code style="color: #395">
-			// We <span class="typewriter" texts="[
-				'design the future 🚀',
-				'design and build websites',
-				'design software systems and architectures',
-				'build full-stack web apps',
-				'build native desktop apps',
-				'build mobile apps',
-				'build REST API:s',
-				'build secure systems',
-				'write robust software',
-				'write scalable code',
-				'write open-source software',
-				'develop embedded systems',
-				'develop new technologies',
-				'work with relational databases',
-				'work with no-SQL databases',
-				'make PC and mobile games',
-				'are a team of talented programmers',
-				'can make all of your ideas come true',
-				'can build whatever you want',
-				]" in="20" out="40" hold="1800" wait="500" noise="70" offset="500"></span>
-			<br>
-			// <span style="color: #29d; font-style: italic">TODO:</span> Implement features, write code and build software</code>
-		</h3>
-		<br>
 	</main>
 	<?php footerElement(); ?>
 </body>

@@ -15,7 +15,7 @@ function cookiesElement() {
 			</span>
 			<p class="cookie-text">
 				This site uses cookies to improve your experience and for advertising.
-				<a target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy Statement</a>
+				<?php // <a target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy Statement</a> ?>
 			</p>
 		</div>
 		<div class="right flex row">

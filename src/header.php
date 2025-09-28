@@ -12,20 +12,18 @@ function navElement($currentPage) {
 				</span>
 			</button>
 			<div id="navigationLogo">
-				<a href="/"><img class="logo-image" src="assets/logo_small.png"></a>
+				<a href="/">
+					<!-- <img src="assets/logo_small.png" /> -->
+					<img src="assets/logo.svg" class="logo-image" alt="logo">
+					<h1 class="willsoft" style="display: inline">Willso<span>ft</span></h1>
+				</a>
 			</div>
 			<ul id="navigationLinks" class="links align-center">
-				<li><a href="services.php"
-						class="<?php echo $currentPage == "Services" ? "selected" : ""; ?>">Services</a>
-				</li>
-				<li><a href="projects.php"
-						class="<?php echo $currentPage == "Projects" ? "selected" : ""; ?>">Projects</a>
-				</li>
-				<li><a href="products.php"
-						class="<?php echo $currentPage == "Products" ? "selected" : ""; ?>">Products</a>
-				</li>
-				<li><a href="open-source.php"
-						class="<?php echo $currentPage == "Open-Source" ? "selected" : ""; ?>">Open-Source</a></li>
+				<li><a href="services.php" class="<?php echo $currentPage == "Services" ? "selected" : ""; ?>">Services</a></li>
+				<li><a href="products.php" class="<?php echo $currentPage == "Products" ? "selected" : ""; ?>">Products</a></li>
+				<li><a href="innovation.php" class="<?php echo $currentPage == "Innovation" ? "selected" : ""; ?>">Innovation</a></li>
+				<li><a href="projects.php" class="<?php echo $currentPage == "Projects" ? "selected" : ""; ?>">Projects</a></li>
+				<!-- <li><a href="open-source.php" class="<?php echo $currentPage == "Open-Source" ? "selected" : ""; ?>">Open-Source</a></li> -->
 				<li><a href="about.php" class="<?php echo $currentPage == "About" ? "selected" : ""; ?>">About Us</a></li>
 				<li><a href="contact.php" class="<?php echo $currentPage == "Contact" ? "selected" : ""; ?>">Contact</a>
 				</li>
@@ -44,9 +42,10 @@ function hamburgerDropdownElement() {
 	<div class="container">
 		<ul class="links align-center column">
 			<li><a href="services.php">Services</a></li>
-			<li><a href="projects.php">Projects</a></li>
 			<li><a href="products.php">Products</a></li>
-			<li><a href="open-source.php">Open-Source</a></li>
+			<li><a href="innovation.php">Innovation</a></li>
+			<li><a href="projects.php">Projects</a></li>
+			<!-- <li><a href="open-source.php">Open-Source</a></li> -->
 			<li><a href="about.php">About Us</a></li>
 			<li><a href="contact.php">Contact</a></li>
 		</ul>

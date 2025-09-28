@@ -14,7 +14,7 @@
 		<div class="container hero-content hero-content-small">
 			<h1 class="hero-title">Products</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
-				Software and SaaS Products
+				Solutions and SaaS Products
 			</p>
 		</div>
 	</div>

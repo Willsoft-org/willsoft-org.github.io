@@ -1,0 +1,123 @@
+.bg-red {
+  --bg-color: #d13438;
+  background-color: #d13438;
+}
+
+.bg-red-light {
+  --bg-color: #ff4345;
+  background-color: #ff4345;
+}
+
+.bg-red-dark {
+  --bg-color: #b30008;
+  background-color: #b30008;
+}
+
+.bg-blue {
+  --bg-color: #422bca;
+  background-color: #422bca;
+}
+
+.bg-blue-light {
+  --bg-color: #0093E9;
+  background-color: #0093E9;
+}
+
+.bg-yellow {
+  --bg-color: #d9921c;
+  background-color: #d9921c;
+}
+
+.bg-yellow-light {
+  --bg-color: #f2cb5c;
+  background-color: #f2cb5c;
+}
+
+.bg-orange {
+  --bg-color: #ca832b;
+  background-color: #ca832b;
+}
+
+.bg-orange-light {
+  --bg-color: #caa02b;
+  background-color: #caa02b;
+}
+
+.bg-green {
+  --bg-color: #136b3a;
+  background-color: #136b3a;
+}
+
+.bg-green-light {
+  --bg-color: #6e9a45;
+  background-color: #6e9a45;
+}
+
+.bg-green {
+  --bg-color: #1da240;
+  background-color: #1da240;
+}
+
+.bg-green-light {
+  --bg-color: #29af6b;
+  background-color: #29af6b;
+}
+
+.adjust-lighter-4 {
+  filter: brightness(1.04) hue-rotate(4deg);
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+nav {
+  font-size: 16px !important;
+  border-bottom: solid 1px #EBEBEB;
+}
+nav .left #navigationHamburger {
+  display: none;
+}
+nav .left #navigationLogo {
+  height: 58px;
+  padding: 16px 20px 17px 0;
+  line-height: 0;
+}
+nav .left #navigationLogo img {
+  height: 100%;
+}
+nav .left #navigationLinks {
+  display: flex;
+}
+nav .left #navigationLinks li a {
+  --underline-padding: 4px;
+  --underline-thickness: 2px;
+  margin: 0 8px;
+  padding: var(--underline-padding) 0;
+}
+nav .left #navigationLinks li a:hover {
+  border-bottom: solid var(--underline-thickness) #DBDBDB;
+  padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+}
+nav .left #navigationLinks li a.selected {
+  border-bottom: solid var(--underline-thickness) #cccccc;
+  padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+}
+
+#hamburgerDropdown {
+  border-bottom: solid 2px #616161;
+}
+#hamburgerDropdown .links li {
+  border-bottom: 1px solid #EBEBEB;
+  width: 100%;
+}
+#hamburgerDropdown .links li a {
+  padding: 14px 15px 15px;
+  width: 100%;
+}
+#hamburgerDropdown .links li:hover > a {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}

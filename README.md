@@ -1,8 +1,8 @@
-![](assets/willsoft_background.jpg)
+![](public/assets/willsoft_background.jpg)
 
-# Company Website
+###  The official repository for the Willsoft company website.
 
-The official Willsoft company website repository.
+<br/>
 
 # Inspiration
 ## Layout and Design

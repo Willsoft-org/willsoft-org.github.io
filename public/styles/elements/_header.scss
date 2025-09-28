@@ -15,9 +15,14 @@ nav {
 			display: none;
 		}
 
-		#navigationLogo .logo-image {
+		#navigationLogo {
 			height: 58px;
-    		padding: 16px 20px 16px 0;
+    		padding: 16px 20px 17px 0;
+			line-height: 0;
+
+			img {
+				height: 100%;
+			}
 		}
 
 

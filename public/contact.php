@@ -15,7 +15,7 @@
 			<h1 class="hero-title">Contact us</h1> <!-- Welcome to the Home Page -->
 			<p class="hero-lead">
 				Are you interested in building<br>
-				your next project with us?
+				your next big idea with us?
 			</p>
 		</div>
 	</div>
@@ -69,7 +69,7 @@
 		<?php
 			}
 		?>
-		<br><br>
+		
 		<form action="contact-mail.php" method="post">
 			<div class="form-group">
 				<label for="first_name" class="form">First Name</label>
@@ -102,7 +102,7 @@
 			</div>
 			<button type="submit" name="submit" class="form btn btn-primary">Submit</button>
 		</form>
-		<br><br><br>
+		<br>
 		<?php
 			}
 		?>

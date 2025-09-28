@@ -20,13 +20,6 @@ require_once('../src/footer.php');
 	</div>
 	<main class="container">
 		<!-- A landing page for a software consulting company. -->
-		<div class="tagline-box bg-orange mb64">
-			<p class="title">Innovation and Excellence</p>
-			<p class="body">
-				We are dedicated to delivering innovative IT solutions that meet the diverse needs of our clients.
-			</p>
-		</div>
-
 		<h1>Meet the Team</h1>
 
 		<div class="team-gallery mb20 mt20">
@@ -60,6 +53,12 @@ require_once('../src/footer.php');
 
 		<br>
 		<br>
+		<div class="tagline-box bg-yellow adjust-lighter-4 mb64">
+			<p class="title">Innovation and Excellence</p>
+			<p class="body">
+				We are dedicated to delivering innovative IT solutions that meet the diverse needs of our clients.
+			</p>
+		</div>
 
 		<h1>Why Choose Us?</h1>
 		<p>
@@ -73,18 +72,6 @@ require_once('../src/footer.php');
 
 		<br>
 		<br>
-
-		<h1>Innovation, Research & Development</h1>
-		<p>At Willsoft, we are firm believers in the power of innovation. We understand that to stay ahead in the fast-paced world of technology, we need to continually adapt, improve, and invent. That's why we place such a high value on our research and development efforts.</p>
-
-		<p>Our dedicated R&D team works tirelessly to create new technologies and tools that push the boundaries of what's possible. These innovations not only give us a competitive edge but also provide developers with the resources they need to excel in their own work.</p>
-
-		<p>Through our R&D initiatives, we have been able to launch a range of groundbreaking products that redefine user experience and streamline business processes. We see each product we develop as a solution to a real-world problem and a step towards a more efficient and technologically advanced future.</p>
-
-		<p>At Willsoft, innovation is not just a buzzword - it's an integral part of who we are and what we do.</p>
-
-		<p>We are eager to put our skills to work for you. Let us welcome you to a world of tailored technology and exceptional service.</p>
-
 
 	</main>
 	<?php footerElement(); ?>
