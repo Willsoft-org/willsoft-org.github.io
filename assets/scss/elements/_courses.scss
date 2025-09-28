@@ -1,0 +1,122 @@
+@import "../util/colors";
+
+.courses-intro {
+  .lead {
+    font-size: 1.15rem;
+    line-height: 1.55rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.course-category {
+  margin-bottom: 70px;
+  position: relative;
+
+  .category-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 0 0 26px 0;
+    line-height: 2.3rem;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, $color-accent-blue 0%, $color-accent-blue-light 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 4px;
+      border-radius: 2px;
+      background: $color-accent-blue-light;
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
+
+  &[data-accent="green"] .category-title {
+    &:after { background: $color-accent-green-2-light; }
+  }
+  &[data-accent="yellow"] .category-title {
+    &:after { background: $color-accent-yellow-light; }
+  }
+  &[data-accent="purple"] .category-title {
+    &:after { background: #d36366; }
+  }
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px 24px;
+}
+
+.course-grid.research {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.course-card {
+  background: $color-white2;
+  border: 1px solid $color-white4;
+  padding: 18px 18px 22px 18px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 4px 18px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+  text-align: left;
+
+  h3 {
+    font-size: 1.05rem;
+    margin: 0 0 10px 0;
+    line-height: 1.3rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: .87rem;
+    line-height: 1.25rem;
+    margin: 0;
+    color: $color-gray-dark;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08), 0 9px 30px rgba(0,0,0,0.06);
+    border-color: $color-white5;
+  }
+
+  &.wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .course-card.wide { grid-column: span 1; }
+  .course-category .category-title { font-size: 1.8rem; }
+}
+
+.courses-sep {
+  margin: 40px auto 50px auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, $color-white4 20%, $color-white4 80%, rgba(0,0,0,0) 100%);
+}
+
+.courses-footer-cta {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+
+  p { margin: 10px 0; }
+}
+
+/* Hero color variant for courses */
+.hero.courses {
+  background: $color-accent-blue;
+  background-image: url(../img/tech-bg.svg),
+    linear-gradient(145deg, $color-accent-blue 20%, $color-accent-blue-light 120%);
+}

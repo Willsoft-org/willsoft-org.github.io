@@ -25,14 +25,19 @@ url = "/innovation/"
 weight = 40
 
 [[menu.main]]
+name = "Courses"
+url = "/courses/"
+weight = 50
+
+[[menu.main]]
 name = "About Us"
 url = "/about/"
-weight = 50
+weight = 60
 
 [[menu.main]]
 name = "Contact"
 url = "/contact/"
-weight = 60
+weight = 70
 
 [params]
 googleAnalyticsID = 'G-NQ7H5WKFBM'
