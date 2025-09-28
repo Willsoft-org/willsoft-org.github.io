@@ -6,6 +6,26 @@ footer {
 	font-size: 11px;
 	line-height: 16px;
 
+	// Tagline / typewriter headline styling (migrated from old site inline styles)
+	.footer-tagline {
+		// keep code element monospace but inherit footer base size (11px) unless overridden
+			color: #395;
+			font-size: 1em;
+			line-height: 1.45;
+			display: inline-block;
+		
+
+		.typewriter {
+			// inherits color from code; additional effects via existing typewriter util
+			white-space: nowrap;
+		}
+
+		.todo-accent {
+			color: #29d;
+			font-style: italic;
+		}
+	}
+
 	.sections {
 		display: flex;
 		flex-wrap: wrap;
