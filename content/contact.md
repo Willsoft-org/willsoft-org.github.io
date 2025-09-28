@@ -12,7 +12,7 @@ title = "Contact"
   <p class="c-heading-2">{{ $message | safeHTML }}</p>
 </div>
 <style>
-.mail-success {background-image:url(/assets/contact/check-animation-v2.gif);background-size:contain;background-repeat:no-repeat;background-position:center;background-position-y:-50px;padding-top:120px;margin-bottom:40px;text-align:center;}
+.mail-success {background-image:url(/img/contact/check-animation-v2.gif);background-size:contain;background-repeat:no-repeat;background-position:center;background-position-y:-50px;padding-top:120px;margin-bottom:40px;text-align:center;}
 </style>
 {{ else }}
 <h1>We'd love to hear from you!</h1>

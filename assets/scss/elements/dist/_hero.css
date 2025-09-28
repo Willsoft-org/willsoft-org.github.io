@@ -77,43 +77,43 @@
 }
 .hero.landing {
   background: #422bca;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #422bca 30%, #0093E9 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #422bca 30%, #0093E9 130%);
 }
 .hero.services {
   background: #2b72ca;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #0c7cbd 30%, #558ef8 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #0c7cbd 30%, #558ef8 130%);
 }
 .hero.products {
   background: #1da240;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
 }
 .hero.projects {
   background: #1da240;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
 }
 .hero.innovation {
   background: #d9921c;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
 }
 .hero.open-source {
   background: #d36366;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d13438 30%, #d36366 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #d13438 30%, #d36366 130%);
 }
 .hero.about {
   background: #d9921c;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
+  background-image: url(../img/h-bg.svg);
+  background-image: url(../img/h-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
 }
 .hero.contact {
   background: #1da240;
-  background-image: url(../assets/tech-bg.svg);
-  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+  background-image: url(../img/tech-bg.svg);
+  background-image: url(../img/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
 }
 .hero .hero-content {
   text-align: center;

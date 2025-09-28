@@ -1,4 +1,4 @@
-![](public/assets/willsoft_background.jpg)
+![](static/img/willsoft_background.jpg)
 
 ###  The official repository for the Willsoft company website.
 

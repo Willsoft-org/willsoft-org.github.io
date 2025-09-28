@@ -6,64 +6,64 @@
 
 	&.landing {
 		background: $color-accent-blue;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-blue 30%, $color-accent-blue-light 130%);
 	}
 
 	&.services {
 		background: #2b72ca;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, #0c7cbd 30%, #558ef8 130%);
 			// linear-gradient(180deg, #0c7cbd 30%, #31b9de 130%);
 	}
 
 	&.products {
 		background: $color-accent-green-2;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-green-2 30%, $color-accent-green-2-light 130%);
 	}
 
 	&.projects {
 		background: $color-accent-green-2;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-green-2 30%, $color-accent-green-2-light 130%);
 	}
 
 	&.innovation {
 		background: $color-accent-yellow;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-yellow 30%, $color-accent-yellow-light 130%);
 	}
 
 	// &.open-source {
 	// 	background: #a72c5f;
-	// 	background-image: url(../assets/tech-bg.svg);
-	// 	background-image: url(../assets/tech-bg.svg),
+	// 	background-image: url(../img/tech-bg.svg);
+	// 	background-image: url(../img/tech-bg.svg),
 	// 		linear-gradient(180deg, #a72c5f 30%, #bf3649 130%);
 	// }
 	&.open-source {
 		background: #d36366;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-red 30%, #d36366 130%);
 	}
 
 	&.about {
 		background: $color-accent-yellow;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-yellow 30%, $color-accent-yellow-light 130%);
 	}
 
 	&.contact {
 		background: $color-accent-green-2;
-		background-image: url(../assets/tech-bg.svg);
-		background-image: url(../assets/tech-bg.svg),
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
 			linear-gradient(180deg, $color-accent-green-2 30%, $color-accent-green-2-light 130%);
 	}
 
