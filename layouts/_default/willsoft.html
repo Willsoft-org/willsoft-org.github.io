@@ -9,8 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codolog/form@1.0.0/dist/form.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
-  {{ $willsoft := resources.Get "scss/willsoft/main.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $willsoft.Permalink }}" integrity="{{ $willsoft.Data.Integrity }}" />
+  {{/* SCSS pipeline: use root main.scss (was previously pointing to scss/willsoft/main.scss which does not exist) */}}
+  {{ $rootScss := resources.Get "scss/main.scss" }}
+  {{ if $rootScss }}
+    {{ $willsoft := $rootScss | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $willsoft.Permalink }}" integrity="{{ $willsoft.Data.Integrity }}" />
+  {{ else }}
+    <!-- Warning: assets/scss/main.scss not found -->
+  {{ end }}
   {{ block "head" . }}{{ end }}
   {{ with .Site.Params.googleAnalyticsID }}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
@@ -23,8 +29,9 @@
 <body>
   {{ partial "willsoft/header.html" . }}
   {{/* Hero Section */}}
+  {{ $root := . }}
   {{ with .Params.heroTitle }}
-  <div class="hero {{ .Site.Params.heroBaseClass }} {{ $.Params.heroClass }}">
+  <div class="hero {{ $root.Site.Params.heroBaseClass }} {{ $root.Params.heroClass }}">
     <div class="container hero-content {{ if $.Params.heroSmall }}hero-content-small{{ end }}">
       <h1 class="hero-title">{{ $.Params.heroTitle }}</h1>
       {{ with $.Params.heroLead }}<p class="hero-lead">{{ . | safeHTML }}</p>{{ end }}
