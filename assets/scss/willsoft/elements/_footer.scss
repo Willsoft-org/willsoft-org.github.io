@@ -1,0 +1,74 @@
+@import "../util/colors";
+
+footer {
+	background: $color-white2;
+	margin-top: 64px;
+	font-size: 11px;
+	line-height: 16px;
+
+	.sections {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -16px;
+
+		.section {
+			padding: 0 16px;
+
+			/*
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+			*/
+
+			.heading-4 {
+				font-size: 15px;
+				line-height: 20px;
+				// padding: 36px 0 4px;
+				padding: 20px 0 4px;
+				font-weight: 600;
+				color: $color-gray;
+			}
+		}
+	}
+
+	.social {
+		font-size: 16px;
+		padding-top: 10px;
+    	padding-bottom: 10px;
+    	background: $color-white3;
+
+		.container {
+			justify-content: space-between;
+			flex-direction: row;
+
+			.follow {
+				padding-right: 10px;
+			}
+			.share {
+				padding-left: 10px;
+				text-align: right;
+			}
+
+			a {
+				vertical-align: middle;
+				font-size: 20px;
+				padding: 0 2px;
+			}
+		}
+	}
+
+	.company {
+		padding-top: 10px;
+	}
+
+	.copyright {
+		color: $color-gray;
+		padding: 16px 5% 20px;
+		align-items: center;
+	}
+}

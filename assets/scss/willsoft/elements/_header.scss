@@ -1,0 +1,71 @@
+@import "../util/colors";
+
+header {
+	width: 100%;
+	background-color: $color-white;
+	z-index: 99;
+}
+
+nav {
+	font-size: 16px !important;
+	border-bottom: solid 1px $color-white3; // #a6a6a6;
+
+	.left {
+		#navigationHamburger {
+			display: none;
+		}
+
+		#navigationLogo {
+			height: 58px;
+    		padding: 16px 20px 17px 0;
+			line-height: 0;
+
+			img {
+				height: 100%;
+			}
+		}
+
+
+		#navigationLinks {
+			display: flex;
+
+			li a {
+				--underline-padding: 4px;
+				--underline-thickness: 2px;
+				margin: 0 8px;
+				padding: var(--underline-padding) 0;
+
+				&:hover {
+					border-bottom: solid var(--underline-thickness) $color-white4;
+					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+				}
+
+				&.selected {
+					border-bottom: solid var(--underline-thickness) $color-gray-light; // #428bdd;
+					padding-bottom: calc(var(--underline-padding) - var(--underline-thickness));
+				}
+			}
+		}
+	}
+}
+
+#hamburgerDropdown {
+	border-bottom: solid 2px $color-gray;
+
+	.links {
+		li {
+			border-bottom: 1px solid $color-white3;
+			width: 100%;
+
+			a {
+				padding: 14px 15px 15px;
+				width: 100%;
+			}
+
+			&:hover>a {
+				font-weight: 500;
+				letter-spacing: -.2px;
+			}
+		}
+	}
+}

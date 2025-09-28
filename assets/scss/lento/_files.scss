@@ -1,0 +1,23 @@
+.file-title {
+	margin-bottom: 0;
+}
+
+pre.file-content {
+	background: whitesmoke;
+    padding: 16px;
+    border-radius: 6px;
+	overflow-x: auto;
+    width: fit-content;
+	margin: 21px auto 0 auto;
+}
+
+img.file-image {
+	margin: 21px auto 0 auto;
+    width: fit-content;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+	pre.file-content, img.file-image {
+		width: 100%;
+	}
+}

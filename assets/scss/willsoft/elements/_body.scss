@@ -1,0 +1,10 @@
+@import "../util/colors";
+
+body {
+	font-size: 17px;
+	font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 320px;
+	color: $color-black;
+	background-color: $color-white;
+	margin: 0;
+}

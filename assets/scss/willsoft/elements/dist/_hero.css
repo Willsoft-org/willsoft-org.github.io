@@ -1,0 +1,159 @@
+.fg-white {
+  color: #ffffff;
+}
+
+.bg-red {
+  --bg-color: #d13438;
+  background-color: #d13438;
+}
+
+.bg-red-light {
+  --bg-color: #ff4345;
+  background-color: #ff4345;
+}
+
+.bg-red-dark {
+  --bg-color: #b30008;
+  background-color: #b30008;
+}
+
+.bg-blue {
+  --bg-color: #422bca;
+  background-color: #422bca;
+}
+
+.bg-blue-light {
+  --bg-color: #0093E9;
+  background-color: #0093E9;
+}
+
+.bg-yellow {
+  --bg-color: #d9921c;
+  background-color: #d9921c;
+}
+
+.bg-yellow-light {
+  --bg-color: #f2cb5c;
+  background-color: #f2cb5c;
+}
+
+.bg-orange {
+  --bg-color: #ca832b;
+  background-color: #ca832b;
+}
+
+.bg-orange-light {
+  --bg-color: #caa02b;
+  background-color: #caa02b;
+}
+
+.bg-green {
+  --bg-color: #136b3a;
+  background-color: #136b3a;
+}
+
+.bg-green-light {
+  --bg-color: #6e9a45;
+  background-color: #6e9a45;
+}
+
+.bg-green {
+  --bg-color: #1da240;
+  background-color: #1da240;
+}
+
+.bg-green-light {
+  --bg-color: #29af6b;
+  background-color: #29af6b;
+}
+
+.adjust-lighter-4 {
+  filter: brightness(1.04) hue-rotate(4deg);
+}
+
+.hero {
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+.hero.landing {
+  background: #422bca;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #422bca 30%, #0093E9 130%);
+}
+.hero.services {
+  background: #2b72ca;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #0c7cbd 30%, #558ef8 130%);
+}
+.hero.products {
+  background: #1da240;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+}
+.hero.projects {
+  background: #1da240;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+}
+.hero.innovation {
+  background: #d9921c;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
+}
+.hero.open-source {
+  background: #d36366;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d13438 30%, #d36366 130%);
+}
+.hero.about {
+  background: #d9921c;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #d9921c 30%, #f2cb5c 130%);
+}
+.hero.contact {
+  background: #1da240;
+  background-image: url(../assets/tech-bg.svg);
+  background-image: url(../assets/tech-bg.svg), linear-gradient(180deg, #1da240 30%, #29af6b 130%);
+}
+.hero .hero-content {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.hero .hero-content-small {
+  padding-top: 32px !important;
+  padding-bottom: 24px !important;
+}
+.hero .hero-content-small .hero-title {
+  font-size: 48px !important;
+  line-height: 48px !important;
+}
+.hero .hero-content-small .hero-lead {
+  font-size: 1.5rem !important;
+  margin-top: 10px !important;
+}
+.hero .hero-content .hero-title {
+  font-size: 62px;
+  line-height: 71px;
+  font-weight: 500;
+  align-self: center;
+}
+.hero .hero-content .hero-title:after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: solid 3px;
+  width: 50%;
+  margin-left: 25%;
+}
+.hero .hero-content .hero-lead {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hero .hero-content .btn {
+  min-width: 180px;
+  margin: 0 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- OGP -->
+	<link rel="image_src" href="{{ .Site.BaseURL }}/img/lento_preview.png">
+	<meta property="og:title" content="{{ .Title }}">
+	<meta property="og:description" content="{{ .Description }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:image" content="{{ .Site.BaseURL }}/img/lento_preview.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:site_name" content="{{ .Site.Title }}">
+	<meta property="og:locale" content="en_US">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{ .Site.BaseURL }}/img/lento_preview.png">
+	<!-- Dependencies -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Numans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/Semantic-UI-CSS-master/semantic.min.css">
+	<link rel="stylesheet" href="/js/katex/katex.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="/css/Semantic-UI-CSS-master/semantic.min.js"></script>
+	<script defer src="/js/katex/katex.min.js"></script>
+	<script defer src="/js/katex/contrib/auto-render.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1FL25J8ERF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-1FL25J8ERF');
+	</script>
+	<!-- Custom styles -->
+	{{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}">
+	<!-- Custom scripts -->
+	{{ $scripts := resources.Get "js/main.js" | minify | fingerprint }}
+	<script defer src="{{ $scripts.Permalink }}"></script>
+	<!-- Title -->
+	<title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+	<!-- Head block -->
+	{{ block "head" . }}{{ end }}
+</head>
+
+<body>
+	{{ partial "header.html" . }}
+	<main>
+		{{ block "main" . }}{{ .Content }}{{ end }}
+	</main>
+	{{ partialCached "footer.html" . }}
+</body>
+
+</html>

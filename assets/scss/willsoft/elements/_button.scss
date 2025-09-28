@@ -1,0 +1,43 @@
+@import "../util/colors";
+
+.btn {
+	display: inline-block;
+	width: auto;
+	font-family: "Segoe UI Semibold",
+		"Segoe UI",
+		Helvetica,
+		Arial,
+		sans-serif;
+	transition: background-color .15s ease-in-out,
+		transform .15s ease-in-out;
+
+	&:not(:disabled):not(.disabled) {
+		cursor: pointer;
+	}
+
+	&.pulse:hover {
+		animation: pulse;
+		animation-duration: .4s;
+	}
+
+	&-white {
+		color: $color-accent-blue !important;
+		background-color: $color-white;
+		border-color: transparent;
+	}
+
+	&-purple {
+		color: $color-white;
+		background-color: transparent;
+		border-color: $color-white;
+		border: solid 1px;
+	}
+
+	&-lg,
+	&-group-lg>.btn {
+		padding: .5rem 1rem;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		border-radius: 0;
+	}
+}

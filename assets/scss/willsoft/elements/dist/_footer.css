@@ -1,0 +1,134 @@
+.fg-white {
+  color: #ffffff;
+}
+
+.bg-red {
+  --bg-color: #d13438;
+  background-color: #d13438;
+}
+
+.bg-red-light {
+  --bg-color: #ff4345;
+  background-color: #ff4345;
+}
+
+.bg-red-dark {
+  --bg-color: #b30008;
+  background-color: #b30008;
+}
+
+.bg-blue {
+  --bg-color: #422bca;
+  background-color: #422bca;
+}
+
+.bg-blue-light {
+  --bg-color: #0093E9;
+  background-color: #0093E9;
+}
+
+.bg-yellow {
+  --bg-color: #d9921c;
+  background-color: #d9921c;
+}
+
+.bg-yellow-light {
+  --bg-color: #f2cb5c;
+  background-color: #f2cb5c;
+}
+
+.bg-orange {
+  --bg-color: #ca832b;
+  background-color: #ca832b;
+}
+
+.bg-orange-light {
+  --bg-color: #caa02b;
+  background-color: #caa02b;
+}
+
+.bg-green {
+  --bg-color: #136b3a;
+  background-color: #136b3a;
+}
+
+.bg-green-light {
+  --bg-color: #6e9a45;
+  background-color: #6e9a45;
+}
+
+.bg-green {
+  --bg-color: #1da240;
+  background-color: #1da240;
+}
+
+.bg-green-light {
+  --bg-color: #29af6b;
+  background-color: #29af6b;
+}
+
+.adjust-lighter-4 {
+  filter: brightness(1.04) hue-rotate(4deg);
+}
+
+footer {
+  background: #F2F2F2;
+  margin-top: 64px;
+  font-size: 11px;
+  line-height: 16px;
+}
+footer .sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -16px;
+}
+footer .sections .section {
+  padding: 0 16px;
+  /*
+  &:first-child {
+  	padding-left: 0;
+  }
+
+  &:last-child {
+  	padding-right: 0;
+  }
+  */
+}
+footer .sections .section .heading-4 {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 20px 0 4px;
+  font-weight: 600;
+  color: #616161;
+}
+footer .social {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #EBEBEB;
+}
+footer .social .container {
+  justify-content: space-between;
+  flex-direction: row;
+}
+footer .social .container .follow {
+  padding-right: 10px;
+}
+footer .social .container .share {
+  padding-left: 10px;
+  text-align: right;
+}
+footer .social .container a {
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 0 2px;
+}
+footer .company {
+  padding-top: 10px;
+}
+footer .copyright {
+  color: #616161;
+  padding: 16px 5% 20px;
+  align-items: center;
+}

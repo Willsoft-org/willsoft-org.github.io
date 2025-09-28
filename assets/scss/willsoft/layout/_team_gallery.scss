@@ -1,0 +1,27 @@
+.team-gallery {
+    display: flex;          /* This makes it a flex container */
+    flex-wrap: wrap;        /* This allows the images to wrap onto the next line if there isn't enough space */
+    justify-content: center; /* This centers the images horizontally */
+    align-items: flex-start;     /* This centers the images vertically */
+    gap: 20px;              /* This adds space between the images */
+
+	.member {
+		max-width: 150px;       /* You can adjust this as needed */
+		height: auto;           /* This maintains the image's aspect ratio */
+		flex: 1 0 auto;         /* This allows the images to grow and shrink as needed, but they won't take up more than their max-width */
+
+		&:hover img {
+			opacity: 0.8;
+		}
+
+		img {
+			border-radius: 10px;    /* Optional: Rounded corners for the images */
+			width: 100%;            /* This makes the images fill the container */
+			height: auto;           /* This maintains the image's aspect ratio */
+		}
+		p {
+			text-align: center;     /* Optional: Centers the text under the images */
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+}
