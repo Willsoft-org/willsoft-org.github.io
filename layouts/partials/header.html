@@ -1,60 +1,56 @@
-<nav>
-	<div class="container">
-		<div id="navbar-left">
-			{{ if not .Params.hideLogo }}
-			<a href="/"><svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="37 38 170 205">
-					<g fill="#2f292c">
-						<path
-							d="M39 240.1 c0 -0.9 47.9 -125.7 50 -130.3 0.7 -1.5 1.7 -2.5 2.1 -2.2 0.5 0.2 2.3 3.2 4 6.5 6.7 12.4 24 25 42.6 31 l7.1 2.2 6.9 -2.2 c20.2 -6.8 36.9 -19.6 44.1 -33.8 4 -7.8 4.6 -6.7 3.9 6.8 -1.4 27.2 -8.5 50.7 -21.3 69.9 -5 7.6 -20.5 23 -28.1 27.9 -2.9 1.9 -5.3 3.6 -5.3 3.8 0 0.2 2 4.4 4.5 9.3 2.5 4.9 4.5 9.2 4.5 9.5 0 0.3 -3.9 0.4 -8.7 0.3 l-8.8 -0.3 -8.3 -16.4 -8.4 -16.4 1.4 -4.6 c1.7 -6 1.8 -31.8 0.1 -34.6 -1.1 -1.7 -1.2 -1.4 -1.3 3 -0.1 10.7 -4.4 24.9 -11.1 36.3 -5.5 9.2 -18 21.1 -27.4 25.9 -9.8 5 -12.8 5.9 -24.1 7.8 -10 1.6 -18.4 1.9 -18.4 0.6z">
-						</path>
-						<path
-							d="M167.1 228.9 l-5.3 -10.1 6 -6 6 -6 7.5 14.3 c10.5 20 10.5 17.9 0.1 17.9 l-8.9 0 -5.4 -10.1z">
-						</path>
-						<path
-							d="M142.8 124.2 c-4.5 -5.1 -5.1 -12 -1.5 -17.3 1.2 -1.9 2.7 -3.4 3.2 -3.4 0.5 0 2 1.5 3.2 3.4 3.6 5.4 2.7 14.1 -2 17.9 -1.1 0.9 -1.7 0.8 -2.9 -0.6z">
-						</path>
-						<path
-							d="M115.5 104.1 c-4 -1.8 -6 -5.1 -6 -10.2 0 -4 0.5 -5.4 2.8 -7.6 2.3 -2.3 3.6 -2.8 7.7 -2.8 4.1 0 5.4 0.5 7.7 2.8 2.3 2.3 2.8 3.6 2.8 7.7 0 4 -0.5 5.5 -2.6 7.6 -2.8 2.8 -8.9 4 -12.4 2.5z">
-						</path>
-						<path
-							d="M164.5 104.1 c-4 -1.8 -6 -5.1 -6 -10.2 0 -4 0.5 -5.4 2.8 -7.6 2.3 -2.3 3.6 -2.8 7.7 -2.8 4.1 0 5.4 0.5 7.7 2.8 2.3 2.3 2.8 3.6 2.8 7.7 0 4 -0.5 5.5 -2.6 7.6 -2.8 2.8 -8.9 4 -12.4 2.5z">
-						</path>
-						<path
-							d="M142.7 85.5 c-2.5 -5.3 -8.8 -11.6 -13.6 -13.8 -3.4 -1.5 -7.8 -2.1 -18.5 -2.6 -7.8 -0.4 -15.1 -1.2 -16.3 -1.9 -3.4 -1.9 -6.3 -6.2 -6.3 -9.3 l0 -2.9 9 0 c8.9 0 9 0 14.2 -4 11 -8.3 27.3 -12.4 41.1 -10.2 9.7 1.5 18.8 5.2 25.5 10.2 5.2 4 5.3 4 14.2 4 l9 0 0 2.9 c0 3.1 -2.9 7.4 -6.3 9.3 -1.2 0.7 -8.5 1.5 -16.3 1.9 -19.2 0.9 -24.9 3.7 -31.7 15.6 l-2.3 4.3 -1.7 -3.5z">
-						</path>
-					</g>
-				</svg></a>
-			{{ end }}
-		</div>
-		<ul id="navbar-right">
-			<li><a href="/install" class="btn pink-gradient">Install</a></li>
-			<li><a href="/community">Community</a></li>
-			<li><a href="/docs/">Documentation</a></li>
-			<!-- <li><a href="/play">Playground</a></li> -->
-			<!-- <li><a href="/getting-started/">Guides</a></li> -->
-			<!-- <li><a href="https://dev.to/williamragstad">Blog</a></li> -->
-			<li><a href="https://github.com/sponsors/WilliamRagstad" target="_blank">Donate</a></li>
-		</ul>
-	</div>
-
-	{{ if .Params.subpage }}
-	<div class="sub-page container">
-		<a href="/">Home</a><i class="right angle icon divider"></i><a href="{{ .RelPermalink }}">{{
-			.Params.subpage | title }}</a>
-	</div>
-	{{ end }}
-
-	{{ if ne .RelPermalink "/" }}
-	<div class="sub-page container">
-		<a href="/">Home</a>
-		<i class="right angle icon divider"></i>
-		{{ $sections := split (trim .RelPermalink "/") "/" }}
-		{{ range $index, $section := $sections }}
-		<a href="/{{ $section }}">{{ $section | title }}</a>
-		{{ if lt (add $index 1) (len $sections) }}
-		<i class="right angle icon divider"></i>
-		{{ end }}
-		{{ end }}
-	</div>
-	{{ end }}
-</nav>
+{{ $current := .RelPermalink }}
+{{ $nav := dict "Services" "/services/" "Products" "/products/" "Innovation" "/innovation/" "Projects" "/projects/" "About" "/about/" "Contact" "/contact/" }}
+<header style="position:fixed;top:0;left:0;width:100%;background:#fff;z-index:99">
+  {{/* Cookie banner (simple cookie script handles persistence) */}}
+  <div id="cookies" class="animate__animated" style="display:none">
+    <div class="container row">
+      <div class="left">
+        <span class="cookie-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24" fill="none" stroke="currentColor">
+            <circle cx="22" cy="22" r="20" stroke-width="2" />
+            <line x1="22" x2="22" y1="18" y2="33" stroke-width="3" />
+            <line x1="22" x2="22" y1="12" y2="15" stroke-width="3" />
+          </svg>
+        </span>
+        <p class="cookie-text">This site uses cookies to improve your experience and for advertising.</p>
+      </div>
+      <div class="right flex row">
+        <button id="acceptCookiesBtn">Accept all</button>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <div class="container row">
+      <div class="left flex row w100">
+        <button id="navigationHamburger" class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </button>
+        <div id="navigationLogo">
+          <a href="/">
+            <img src="/assets/logo.svg" class="logo-image" alt="logo" />
+            <h1 class="willsoft" style="display:inline">Willso<span>ft</span></h1>
+          </a>
+        </div>
+        <ul id="navigationLinks" class="links align-center">
+          {{ range $label, $path := $nav }}
+            <li><a href="{{ $path }}" class="{{ if eq $current $path }}selected{{ end }}">{{ $label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="right flex row"></div>
+    </div>
+  </nav>
+  <div id="hamburgerDropdown" hidden>
+    <div class="container">
+      <ul class="links align-center column">
+        {{ range $label, $path := $nav }}
+          <li><a href="{{ $path }}">{{ $label }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Spacer header to preserve layout below fixed header -->
+<header style="visibility:hidden;opacity:0">
+  <nav><div class="container"><div style="height:58px"></div></div></nav>
+</header>
