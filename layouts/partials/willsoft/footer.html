@@ -1,0 +1,62 @@
+<footer>
+  <div class="social">
+    <div class="container">
+      <div class="follow">
+        Follow us on
+        <div class="inline-block pt6 pb6">
+          <a href="https://twitter.com/intent/follow?screen_name={{ .Site.Params.twitterHandle }}" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="share">
+        Share this page on
+        {{ $url := .Permalink }}
+        <div class="inline-block pt6 pb6">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/intent/tweet?text={{ $url }}" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}&amp;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.reddit.com/submit?url={{ $url }}" target="_blank"><i class="fab fa-reddit"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="mt28">
+      <code style="color:#395">// We <span class="typewriter" texts='{{ jsonify .Site.Params.footerTypewriter }}' in="20" out="40" hold="1800" wait="500" noise="70" offset="500"></span><br>// <span style="color:#29d;font-style:italic">TODO:</span> Implement features, write code and build software</code>
+    </h2>
+    <div class="sections">
+      <div class="section">
+        <div class="heading-4">News</div>
+        <ul class="links column">
+          <li><a href="#">Startup News</a></li>
+          <li><a href="#">Company news</a></li>
+          <li><a href="https://www.linkedin.com/company/willsoft-it/" target="_blank">Willsoft On LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="heading-4">Education and Career</div>
+        <ul class="links column">
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Our courses</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="heading-4">Developers</div>
+        <ul class="links column">
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">Developer program</a></li>
+          <li><a href="#" onclick="document.cookie='cookiesAccepted=false; path=/'">Disable cookies</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="heading-4">Company</div>
+        <ul class="links column">
+          <li><a href="/about/">About Willsoft</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright container">&copy; {{ .Site.Params.companyName }} Copyright {{ now.Format "2006" }} - All Rights Reserved.</div>
+</footer>

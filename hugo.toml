@@ -3,6 +3,33 @@ languageCode = 'en-us'
 title = 'Willsoft'
 cascade.description = "Welcome to Willsoft — The IT and software development company for companies of all sizes."
 
+[params]
+	googleAnalyticsID = 'G-NQ7H5WKFBM'
+	companyName = 'Willsoft'
+	twitterHandle = 'Willsoft_'
+	footerTypewriter = [
+		'design the future 🚀',
+		'design and build websites',
+		'design software systems and architectures',
+		'build full-stack web apps',
+		'build native desktop apps',
+		'build mobile apps',
+		'build REST API:s',
+		'build secure systems',
+		'write robust software',
+		'write scalable code',
+		'write open-source software',
+		'develop embedded systems',
+		'develop new technologies',
+		'work with relational databases',
+		'work with no-SQL databases',
+		'make PC and mobile games',
+		'are a team of talented programmers',
+		'can make all of your ideas come true',
+		'can build whatever you want'
+	]
+
+
 [markup.asciidocExt]
 safeMode = "unsafe"
 

@@ -1,4 +1,4 @@
-@use "sass:math";
+// Removed @use "sass:math" for compatibility with current Hugo Sass processor
 
 // Hamburger
 // ==================================================
@@ -57,7 +57,8 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: math.div($hamburger-layer-height, -2);
+  // Using legacy division for broader compatibility
+  margin-top: ($hamburger-layer-height / -2);
 
   &,
   &::before,

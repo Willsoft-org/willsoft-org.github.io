@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codolog/form@1.0.0/dist/form.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
+  {{ $willsoft := resources.Get "scss/willsoft/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $willsoft.Permalink }}" integrity="{{ $willsoft.Data.Integrity }}" />
+  {{ block "head" . }}{{ end }}
+  {{ with .Site.Params.googleAnalyticsID }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '{{ . }}');
+  </script>
+  {{ end }}
+</head>
+<body>
+  {{ partial "willsoft/header.html" . }}
+  {{/* Hero Section */}}
+  {{ with .Params.heroTitle }}
+  <div class="hero {{ .Site.Params.heroBaseClass }} {{ $.Params.heroClass }}">
+    <div class="container hero-content {{ if $.Params.heroSmall }}hero-content-small{{ end }}">
+      <h1 class="hero-title">{{ $.Params.heroTitle }}</h1>
+      {{ with $.Params.heroLead }}<p class="hero-lead">{{ . | safeHTML }}</p>{{ end }}
+      {{ if $.Params.heroButtons }}
+        <p class="center m0">
+          {{ range $.Params.heroButtons }}<a class="btn {{ .class }}" href="{{ .href }}">{{ .text }}</a>{{ end }}
+        </p>
+      {{ end }}
+      {{ with $.Params.heroSub }}<p>{{ . | safeHTML }}</p>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+  <main class="container">
+    {{ block "main" . }}{{ .Content }}{{ end }}
+  </main>
+  {{ partial "willsoft/footer.html" . }}
+  <script src="/scripts/cookies.js" defer></script>
+  <script src="/scripts/hamburger.js" defer></script>
+  <script src="/scripts/typewriter.js" defer></script>
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>
