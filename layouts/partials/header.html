@@ -1,21 +1,26 @@
-{{ $current := .RelPermalink }}
-{{ $nav := dict "Services" "/services/" "Products" "/products/" "Innovation" "/innovation/" "Projects" "/projects/" "About" "/about/" "Contact" "/contact/" }}
+{{/* Dynamic main menu: defined in hugo.toml under [[menu.main]] */}}
+{{ $menu := .Site.Menus.main }}
+{{ $logo := or .Site.Params.logo "/img/logo.svg" }}
+{{ $brand := or .Site.Params.brandName .Site.Title }}
+{{ $cookieText := or .Site.Params.cookieText "This site uses cookies to improve your experience and for advertising." }}
+{{ $cookieAccept := or .Site.Params.cookieAcceptLabel "Accept all" }}
 <header style="position:fixed;top:0;left:0;width:100%;background:#fff;z-index:99">
   {{/* Cookie banner (simple cookie script handles persistence) */}}
   <div id="cookies" class="animate__animated" style="display:none">
     <div class="container row">
       <div class="left">
         <span class="cookie-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24" fill="none" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24" fill="none"
+            stroke="currentColor">
             <circle cx="22" cy="22" r="20" stroke-width="2" />
             <line x1="22" x2="22" y1="18" y2="33" stroke-width="3" />
             <line x1="22" x2="22" y1="12" y2="15" stroke-width="3" />
           </svg>
         </span>
-        <p class="cookie-text">This site uses cookies to improve your experience and for advertising.</p>
+        <p class="cookie-text">{{ $cookieText }}</p>
       </div>
       <div class="right flex row">
-        <button id="acceptCookiesBtn">Accept all</button>
+        <button id="acceptCookiesBtn">{{ $cookieAccept }}</button>
       </div>
     </div>
   </div>
@@ -27,13 +32,23 @@
         </button>
         <div id="navigationLogo">
           <a href="/">
-            <img src="/img/logo.svg" class="logo-image" alt="logo" />
-            <h1 class="willsoft" style="display:inline">Willso<span>ft</span></h1>
+            <img src="{{ $logo }}" class="logo-image" alt="logo" />
+            <h1 class="willsoft" style="display:inline">{{ $brand }}</h1>
           </a>
         </div>
         <ul id="navigationLinks" class="links align-center">
-          {{ range $label, $path := $nav }}
-            <li><a href="{{ $path }}" class="{{ if eq $current $path }}selected{{ end }}">{{ $label }}</a></li>
+          {{ $ctx := . }}
+          {{ range $menu }}
+          {{ $isActive := false }}
+          {{ if $ctx.Page }}
+          {{ if or ($ctx.Page.IsMenuCurrent "main" .) ($ctx.Page.HasMenuCurrent "main" .) }}
+          {{ $isActive = true }}
+          {{ end }}
+          {{ else if eq $ctx.RelPermalink .URL }}
+          {{/* fallback compare */}}
+          {{ $isActive = true }}
+          {{ end }}
+          <li><a href="{{ .URL }}" class="{{ if $isActive }}selected{{ end }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
@@ -43,8 +58,8 @@
   <div id="hamburgerDropdown" hidden>
     <div class="container">
       <ul class="links align-center column">
-        {{ range $label, $path := $nav }}
-          <li><a href="{{ $path }}">{{ $label }}</a></li>
+        {{ range $menu }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
     </div>
@@ -52,5 +67,9 @@
 </header>
 <!-- Spacer header to preserve layout below fixed header -->
 <header style="visibility:hidden;opacity:0">
-  <nav><div class="container"><div style="height:58px"></div></div></nav>
+  <nav>
+    <div class="container">
+      <div style="height:58px"></div>
+    </div>
+  </nav>
 </header>
