@@ -1,5 +1,4 @@
 +++
-layout = "willsoft"
 heroTitle = "Products"
 heroLead = "Solutions and SaaS Products"
 heroClass = "products"
