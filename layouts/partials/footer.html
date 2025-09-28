@@ -4,23 +4,29 @@
       <div class="follow">
         Follow us on
         <div class="inline-block pt6 pb6">
-          <a href="https://twitter.com/intent/follow?screen_name={{ .Site.Params.twitterHandle }}" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/willsoft-se/" target="_blank"
+            aria-label="Follow Willsoft on LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/intent/follow?screen_name={{ .Site.Params.twitterHandle }}" target="_blank"><i
+              class="fab fa-twitter"></i></a>
         </div>
       </div>
       <div class="share">
         Share this page on
         {{ $url := .Permalink }}
         <div class="inline-block pt6 pb6">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://twitter.com/intent/tweet?text={{ $url }}" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}&amp;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}&amp;src=sdkpreparse" target="_blank"><i
+              class="fab fa-facebook"></i></a>
           <a href="https://www.reddit.com/submit?url={{ $url }}" target="_blank"><i class="fab fa-reddit"></i></a>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <code class="mt28 footer-tagline">// We <span class="typewriter" texts='{{ jsonify .Site.Params.footerTypewriter }}' in="20" out="40" hold="1800" wait="500" noise="70" offset="500"></span><br>// <span class="todo-accent">TODO:</span> Implement features, write code and build software</code>
+    <code
+      class="mt28 footer-tagline">// We <span class="typewriter" texts='{{ jsonify .Site.Params.footerTypewriter }}' in="20" out="40" hold="1800" wait="500" noise="70" offset="500"></span><br>// <span class="todo-accent">TODO:</span> Implement features, write code and build software</code>
     <div class="sections">
       <div class="section">
         <div class="heading-4">News</div>
@@ -56,5 +62,6 @@
       </div>
     </div>
   </div>
-  <div class="copyright container">&copy; {{ .Site.Params.companyName }} Copyright {{ now.Format "2006" }} - All Rights Reserved.</div>
+  <div class="copyright container">&copy; {{ .Site.Params.companyName }} Copyright {{ now.Format "2006" }} - All Rights
+    Reserved.</div>
 </footer>
