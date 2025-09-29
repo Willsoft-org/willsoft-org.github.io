@@ -3,6 +3,7 @@ title = "Home"
 heroTitle = "Software"
 heroLead = "IT Consulting and Development"
 heroClass = "landing"
+heroLarge = true
 heroButtons = [
     { text = "Our Products", href = "/products/", class = "btn btn-white btn-lg btn-scale pulse" },
     { text = "Our Services", href = "/services/", class = "btn btn-purple btn-lg btn-scale btn-normal-weight pulse" }
