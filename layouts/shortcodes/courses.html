@@ -1,0 +1,18 @@
+{{ range .Site.Params.courseCategories }}
+  {{ $categoryId := .id }}
+  {{ $categoryTitle := .title }}
+  {{ $categoryAccent := .accent }}
+  {{ $coursesInCategory := where $.Site.Params.courses "category" $categoryId }}
+  
+<div class="course-category courses-left-align" data-accent="{{ $categoryAccent }}" data-category="{{ $categoryId }}">
+  <h2 class="category-title">{{ $categoryTitle }}</h2>
+  <div class="course-grid{{ if eq $categoryId "research" }} research{{ end }}">
+    {{ range $coursesInCategory }}
+    <div class="course-card" data-category="{{ $categoryId }}">
+      <h3>{{ .title }}</h3>
+      <p>{{ .description }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

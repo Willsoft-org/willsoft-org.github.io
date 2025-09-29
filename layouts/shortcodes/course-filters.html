@@ -1,0 +1,7 @@
+<div class="filter-container">
+  <button class="filter-btn active" data-category="all">All Courses</button>
+  {{ range .Site.Params.courseCategories }}
+  <button class="filter-btn" data-category="{{ .id }}">{{ .title }}</button>
+  {{ end }}
+  <button class="clear-btn" id="clear-filters">Clear</button>
+</div>
