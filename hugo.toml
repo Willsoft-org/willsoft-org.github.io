@@ -146,6 +146,7 @@ title = "Advanced Language Theory, Design & Implementation"
 description = "Advanced type systems, macros, effects, concurrency models, error handling, runtime architecture & ergonomics."
 category = "advanced"
 field = "programming-languages"
+new = true
 
 [[params.courses]]
 title = "Advanced VMs & JIT Compilers"
@@ -170,6 +171,7 @@ title = "Systems Security"
 description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
 category = "systems"
 field = "security"
+new = true
 
 [[params.courses]]
 title = "Compiler Security"
@@ -194,6 +196,7 @@ title = "AI-Assisted Programming & Synthesis"
 description = "LLM-driven developer tooling, proof guidance, code generation & verified synthesis workflows."
 category = "research"
 field = "ai-ml"
+new = true
 
 [[params.courses]]
 title = "E-Graphs & Equality Saturation"

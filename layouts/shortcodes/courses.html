@@ -10,6 +10,11 @@
     {{ range $coursesInCategory }}
     {{ $fieldInfo := (index (where $.Site.Params.courseFields "id" .field) 0) }}
     <div class="course-card" data-category="{{ $categoryId }}" data-field="{{ .field }}">
+      {{ if .new }}
+      <div class="course-new-ribbon" style="background-color: {{ $fieldInfo.color }}">
+        <span class="ribbon-text">New</span>
+      </div>
+      {{ end }}
       <h3>{{ .title }}</h3>
       <p>{{ .description }}</p>
       <div class="course-field-stripe" style="background-color: {{ $fieldInfo.color }}">
