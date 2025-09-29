@@ -6,11 +6,11 @@ title = "Courses"
 description = "Advanced foundations, systems, security, compilers, VMs, formal methods, and research-focused courses."
 +++ 
 
-<div class="courses-intro">
+<div class="courses-intro courses-left-align">
   <p class="lead">A curated suite of <b>advanced computer science & engineering courses</b> spanning language theory, virtual machines, compilers, systems internals, formal verification, security, synthesis and emerging paradigms. Designed for professionals, researchers, and ambitious learners seeking mastery and depth.</p>
 </div>
 
-<div class="course-category" data-accent="blue">
+<div class="course-category courses-left-align" data-accent="blue">
   <h2 class="category-title">📚 Foundations</h2>
   <div class="course-grid">
     <div class="course-card">
@@ -28,7 +28,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
   </div>
 </div>
 
-<div class="course-category" data-accent="green">
+<div class="course-category courses-left-align" data-accent="green">
   <h2 class="category-title">🚀 Advanced</h2>
   <div class="course-grid">
     <div class="course-card">
@@ -46,7 +46,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
   </div>
 </div>
 
-<div class="course-category" data-accent="yellow">
+<div class="course-category courses-left-align" data-accent="yellow">
   <h2 class="category-title">🔍 Systems and Security</h2>
   <div class="course-grid">
     <div class="course-card">
@@ -64,7 +64,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
   </div>
 </div>
 
-<div class="course-category" data-accent="purple">
+<div class="course-category courses-left-align" data-accent="purple">
   <h2 class="category-title">🔬 Extensions and Research</h2>
   <div class="course-grid research">
     <div class="course-card">
@@ -114,7 +114,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
   </div>
 </div>
 
-<div class="courses-footer-cta">
+<div class="courses-footer-cta courses-left-align">
   <p>Interested in custom workshops, on-site training, or a tailored research partnership?</p>
   <!-- <p><a class="btn btn-purple btn-lg pulse" href="/contact/">Contact us</a></p>
    -->
