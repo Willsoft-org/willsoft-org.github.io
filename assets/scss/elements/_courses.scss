@@ -259,16 +259,14 @@
 // Course new ribbon styling - angled premium ribbon
 .course-new-ribbon {
   position: absolute;
-  top: -5px;
-  right: -20px;
-  width: 100px;
-  height: 30px;
+  top: -8px;
+  right: -30px;
+  width: 120px;
+  height: 35px;
   z-index: 10;
   transform: rotate(45deg);
   transform-origin: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-  
-  // Remove the shadow triangles as they interfere with clipping
   
   .ribbon-text {
     position: absolute;
