@@ -18,7 +18,7 @@ footer {
 
 		.typewriter {
 			// inherits color from code; additional effects via existing typewriter util
-			white-space: nowrap;
+			// Removed white-space: nowrap to allow text wrapping on narrow screens
 		}
 
 		.todo-accent {
