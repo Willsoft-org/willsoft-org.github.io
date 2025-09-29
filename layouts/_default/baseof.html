@@ -66,7 +66,7 @@
 	{{ $root := . }}
 	{{ with .Params.heroTitle }}
 	<div class="hero {{ $root.Site.Params.heroBaseClass }} {{ $root.Params.heroClass }}">
-		<div class="container hero-content {{ if and (not $.Params.heroLarge) (ne $.File.LogicalName "_index.md") }}hero-content-small{{ end }}">
+		<div class="container hero-content {{ if not $.Params.heroLarge }}hero-content-small{{ end }}">
 			<h1 class="hero-title">{{ $.Params.heroTitle }}</h1>
 			{{ with $.Params.heroLead }}<p class="hero-lead">{{ . | safeHTML }}</p>{{ end }}
 			{{ if $.Params.heroButtons }}
