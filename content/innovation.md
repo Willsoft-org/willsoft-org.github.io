@@ -27,3 +27,7 @@ We see each new product, solution and technology we develop as a step towards a 
 <p>
 At Willsoft, innovation is not just a buzzword - it's an integral part of who we are and what we do.
 </p>
+
+<div class="fg-white mt10">
+    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
+</div>

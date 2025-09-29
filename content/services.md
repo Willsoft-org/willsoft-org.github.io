@@ -49,5 +49,8 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
       We empower your team with the skills they need to use your technology to its fullest potential.
       We also offer <b>online courses and workshops</b> about software development, cybersecurity, and more.
     </p>
+    <div class="fg-white mt10">
+        <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
+    </div>
   </div>
 </div>
