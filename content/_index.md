@@ -55,6 +55,6 @@ Whether you are looking for a new website or mobile app, we can help!
 Contact us today for more information about how we can help you grow your business!
 </p>
 <div class="fg-white mt10">
-    <a class="btn btn-blue btn-lg pulse" href="/courses/">View Courses</a>
+    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact us!</a>
 </div>

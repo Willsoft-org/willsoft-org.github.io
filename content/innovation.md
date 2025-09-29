@@ -29,5 +29,5 @@ At Willsoft, innovation is not just a buzzword - it's an integral part of who we
 </p>
 
 <div class="fg-white mt10">
-    <a class="btn btn-blue btn-lg pulse" href="/courses/">View Courses</a>
+    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
 </div>
