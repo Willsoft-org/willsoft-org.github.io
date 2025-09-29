@@ -33,3 +33,15 @@
 .content-section:not(:last-child) {
     margin-right: 20px;      /* This adds a margin to the right side of every section except the last one */
 }
+
+/* Mobile responsive: Stack sections vertically on small screens */
+@media (max-width: 700px) {
+    .split-container {
+        flex-direction: column;  /* Stack sections vertically on mobile */
+    }
+    
+    .content-section:not(:last-child) {
+        margin-right: 0;         /* Remove right margin when stacked */
+        margin-bottom: 20px;     /* Add bottom margin for spacing between stacked sections */
+    }
+}
