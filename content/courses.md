@@ -6,6 +6,7 @@ title = "Courses"
 description = "Advanced foundations, systems, security, compilers, VMs, formal methods, and research-focused courses."
 +++ 
 
+<div class="courses-left-align">
 <div class="courses-intro">
   <p class="lead">A curated suite of <b>advanced computer science & engineering courses</b> spanning language theory, virtual machines, compilers, systems internals, formal verification, security, synthesis and emerging paradigms. Designed for professionals, researchers, and ambitious learners seeking mastery and depth.</p>
 </div>
@@ -120,5 +121,6 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
    -->
    <div class="fg-white mt10">
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact us!</a>
+</div>
 </div>
 </div>

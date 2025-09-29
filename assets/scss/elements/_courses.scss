@@ -1,5 +1,10 @@
 @import "../util/colors";
 
+// Override justify alignment for courses page - ensure all text is left-aligned
+.courses-left-align {
+  text-align: left;
+}
+
 .courses-intro {
   .lead {
     font-size: 1.15rem;
