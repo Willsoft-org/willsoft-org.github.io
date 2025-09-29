@@ -47,7 +47,6 @@ Available fields:
 * heroLead (string, HTML allowed) – subtitle line.
 * heroClass (string) – adds extra CSS class to root hero div alongside `params.heroBaseClass`.
 * heroLarge (boolean) – when true, uses large hero styling. Defaults to true for index page, false for all other pages.
-* heroSmall (boolean) – when true, forces small hero styling regardless of page type.
 * heroButtons (array of objects) – each object: text, href, class.
 * heroSub (string, HTML allowed) – small text under buttons.
 * ogImage (string) – optional per-page Open Graph image override.
