@@ -108,6 +108,45 @@
   }
 }
 
+// Field filter styling
+.field-filter-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  .filter-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $color-gray-dark;
+    margin-right: 10px;
+  }
+
+  .field-filter-btn {
+    padding: 8px 16px;
+    border: 2px solid $color-white4;
+    background: $color-white2;
+    color: $color-gray-dark;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: $color-accent-blue;
+      background: rgba($color-accent-blue, 0.05);
+    }
+
+    &.active {
+      background: $color-accent-blue;
+      border-color: $color-accent-blue;
+      color: white;
+    }
+  }
+}
+
 // Responsive adjustments for search/filter
 @media (max-width: 768px) {
   .courses-search-filter {
@@ -178,6 +217,9 @@
   flex-direction: column;
   transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease, opacity 0.3s ease;
   text-align: left;
+  
+  // Add extra bottom padding to accommodate field stripe
+  padding-bottom: 40px;
 
   h3 {
     font-size: 1.05rem;
@@ -210,6 +252,29 @@
   &.highlighted {
     border-color: $color-accent-blue;
     background: rgba($color-accent-blue, 0.02);
+  }
+}
+
+// Course field stripe styling
+.course-field-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 4px 4px;
+  
+  .field-name {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 }
 

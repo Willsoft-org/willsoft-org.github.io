@@ -5,3 +5,11 @@
   {{ end }}
   <button class="clear-btn" id="clear-filters">Clear</button>
 </div>
+
+<div class="field-filter-container">
+  <label class="filter-label">Filter by Field:</label>
+  <button class="field-filter-btn active" data-field="all">All Fields</button>
+  {{ range .Site.Params.courseFields }}
+  <button class="field-filter-btn" data-field="{{ .id }}">{{ .title }}</button>
+  {{ end }}
+</div>

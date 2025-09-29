@@ -8,9 +8,13 @@
   <h2 class="category-title">{{ $categoryTitle }}</h2>
   <div class="course-grid{{ if eq $categoryId "research" }} research{{ end }}">
     {{ range $coursesInCategory }}
-    <div class="course-card" data-category="{{ $categoryId }}">
+    {{ $fieldInfo := (index (where $.Site.Params.courseFields "id" .field) 0) }}
+    <div class="course-card" data-category="{{ $categoryId }}" data-field="{{ .field }}">
       <h3>{{ .title }}</h3>
       <p>{{ .description }}</p>
+      <div class="course-field-stripe" style="background-color: {{ $fieldInfo.color }}">
+        <span class="field-name">{{ $fieldInfo.title }}</span>
+      </div>
     </div>
     {{ end }}
   </div>
