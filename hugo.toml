@@ -70,6 +70,128 @@ footerTypewriter = [
     'can build whatever you want',
 ]
 
+# Course categories configuration
+[[params.courseCategories]]
+id = "foundations"
+title = "📚 Foundations"
+accent = "blue"
+
+[[params.courseCategories]]
+id = "advanced"
+title = "🚀 Advanced"
+accent = "green"
+
+[[params.courseCategories]]
+id = "systems"
+title = "🔍 Systems/Security"
+accent = "yellow"
+
+[[params.courseCategories]]
+id = "research"
+title = "🔬 Extensions/Research"
+accent = "purple"
+
+# Course data
+[[params.courses]]
+title = "Foundations of Programming Languages"
+description = "Core principles of syntax, semantics, paradigms, and type systems, introducing how languages are defined and understood."
+category = "foundations"
+
+[[params.courses]]
+title = "Foundations of Interpreters & Virtual Machines"
+description = "How code executes via AST interpreters and bytecode VMs; stack vs. register machines and evaluation strategies."
+category = "foundations"
+
+[[params.courses]]
+title = "Foundations of Compilers"
+description = "Step-by-step compiler pipeline: lexing, parsing, semantic analysis, IR, optimization and code generation."
+category = "foundations"
+
+[[params.courses]]
+title = "Advanced Language Theory, Design & Implementation"
+description = "Advanced type systems, macros, effects, concurrency models, error handling, runtime architecture & ergonomics."
+category = "advanced"
+
+[[params.courses]]
+title = "Advanced VMs & JIT Compilers"
+description = "Virtual machine architectures, tiered & speculative JIT compilation, garbage collection & dynamic runtime optimization."
+category = "advanced"
+
+[[params.courses]]
+title = "Advanced Compiler Construction & Optimization"
+description = "SSA, data-flow, inlining, loop transforms, register allocation, polyhedral ideas & target-aware lowering."
+category = "advanced"
+
+[[params.courses]]
+title = "Windows Internals (x86/x64)"
+description = "Kernel → user architecture, processes, threads, memory management, drivers, system calls, scheduling, PE/COFF binaries & tooling."
+category = "systems"
+
+[[params.courses]]
+title = "Systems Security"
+description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
+category = "systems"
+
+[[params.courses]]
+title = "Compiler Security"
+description = "Language-based security, memory safety, exploit classes in compilers/runtimes, supply chain risk, mitigations, secure toolchains, formal verification, proofs."
+category = "systems"
+
+[[params.courses]]
+title = "Formal Methods & Proof Assistants"
+description = "Logic foundations, proof automation & verification using Coq, Lean & Agda for language and compiler correctness."
+category = "research"
+
+[[params.courses]]
+title = "Program Synthesis with Refinement Types"
+description = "Guided synthesis using refinement types, holes, constraint solving & SMT-based search strategies."
+category = "research"
+
+[[params.courses]]
+title = "AI-Assisted Programming & Synthesis"
+description = "LLM-driven developer tooling, proof guidance, code generation & verified synthesis workflows."
+category = "research"
+
+[[params.courses]]
+title = "E-Graphs & Equality Saturation"
+description = "Algebraic rewrite engines, saturation strategies & global optimization for compilers and synthesizers."
+category = "research"
+
+[[params.courses]]
+title = "Verified Compilers"
+description = "End-to-end correctness (CompCert, CakeML), mechanized semantics & trusted computing bases."
+category = "research"
+
+[[params.courses]]
+title = "Concurrency & Parallelism"
+description = "Actors, CSP, STM, lock-free structures, GPU offload models & safe parallel runtime design."
+category = "research"
+
+[[params.courses]]
+title = "Metaprogramming & DSLs"
+description = "Hygienic macros, multi-stage evaluation, staging runtimes & intentional language layering."
+category = "research"
+
+[[params.courses]]
+title = "WebAssembly & Polyglot Runtimes"
+description = "WASM execution model, embedding, cross-language interop & portability in modern ecosystems."
+category = "research"
+
+[[params.courses]]
+title = "GPU/Accelerator Compilation"
+description = "Passes for CUDA/OpenCL, heterogeneous lowering, scheduling, memory hierarchies & performance modeling."
+category = "research"
+
+[[params.courses]]
+title = "HoTT, Dependent & Refinement Types"
+description = "Higher inductive types, path equality, expressive type-level reasoning & program correctness."
+category = "research"
+
+[[params.courses]]
+title = "Quantum & Reversible Programming"
+description = "Quantum state, reversible computation models, linear types & future runtime implications."
+category = "research"
+
 
 [markup.asciidocExt]
 safeMode = "unsafe"
