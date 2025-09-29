@@ -47,7 +47,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
 </div>
 
 <div class="course-category courses-left-align" data-accent="yellow">
-  <h2 class="category-title">🔍 Systems and Security</h2>
+  <h2 class="category-title">🔍 Systems / Security</h2>
   <div class="course-grid">
     <div class="course-card">
       <h3>Windows Internals (x86/x64)</h3>
@@ -65,7 +65,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
 </div>
 
 <div class="course-category courses-left-align" data-accent="purple">
-  <h2 class="category-title">🔬 Extensions and Research</h2>
+  <h2 class="category-title">🔬 Extensions / Research</h2>
   <div class="course-grid research">
     <div class="course-card">
       <h3>Formal Methods & Proof Assistants</h3>
