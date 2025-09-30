@@ -13,7 +13,7 @@ accent = "green"
 
 [[courseCategories]]
 id = "research"
-title = "Extensions/Research"
+title = "Research"
 icon = "🔬"
 accent = "purple"
 
