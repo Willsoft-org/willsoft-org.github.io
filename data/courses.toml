@@ -1,17 +1,20 @@
 # Course categories configuration
 [[courseCategories]]
 id = "foundations"
-title = "📚 Foundations"
+title = "Foundations"
+icon = "📚"
 accent = "blue"
 
 [[courseCategories]]
 id = "advanced"
-title = "🚀 Advanced"
+title = "Advanced"
+icon = "🚀"
 accent = "green"
 
 [[courseCategories]]
 id = "research"
-title = "🔬 Extensions/Research"
+title = "Extensions/Research"
+icon = "🔬"
 accent = "purple"
 
 # Course fields configuration (academic/professional fields)
