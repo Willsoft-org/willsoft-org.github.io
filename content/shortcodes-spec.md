@@ -1,3 +1,8 @@
++++
+title = "Course Short-Code Specification"
+draft = false
++++
+
 # Course Short-Code Specification
 
 ## General Format
