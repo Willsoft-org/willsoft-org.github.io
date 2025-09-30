@@ -249,6 +249,16 @@
     font-size: 0.8rem;
     font-weight: 600;
     
+    .course-shortcode {
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba($color-accent-purple, 0.08);
+      color: $color-accent-purple;
+      font-family: 'Courier New', monospace;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    
     .course-duration,
     .course-price {
       padding: 4px 10px;

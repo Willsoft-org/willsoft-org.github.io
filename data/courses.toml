@@ -54,6 +54,7 @@ title = "Foundations of Programming Languages"
 description = "Core principles of syntax, semantics, paradigms, and type systems, introducing how languages are defined and understood."
 level = "foundations"
 field = "pl"
+shortcode = "PLF"
 duration = 8
 price = 1200
 
@@ -62,6 +63,7 @@ title = "Foundations of Interpreters & Virtual Machines"
 description = "How code executes via AST interpreters and bytecode VMs; stack vs. register machines and evaluation strategies."
 level = "foundations"
 field = "pl"
+shortcode = "VMF"
 duration = 10
 price = 1500
 
@@ -70,6 +72,7 @@ title = "Foundations of Compilers"
 description = "Step-by-step compiler pipeline: lexing, parsing, semantic analysis, IR, optimization and code generation."
 level = "foundations"
 field = "pl"
+shortcode = "CCF"
 duration = 12
 price = 1800
 
@@ -78,6 +81,7 @@ title = "Advanced Language Theory, Design & Implementation"
 description = "Advanced type systems, macros, effects, concurrency models, error handling, runtime architecture & ergonomics."
 level = "advanced"
 field = "pl"
+shortcode = "PLA"
 new = true
 duration = 12
 price = 2000
@@ -87,6 +91,7 @@ title = "Advanced VMs & JIT Compilers"
 description = "Virtual machine architectures, tiered & speculative JIT compilation, garbage collection & dynamic runtime optimization."
 level = "advanced"
 field = "pl"
+shortcode = "JCVMA"
 duration = 10
 price = 1800
 
@@ -95,6 +100,7 @@ title = "Advanced Compiler Construction & Optimization"
 description = "SSA, data-flow, inlining, loop transforms, register allocation, polyhedral ideas & target-aware lowering."
 level = "advanced"
 field = "pl"
+shortcode = "PLCOA"
 duration = 12
 price = 2000
 
@@ -103,6 +109,7 @@ title = "Windows Internals (x86/x64)"
 description = "Kernel → user architecture, processes, threads, memory management, drivers, system calls, scheduling, PE/COFF binaries & tooling."
 level = "foundations"
 field = "os"
+shortcode = "OSWINF"
 duration = 10
 price = 1500
 
@@ -111,6 +118,7 @@ title = "Systems Security"
 description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
 level = "advanced"
 field = "sec"
+shortcode = "SECA"
 new = true
 duration = 8
 price = 1600
@@ -120,6 +128,7 @@ title = "Compiler Security"
 description = "Language-based security, memory safety, exploit classes in compilers/runtimes, supply chain risk, mitigations, secure toolchains, formal verification, proofs."
 level = "research"
 field = "sec"
+shortcode = "SECVERR"
 duration = 8
 price = 2200
 
@@ -128,6 +137,7 @@ title = "Formal Methods & Proof Assistants"
 description = "Logic foundations, proof automation & verification using Coq, Lean & Agda for language and compiler correctness."
 level = "research"
 field = "fm"
+shortcode = "FMPAR"
 duration = 10
 price = 2400
 
@@ -136,6 +146,7 @@ title = "Program Synthesis with Refinement Types"
 description = "Guided synthesis using refinement types, holes, constraint solving & SMT-based search strategies."
 level = "research"
 field = "fm"
+shortcode = "FMRTR"
 duration = 8
 price = 2200
 
@@ -144,6 +155,7 @@ title = "AI-Assisted Programming & Synthesis"
 description = "LLM-driven developer tooling, proof guidance, code generation & verified synthesis workflows."
 level = "research"
 field = "ai-ml"
+shortcode = "AISYNR"
 new = true
 duration = 6
 price = 2000
@@ -153,6 +165,7 @@ title = "E-Graphs & Equality Saturation"
 description = "Algebraic rewrite engines, saturation strategies & global optimization for compilers and synthesizers."
 level = "research"
 field = "pl"
+shortcode = "PLEQSR"
 duration = 6
 price = 2000
 
@@ -161,6 +174,7 @@ title = "Verified Compilers"
 description = "End-to-end correctness (CompCert, CakeML), mechanized semantics & trusted computing bases."
 level = "research"
 field = "fm"
+shortcode = "CCVERR"
 duration = 10
 price = 2500
 
@@ -169,6 +183,7 @@ title = "Concurrency & Parallelism"
 description = "Actors, CSP, STM, lock-free structures, GPU offload models & safe parallel runtime design."
 level = "research"
 field = "parallel"
+shortcode = "PCCNCR"
 duration = 8
 price = 2200
 
@@ -177,6 +192,7 @@ title = "Metaprogramming & DSLs"
 description = "Hygienic macros, multi-stage evaluation, staging runtimes & intentional language layering."
 level = "research"
 field = "pl"
+shortcode = "PLMPR"
 duration = 6
 price = 2000
 
@@ -185,6 +201,7 @@ title = "WebAssembly & Polyglot Runtimes"
 description = "WASM execution model, embedding, cross-language interop & portability in modern ecosystems."
 level = "research"
 field = "pl"
+shortcode = "PLWAR"
 duration = 6
 price = 1900
 
@@ -193,6 +210,7 @@ title = "GPU/Accelerator Compilation"
 description = "Passes for CUDA/OpenCL, heterogeneous lowering, scheduling, memory hierarchies & performance modeling."
 level = "research"
 field = "parallel"
+shortcode = "PCGPUR"
 duration = 8
 price = 2200
 
@@ -201,6 +219,7 @@ title = "HoTT, Dependent & Refinement Types"
 description = "Higher inductive types, path equality, expressive type-level reasoning & program correctness."
 level = "research"
 field = "fm"
+shortcode = "TTHTTDR"
 duration = 10
 price = 2500
 
@@ -209,5 +228,6 @@ title = "Quantum & Reversible Programming"
 description = "Quantum state, reversible computation models, linear types & future runtime implications."
 level = "research"
 field = "parallel"
+shortcode = "PCQNTR"
 duration = 6
 price = 2100

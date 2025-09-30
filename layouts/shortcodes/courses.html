@@ -18,8 +18,9 @@
       {{ end }}
       <h3>{{ .title }}</h3>
       <p>{{ .description }}</p>
-      {{ if or .duration .price }}
+      {{ if or .shortcode .duration .price }}
       <div class="course-meta">
+        {{ if .shortcode }}<span class="course-shortcode">{{ .shortcode }}</span>{{ end }}
         {{ if .duration }}<span class="course-duration">{{ .duration }}w</span>{{ end }}
         {{ if .price }}<span class="course-price">${{ .price }}/pp</span>{{ end }}
       </div>
