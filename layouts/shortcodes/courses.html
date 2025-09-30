@@ -1,11 +1,12 @@
 {{ range .Site.Data.courses.courseCategories }}
   {{ $categoryId := .id }}
   {{ $categoryTitle := .title }}
+  {{ $categoryIcon := .icon }}
   {{ $categoryAccent := .accent }}
   {{ $coursesInCategory := where $.Site.Data.courses.courses "category" $categoryId }}
   
 <div class="course-category courses-left-align" data-accent="{{ $categoryAccent }}" data-category="{{ $categoryId }}">
-  <h2 class="category-title">{{ $categoryTitle }}</h2>
+  <h2 class="category-title">{{ $categoryIcon }} {{ $categoryTitle }}</h2>
   <div class="course-grid{{ if eq $categoryId "research" }} research{{ end }}">
     {{ range $coursesInCategory }}
     {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}

@@ -216,7 +216,7 @@
     
     function getFilterDisplayName(filter) {
         const button = document.querySelector(`[data-category="${filter}"]`);
-        return button ? button.textContent.replace(/[📚🚀🔍🔬]\s*/, '') : filter;
+        return button ? button.textContent : filter;
     }
     
     function getFieldDisplayName(field) {
