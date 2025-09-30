@@ -55,7 +55,7 @@ color = "#ec4899"
 
 [[courseFields]]
 id = "education"
-title = "Education & Design"
+title = "Education/Design"
 color = "#14b8a6"
 
 [[courseFields]]
@@ -67,11 +67,6 @@ color = "#64748b"
 id = "web"
 title = "Web Development"
 color = "#f97316"
-
-[[courseFields]]
-id = "malware"
-title = "Malware & Forensics"
-color = "#dc2626"
 
 # Course data
 [[courses]]
@@ -137,6 +132,7 @@ field = "os"
 shortcode = "OSWINF"
 duration = 10
 price = 1500
+new = true
 
 [[courses]]
 title = "Systems Security"
@@ -202,14 +198,15 @@ field = "fm"
 shortcode = "CCVERR"
 duration = 10
 price = 2500
+new = true
 
 [[courses]]
 title = "Concurrency & Parallelism"
 description = "Actors, CSP, STM, lock-free structures, GPU offload models & safe parallel runtime design."
-level = "research"
+level = "advanced"
 field = "parallel"
 shortcode = "PCCNCR"
-duration = 8
+duration = 3
 price = 2200
 
 [[courses]]
@@ -218,17 +215,19 @@ description = "Hygienic macros, multi-stage evaluation, staging runtimes & inten
 level = "research"
 field = "pl"
 shortcode = "PLMPR"
-duration = 6
+duration = 3
 price = 2000
+new = true
 
 [[courses]]
-title = "WebAssembly & Polyglot Runtimes"
+title = "WebAssembly Runtimes"
 description = "WASM execution model, embedding, cross-language interop & portability in modern ecosystems."
 level = "research"
 field = "pl"
 shortcode = "PLWAR"
-duration = 6
+duration = 2
 price = 1900
+new = true
 
 [[courses]]
 title = "GPU/Accelerator Compilation"
@@ -238,6 +237,7 @@ field = "parallel"
 shortcode = "PCGPUR"
 duration = 8
 price = 2200
+new = true
 
 [[courses]]
 title = "HoTT, Dependent & Refinement Types"
@@ -247,25 +247,27 @@ field = "fm"
 shortcode = "TTHTTDR"
 duration = 10
 price = 2500
+new = true
 
-[[courses]]
-title = "Quantum & Reversible Programming"
-description = "Quantum state, reversible computation models, linear types & future runtime implications."
-level = "research"
-field = "parallel"
-shortcode = "PCQNTR"
-duration = 6
-price = 2100
+# [[courses]]
+# title = "Quantum & Reversible Programming"
+# description = "Quantum state, reversible computation models, linear types & future runtime implications."
+# level = "research"
+# field = "parallel"
+# shortcode = "PCQNTR"
+# duration = 6
+# price = 2100
 
 # Foundations - Operating Systems
 [[courses]]
 title = "Foundations of Operating Systems for Language Runtimes"
 description = "OS features supporting languages: processes, scheduling, memory management, filesystems, and how languages leverage OS abstractions."
 level = "foundations"
-field = "os"
-shortcode = "OSF"
-duration = 10
+field = "pl"
+shortcode = "PLOSF"
+duration = 2
 price = 1500
+new = true
 
 # Foundations - Mathematical
 [[courses]]
@@ -274,8 +276,9 @@ description = "Lambda calculus, automata theory, Turing machines, denotational/o
 level = "foundations"
 field = "pl"
 shortcode = "PLMATHF"
-duration = 10
+duration = 1
 price = 1600
+new = true
 
 # Foundations - Program Analysis
 [[courses]]
@@ -283,9 +286,10 @@ title = "Foundations of Program Analysis"
 description = "Static vs. dynamic analysis, abstract interpretation, symbolic execution, and their role in compilers, verifiers, and security."
 level = "foundations"
 field = "pl"
-shortcode = "PLAPAF"
-duration = 10
+shortcode = "PAF"
+duration = 2
 price = 1600
+new = true
 
 # Foundations - General Programming Intro
 [[courses]]
@@ -294,8 +298,8 @@ description = "Basics of algorithms, data structures, control flow, functions, a
 level = "foundations"
 field = "gen-prog"
 shortcode = "PROGF"
-duration = 6
-price = 800
+duration = 2
+price = 1100
 
 [[courses]]
 title = "Object-Oriented Programming"
@@ -312,7 +316,7 @@ description = "Pure functions, recursion, higher-order functions, immutability t
 level = "foundations"
 field = "gen-prog"
 shortcode = "FPF"
-duration = 8
+duration = 1
 price = 1100
 
 [[courses]]
@@ -321,7 +325,7 @@ description = "Pointers, memory management, low-level OS interaction, safe vs. u
 level = "foundations"
 field = "gen-prog"
 shortcode = "SYSPF"
-duration = 10
+duration = 1
 price = 1400
 
 [[courses]]
@@ -330,7 +334,7 @@ description = "Building full-stack applications, HTTP APIs, frontend-backend int
 level = "foundations"
 field = "web"
 shortcode = "WEBF"
-duration = 8
+duration = 1
 price = 1200
 
 [[courses]]
@@ -339,7 +343,7 @@ description = "Testing, version control, CI/CD, design principles, and collabora
 level = "foundations"
 field = "gen-prog"
 shortcode = "SWEF"
-duration = 6
+duration = 1
 price = 1000
 
 # Foundations - Security
@@ -349,7 +353,7 @@ description = "Core concepts: confidentiality, integrity, availability, threat m
 level = "foundations"
 field = "sec"
 shortcode = "SECF"
-duration = 8
+duration = 1
 price = 1200
 
 [[courses]]
@@ -358,7 +362,7 @@ description = "Disassembly, control-flow graphs, lifting to IR, and binary instr
 level = "foundations"
 field = "sec"
 shortcode = "REVF"
-duration = 10
+duration = 1
 price = 1500
 
 # Foundations - Logic Programming
@@ -368,7 +372,7 @@ description = "Prolog, Horn clauses, resolution, SLDNF, and declarative problem 
 level = "foundations"
 field = "logic"
 shortcode = "LOGF"
-duration = 8
+duration = 1
 price = 1300
 
 # Advanced - Memory Management
@@ -378,7 +382,7 @@ description = "Dedicated course on GC algorithms, memory models, region-based al
 level = "advanced"
 field = "pl"
 shortcode = "PLGCA"
-duration = 10
+duration = 2
 price = 1800
 
 # Advanced - Binary Analysis
@@ -387,8 +391,8 @@ title = "Binary Analysis & Reverse Engineering"
 description = "ELF/PE/Mach-O parsing, disassembly, lifting to IR, symbolic execution for reverse engineering."
 level = "advanced"
 field = "sec"
-shortcode = "BINANA"
-duration = 10
+shortcode = "REVA"
+duration = 2
 price = 1800
 
 # Advanced - Security Courses
@@ -397,8 +401,8 @@ title = "Static Analysis for Security"
 description = "Abstract interpretation, data-flow, taint analysis, symbolic execution for finding security vulnerabilities."
 level = "advanced"
 field = "sec"
-shortcode = "STATANA"
-duration = 10
+shortcode = "REVSTCA"
+duration = 1
 price = 1700
 
 [[courses]]
@@ -406,17 +410,17 @@ title = "Dynamic Analysis & Sandboxing"
 description = "Instrumentation with Pin/DynamoRIO, tracing system calls, unpacking obfuscated binaries, and runtime analysis."
 level = "advanced"
 field = "sec"
-shortcode = "DYNANA"
-duration = 10
+shortcode = "REVDYNA"
+duration = 1
 price = 1700
 
 [[courses]]
 title = "Malware Analysis"
 description = "Real-world malware families, obfuscation techniques, persistence mechanisms, and anti-analysis tricks."
 level = "advanced"
-field = "malware"
-shortcode = "MALWARA"
-duration = 10
+field = "sec"
+shortcode = "MALA"
+duration = 2
 price = 1800
 
 [[courses]]
@@ -424,8 +428,8 @@ title = "Exploit Development"
 description = "Stack smashing, heap exploitation, ROP/JOP, format string exploits, and mitigations like DEP and ASLR."
 level = "advanced"
 field = "sec"
-shortcode = "EXPLOITA"
-duration = 10
+shortcode = "EXPA"
+duration = 3
 price = 1800
 
 [[courses]]
@@ -433,17 +437,17 @@ title = "Secure Systems Programming"
 description = "Memory-safe design, fuzzing, secure coding patterns in C/Rust, and defensive programming techniques."
 level = "advanced"
 field = "sec"
-shortcode = "SECSYSA"
-duration = 8
+shortcode = "SECPRGA"
+duration = 2
 price = 1600
 
 [[courses]]
 title = "Forensics & Incident Response"
 description = "Memory dumps, log analysis, disk forensics, attribution basics, and incident investigation methodologies."
 level = "advanced"
-field = "malware"
-shortcode = "FORENSA"
-duration = 8
+field = "sec"
+shortcode = "SECFORA"
+duration = 2
 price = 1600
 
 # Advanced - Logic & Constraints
@@ -453,7 +457,7 @@ description = "Solvers for constraints over integers, Booleans, or reals. Hands-
 level = "advanced"
 field = "logic"
 shortcode = "SMTA"
-duration = 8
+duration = 2
 price = 1700
 
 [[courses]]
@@ -461,8 +465,8 @@ title = "Datalog & Relational Programming"
 description = "Datalog engines, recursion, fixed-point semantics, and applications in program analysis using Soufflé."
 level = "advanced"
 field = "logic"
-shortcode = "DATALOGA"
-duration = 8
+shortcode = "LOGDATA"
+duration = 1
 price = 1600
 
 # Advanced - Session Types
@@ -471,8 +475,8 @@ title = "Session Types & Protocol Programming"
 description = "Using linear/affine types to enforce communication protocols at compile time. Covers π-calculus and multiparty session types."
 level = "advanced"
 field = "pl"
-shortcode = "SESSTYPA"
-duration = 8
+shortcode = "PLSESA"
+duration = 1
 price = 1700
 
 # Research - Security & Systems
@@ -481,8 +485,8 @@ title = "Secure Virtualization & Sandboxing"
 description = "JIT hardening, WASM isolation, capability-based systems, and secure runtime design for sandboxed execution."
 level = "research"
 field = "sec"
-shortcode = "SECVIRTR"
-duration = 8
+shortcode = "SECVBSR"
+duration = 2
 price = 2200
 
 [[courses]]
@@ -491,7 +495,7 @@ description = "Compilation for enclaves (Intel SGX, ARM TrustZone), constant-tim
 level = "research"
 field = "sec"
 shortcode = "TEER"
-duration = 10
+duration = 2
 price = 2400
 
 [[courses]]
@@ -499,8 +503,8 @@ title = "Exploit Development in Compilers & Toolchains"
 description = "Hands-on deep dive into exploit primitives in compiler internals and runtime assumptions."
 level = "research"
 field = "sec"
-shortcode = "CEXPLTR"
-duration = 8
+shortcode = "CEXPR"
+duration = 4
 price = 2300
 
 [[courses]]
@@ -508,8 +512,8 @@ title = "Secure Compilation & Toolchain Hardening"
 description = "How compiler bugs become exploits, verified compilation, reproducible builds, and supply chain security."
 level = "research"
 field = "sec"
-shortcode = "SCTOOLR"
-duration = 10
+shortcode = "SCHR"
+duration = 4
 price = 2400
 
 [[courses]]
@@ -517,17 +521,17 @@ title = "Language-Based Security"
 description = "Information-flow control, type systems for security, capability-based languages, and secure programming abstractions."
 level = "research"
 field = "sec"
-shortcode = "LBSECR"
-duration = 10
+shortcode = "PLSECR"
+duration = 5
 price = 2300
 
 [[courses]]
-title = "Binary Translation & Decompilation"
-description = "Static decompilation, dynamic binary translation, E-graphs for reverse engineering, and program lifting techniques."
+title = "Automated Binary Decompilation"
+description = "Static decompilation, dynamic binary translation, automatic deobfuscation, E-graphs for reverse engineering, and program lifting techniques."
 level = "research"
 field = "sec"
-shortcode = "BINTRANR"
-duration = 10
+shortcode = "REVBINR"
+duration = 3
 price = 2400
 
 # Research - Proof-Carrying Code
@@ -537,7 +541,7 @@ description = "How code can carry formal proofs of safety, and how runtimes enfo
 level = "research"
 field = "fm"
 shortcode = "PCCR"
-duration = 8
+duration = 4
 price = 2300
 
 # Research - Language Design & Theory
@@ -546,17 +550,17 @@ title = "Interactive & Visual Programming Languages"
 description = "Study of Scratch, LabView, Max/MSP, and modern research into multimodal/programmer-friendly PLs."
 level = "research"
 field = "education"
-shortcode = "VPLR"
-duration = 6
+shortcode = "PLIVR"
+duration = 2
 price = 2000
 
 [[courses]]
 title = "Probabilistic & Differentiable Programming Languages"
-description = "Language support for ML/AI: PPLs (Stan, Pyro), differentiable interpreters, and semantics of probability."
+description = "Language support for ML/AI: PPLs (TreePPL, Stan, Pyro), differentiable interpreters, and semantics of probability."
 level = "research"
 field = "ai-ml"
-shortcode = "PROBPLR"
-duration = 8
+shortcode = "PLPRBR"
+duration = 4
 price = 2200
 
 [[courses]]
@@ -564,8 +568,8 @@ title = "Automated Bug-Finding & Fuzzing for Compilers"
 description = "Superoptimization, CSmith, Greybox fuzzing, differential testing of compiler toolchains."
 level = "research"
 field = "pl"
-shortcode = "FUZZCCR"
-duration = 8
+shortcode = "PLFZZR"
+duration = 2
 price = 2200
 
 [[courses]]
@@ -583,8 +587,8 @@ description = "The art of bootstrapping languages, writing compilers in their ow
 level = "research"
 field = "pl"
 shortcode = "METAIRCR"
-duration = 8
-price = 2200
+duration = 1
+price = 1700
 
 [[courses]]
 title = "Security Protocols in Programming Languages"
@@ -600,8 +604,8 @@ title = "Cognitive Dimensions of Language Design"
 description = "Human factors, usability, learnability, and error-proneness in PL design with empirical research."
 level = "research"
 field = "education"
-shortcode = "COGPLR"
-duration = 6
+shortcode = "PLCOGR"
+duration = 1
 price = 2000
 
 [[courses]]
@@ -609,8 +613,8 @@ title = "History of Programming Languages"
 description = "Evolution of paradigms from Fortran, Lisp, Simula, ML, Haskell, to Rust with focus on paradigm shifts."
 level = "research"
 field = "education"
-shortcode = "HISTPLR"
-duration = 6
+shortcode = "PLHISR"
+duration = 1
 price = 1900
 
 [[courses]]
@@ -618,17 +622,17 @@ title = "Philosophy of Programming Languages"
 description = "What makes a good language? Tradeoffs between safety, expressivity, performance, and usability."
 level = "research"
 field = "education"
-shortcode = "PHILPLR"
-duration = 6
+shortcode = "PLSOPR"
+duration = 1
 price = 1900
 
 [[courses]]
 title = "Implementation of Esoteric Languages"
 description = "Brainfuck, Befunge, Malbolge as a playful but deep dive into semantics and compilation challenges."
-level = "research"
+level = "advanced"
 field = "education"
-shortcode = "ESOPLR"
-duration = 4
+shortcode = "PLESOA"
+duration = 3
 price = 1600
 
 [[courses]]
@@ -636,8 +640,8 @@ title = "Education-Oriented Language Design"
 description = "How to design languages for teaching (LOGO, Elm, Hedy), and the pedagogy behind educational PLs."
 level = "research"
 field = "education"
-shortcode = "EDUPLR"
-duration = 6
+shortcode = "PLEDUR"
+duration = 1
 price = 1900
 
 # Research - Dependently Typed Programming
@@ -647,45 +651,37 @@ description = "Encoding invariants and proofs in types, verified data structures
 level = "research"
 field = "fm"
 shortcode = "DTTPRR"
-duration = 10
+duration = 3
 price = 2400
 
-# Research - Proof Assistants
+# Proof Assistants
+
 [[courses]]
-title = "Programming in Lean 4"
-description = "Building formally verified software and systems. From theorem proving to writing verified functional code and DSLs inside Lean."
-level = "research"
+title = "Certified Programming in Coq/Agda/Lean"
+description = "Building formally verified software by theorem proving algorithms and data structures."
+level = "advanced"
 field = "fm"
-shortcode = "LEAN4R"
-duration = 10
+shortcode = "CPA"
+duration = 4
 price = 2500
 
 [[courses]]
-title = "Certified Programming in Coq/Agda"
-description = "Extracting verified code from proofs. Verified interpreters, compilers, and data structures."
+title = "Theory of Formal Software Development"
+description = "From specification → proof → implementation using Hoare logic, separation logic, and refinement calculus."
 level = "research"
 field = "fm"
-shortcode = "COQAGDAR"
-duration = 10
-price = 2500
-
-[[courses]]
-title = "Formal Software Development"
-description = "Bridging specification → proof → implementation using Hoare logic, separation logic, and refinement calculus."
-level = "research"
-field = "fm"
-shortcode = "FMDEVR"
-duration = 10
+shortcode = "FSDR"
+duration = 4
 price = 2400
 
 # Research - Verified Systems
 [[courses]]
 title = "Verified Operating Systems"
-description = "Case studies like seL4, CertiKOS. Build a small verified kernel using Coq or Lean for mechanized proofs."
+description = "Case studies like seL4, SeKVM, CertiKOS. Build a small verified kernel using Coq or Lean for mechanized proofs."
 level = "research"
 field = "fm"
 shortcode = "VEROSR"
-duration = 12
+duration = 4
 price = 2600
 
 [[courses]]
@@ -694,17 +690,17 @@ description = "Proving isolation, scheduling, and memory safety of hypervisors. 
 level = "research"
 field = "fm"
 shortcode = "VERHYPR"
-duration = 10
-price = 2500
+duration = 4
+price = 2700
 
-[[courses]]
-title = "Verified Cryptography"
-description = "Using frameworks like Fiat-Crypto or EverCrypt to generate verified constant-time cryptographic primitives."
-level = "research"
-field = "fm"
-shortcode = "VERCRYPR"
-duration = 10
-price = 2500
+# [[courses]]
+# title = "Verified Cryptography"
+# description = "Using frameworks like Fiat-Crypto or EverCrypt to generate verified constant-time cryptographic primitives."
+# level = "research"
+# field = "fm"
+# shortcode = "VERCRYPR"
+# duration = 3
+# price = 2500
 
 [[courses]]
 title = "Verified Networking & Protocols"
@@ -712,7 +708,7 @@ description = "Building verified protocol stacks (TCP, TLS) with session types, 
 level = "research"
 field = "fm"
 shortcode = "VERNETR"
-duration = 10
+duration = 4
 price = 2500
 
 # Research - E-graphs & Reasoning
@@ -722,8 +718,9 @@ description = "Hands-on with the Egg library (Rust) and Egglog (declarative equa
 level = "research"
 field = "pl"
 shortcode = "EGGR"
-duration = 6
-price = 2000
+duration = 5
+price = 2300
+new = true
 
 [[courses]]
 title = "Symbolic AI & Automated Reasoning with Rewriting"
@@ -731,8 +728,9 @@ description = "Extending e-graphs beyond compilers: theorem proving, SMT integra
 level = "research"
 field = "ai-ml"
 shortcode = "SYMAIR"
-duration = 8
-price = 2200
+duration = 5
+price = 2800
+new = true
 
 [[courses]]
 title = "Abstract Interpretation & Program Logics"
@@ -740,8 +738,9 @@ description = "Theory of static analysis, lattice-based frameworks, abstract dom
 level = "research"
 field = "pl"
 shortcode = "ABSINTR"
-duration = 10
+duration = 5
 price = 2400
+new = true
 
 [[courses]]
 title = "Supercompilation & Partial Evaluation"
@@ -749,14 +748,16 @@ description = "Techniques for transforming programs via symbolic execution and e
 level = "research"
 field = "pl"
 shortcode = "SUPERR"
-duration = 8
+duration = 4
 price = 2300
+new = true
 
 [[courses]]
 title = "Reversible & Relational Programming"
 description = "Languages where computation is symmetric (Janus, Mercury, miniKanren), connecting to logic programming and proof search."
 level = "research"
 field = "logic"
-shortcode = "REVRELR"
+shortcode = "LOGSYMR"
 duration = 8
 price = 2200
+new = true
