@@ -54,18 +54,24 @@ title = "Foundations of Programming Languages"
 description = "Core principles of syntax, semantics, paradigms, and type systems, introducing how languages are defined and understood."
 level = "foundations"
 field = "pl"
+duration = 8
+price = 1200
 
 [[courses]]
 title = "Foundations of Interpreters & Virtual Machines"
 description = "How code executes via AST interpreters and bytecode VMs; stack vs. register machines and evaluation strategies."
 level = "foundations"
 field = "pl"
+duration = 10
+price = 1500
 
 [[courses]]
 title = "Foundations of Compilers"
 description = "Step-by-step compiler pipeline: lexing, parsing, semantic analysis, IR, optimization and code generation."
 level = "foundations"
 field = "pl"
+duration = 12
+price = 1800
 
 [[courses]]
 title = "Advanced Language Theory, Design & Implementation"
@@ -73,24 +79,32 @@ description = "Advanced type systems, macros, effects, concurrency models, error
 level = "advanced"
 field = "pl"
 new = true
+duration = 12
+price = 2000
 
 [[courses]]
 title = "Advanced VMs & JIT Compilers"
 description = "Virtual machine architectures, tiered & speculative JIT compilation, garbage collection & dynamic runtime optimization."
 level = "advanced"
 field = "pl"
+duration = 10
+price = 1800
 
 [[courses]]
 title = "Advanced Compiler Construction & Optimization"
 description = "SSA, data-flow, inlining, loop transforms, register allocation, polyhedral ideas & target-aware lowering."
 level = "advanced"
 field = "pl"
+duration = 12
+price = 2000
 
 [[courses]]
 title = "Windows Internals (x86/x64)"
 description = "Kernel → user architecture, processes, threads, memory management, drivers, system calls, scheduling, PE/COFF binaries & tooling."
 level = "foundations"
 field = "os"
+duration = 10
+price = 1500
 
 [[courses]]
 title = "Systems Security"
@@ -98,24 +112,32 @@ description = "Exploits, vulnerabilities, mitigations, memory safety, attack sur
 level = "advanced"
 field = "sec"
 new = true
+duration = 8
+price = 1600
 
 [[courses]]
 title = "Compiler Security"
 description = "Language-based security, memory safety, exploit classes in compilers/runtimes, supply chain risk, mitigations, secure toolchains, formal verification, proofs."
 level = "research"
 field = "sec"
+duration = 8
+price = 2200
 
 [[courses]]
 title = "Formal Methods & Proof Assistants"
 description = "Logic foundations, proof automation & verification using Coq, Lean & Agda for language and compiler correctness."
 level = "research"
 field = "fm"
+duration = 10
+price = 2400
 
 [[courses]]
 title = "Program Synthesis with Refinement Types"
 description = "Guided synthesis using refinement types, holes, constraint solving & SMT-based search strategies."
 level = "research"
 field = "fm"
+duration = 8
+price = 2200
 
 [[courses]]
 title = "AI-Assisted Programming & Synthesis"
@@ -123,51 +145,69 @@ description = "LLM-driven developer tooling, proof guidance, code generation & v
 level = "research"
 field = "ai-ml"
 new = true
+duration = 6
+price = 2000
 
 [[courses]]
 title = "E-Graphs & Equality Saturation"
 description = "Algebraic rewrite engines, saturation strategies & global optimization for compilers and synthesizers."
 level = "research"
 field = "pl"
+duration = 6
+price = 2000
 
 [[courses]]
 title = "Verified Compilers"
 description = "End-to-end correctness (CompCert, CakeML), mechanized semantics & trusted computing bases."
 level = "research"
 field = "fm"
+duration = 10
+price = 2500
 
 [[courses]]
 title = "Concurrency & Parallelism"
 description = "Actors, CSP, STM, lock-free structures, GPU offload models & safe parallel runtime design."
 level = "research"
 field = "parallel"
+duration = 8
+price = 2200
 
 [[courses]]
 title = "Metaprogramming & DSLs"
 description = "Hygienic macros, multi-stage evaluation, staging runtimes & intentional language layering."
 level = "research"
 field = "pl"
+duration = 6
+price = 2000
 
 [[courses]]
 title = "WebAssembly & Polyglot Runtimes"
 description = "WASM execution model, embedding, cross-language interop & portability in modern ecosystems."
 level = "research"
 field = "pl"
+duration = 6
+price = 1900
 
 [[courses]]
 title = "GPU/Accelerator Compilation"
 description = "Passes for CUDA/OpenCL, heterogeneous lowering, scheduling, memory hierarchies & performance modeling."
 level = "research"
 field = "parallel"
+duration = 8
+price = 2200
 
 [[courses]]
 title = "HoTT, Dependent & Refinement Types"
 description = "Higher inductive types, path equality, expressive type-level reasoning & program correctness."
 level = "research"
 field = "fm"
+duration = 10
+price = 2500
 
 [[courses]]
 title = "Quantum & Reversible Programming"
 description = "Quantum state, reversible computation models, linear types & future runtime implications."
 level = "research"
 field = "parallel"
+duration = 6
+price = 2100

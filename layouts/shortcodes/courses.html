@@ -18,6 +18,12 @@
       {{ end }}
       <h3>{{ .title }}</h3>
       <p>{{ .description }}</p>
+      {{ if or .duration .price }}
+      <div class="course-meta">
+        {{ if .duration }}<span class="course-duration">{{ .duration }}w</span>{{ end }}
+        {{ if .price }}<span class="course-price">${{ .price }}/pp</span>{{ end }}
+      </div>
+      {{ end }}
       <div class="course-field-stripe" style="background-color: {{ $fieldInfo.color }}">
         <span class="field-name">{{ $fieldInfo.title }}</span>
       </div>
