@@ -8,6 +8,7 @@ description = "Advanced foundations, systems, security, compilers, VMs, formal m
 
 <div class="courses-intro courses-left-align">
   <p class="lead">A curated suite of <b>advanced computer science & engineering courses</b> spanning language theory, virtual machines, compilers, systems internals, formal verification, security, synthesis and emerging paradigms. Designed for professionals, researchers, and ambitious learners seeking mastery and depth.</p>
+  <p class="course-format-note">All courses and workshops are <b>interactive</b> and can be delivered <b>in-person, virtual, remote, or online</b> based on your preferences and needs.</p>
 </div>
 
 <div class="courses-search-filter courses-left-align">

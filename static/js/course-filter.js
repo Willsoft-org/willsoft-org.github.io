@@ -139,17 +139,28 @@
             const fieldStripe = card.querySelector('.course-field-stripe .field-name');
             const fieldName = fieldStripe ? fieldStripe.textContent.toLowerCase() : '';
             
+            // Get duration and price for search
+            const courseMeta = card.querySelector('.course-meta');
+            let metaText = '';
+            if (courseMeta) {
+                const duration = courseMeta.querySelector('.course-duration');
+                const price = courseMeta.querySelector('.course-price');
+                metaText = (duration ? duration.textContent.toLowerCase() : '') + ' ' + 
+                          (price ? price.textContent.toLowerCase() : '');
+            }
+            
             // Check level filter
             const levelMatch = currentFilter === 'all' || cardLevel === currentFilter;
             
             // Check field filter
             const fieldMatch = currentFieldFilter === 'all' || cardField === currentFieldFilter;
             
-            // Check search filter (including field names)
+            // Check search filter (including field names, duration, and price)
             const searchMatch = !currentSearch || 
                 cardTitle.includes(currentSearch) || 
                 cardDescription.includes(currentSearch) ||
-                fieldName.includes(currentSearch);
+                fieldName.includes(currentSearch) ||
+                metaText.includes(currentSearch);
             
             // Show/hide card
             if (levelMatch && fieldMatch && searchMatch) {

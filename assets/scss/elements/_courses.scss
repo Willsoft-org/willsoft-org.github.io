@@ -11,7 +11,14 @@
     line-height: 1.55rem;
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .course-format-note {
+    font-size: 0.95rem;
+    line-height: 1.4rem;
     margin-bottom: 40px;
+    color: $color-gray-dark;
   }
 }
 
@@ -231,8 +238,29 @@
   p {
     font-size: .87rem;
     line-height: 1.25rem;
-    margin: 0;
+    margin: 0 0 8px 0;
     color: $color-gray-dark;
+  }
+
+  .course-meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    
+    .course-duration,
+    .course-price {
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba($color-accent-blue, 0.08);
+      color: $color-accent-blue;
+    }
+    
+    .course-price {
+      background: rgba($color-accent-green-2, 0.08);
+      color: $color-accent-green-2;
+    }
   }
 
   &:hover {
