@@ -1,14 +1,14 @@
-{{ range .Site.Params.courseCategories }}
+{{ range .Site.Data.courses.courseCategories }}
   {{ $categoryId := .id }}
   {{ $categoryTitle := .title }}
   {{ $categoryAccent := .accent }}
-  {{ $coursesInCategory := where $.Site.Params.courses "category" $categoryId }}
+  {{ $coursesInCategory := where $.Site.Data.courses.courses "category" $categoryId }}
   
 <div class="course-category courses-left-align" data-accent="{{ $categoryAccent }}" data-category="{{ $categoryId }}">
   <h2 class="category-title">{{ $categoryTitle }}</h2>
   <div class="course-grid{{ if eq $categoryId "research" }} research{{ end }}">
     {{ range $coursesInCategory }}
-    {{ $fieldInfo := (index (where $.Site.Params.courseFields "id" .field) 0) }}
+    {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}
     <div class="course-card" data-category="{{ $categoryId }}" data-field="{{ .field }}">
       {{ if .new }}
       <div class="course-new-ribbon" style="background-color: {{ $fieldInfo.color }}">
