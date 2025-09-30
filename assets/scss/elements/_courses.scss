@@ -68,12 +68,12 @@
     margin-bottom: 20px;
 
     .filter-btn {
-      padding: 10px 18px;
+      padding: 8px 12px;
       border: 2px solid $color-white4;
       background: $color-white2;
       color: $color-gray-dark;
       border-radius: 6px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -91,12 +91,12 @@
     }
 
     .clear-btn {
-      padding: 10px 18px;
+      padding: 8px 12px;
       border: 2px solid $color-white5;
       background: transparent;
       color: $color-gray-dark;
       border-radius: 6px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       cursor: pointer;
       transition: all 0.3s ease;
 
@@ -124,19 +124,19 @@
   gap: 10px;
 
   .filter-label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: $color-gray-dark;
     margin-right: 10px;
   }
 
   .field-filter-btn {
-    padding: 8px 16px;
+    padding: 8px 12px;
     border: 2px solid $color-white4;
     background: $color-white2;
     color: $color-gray-dark;
     border-radius: 6px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
