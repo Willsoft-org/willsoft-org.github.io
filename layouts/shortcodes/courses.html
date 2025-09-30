@@ -1,16 +1,16 @@
-{{ range .Site.Data.courses.courseCategories }}
-  {{ $categoryId := .id }}
-  {{ $categoryTitle := .title }}
-  {{ $categoryIcon := .icon }}
-  {{ $categoryAccent := .accent }}
-  {{ $coursesInCategory := where $.Site.Data.courses.courses "category" $categoryId }}
+{{ range .Site.Data.courses.courseLevels }}
+  {{ $levelId := .id }}
+  {{ $levelTitle := .title }}
+  {{ $levelIcon := .icon }}
+  {{ $levelAccent := .accent }}
+  {{ $coursesInLevel := where $.Site.Data.courses.courses "level" $levelId }}
   
-<div class="course-category courses-left-align" data-accent="{{ $categoryAccent }}" data-category="{{ $categoryId }}">
-  <h2 class="category-title">{{ $categoryIcon }} {{ $categoryTitle }}</h2>
-  <div class="course-grid{{ if eq $categoryId "research" }} research{{ end }}">
-    {{ range $coursesInCategory }}
+<div class="course-level courses-left-align" data-accent="{{ $levelAccent }}" data-level="{{ $levelId }}">
+  <h2 class="level-title">{{ $levelIcon }} {{ $levelTitle }}</h2>
+  <div class="course-grid{{ if eq $levelId "research" }} research{{ end }}">
+    {{ range $coursesInLevel }}
     {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}
-    <div class="course-card" data-category="{{ $categoryId }}" data-field="{{ .field }}">
+    <div class="course-card" data-level="{{ $levelId }}" data-field="{{ .field }}">
       {{ if .new }}
       <div class="course-new-ribbon" style="background-color: {{ $fieldInfo.color }}">
         <span class="ribbon-text">New</span>

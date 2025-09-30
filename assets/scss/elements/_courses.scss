@@ -159,11 +159,11 @@
   }
 }
 
-.course-category {
+.course-level {
   margin-bottom: 70px;
   position: relative;
 
-  .category-title {
+  .level-title {
     font-size: 1.75rem;
     font-weight: 500;
     margin: 0 0 26px 0;
@@ -185,13 +185,13 @@
     }
   }
 
-  &[data-accent="green"] .category-title {
+  &[data-accent="green"] .level-title {
     &:after { background: $color-accent-green-2-light; }
   }
-  &[data-accent="yellow"] .category-title {
+  &[data-accent="yellow"] .level-title {
     &:after { background: $color-accent-yellow-light; }
   }
-  &[data-accent="purple"] .category-title {
+  &[data-accent="purple"] .level-title {
     &:after { background: #d36366; }
   }
 }
@@ -307,8 +307,8 @@
   }
 }
 
-// Hide entire category when no visible cards
-.course-category {
+// Hide entire level when no visible cards
+.course-level {
   transition: opacity 0.3s ease;
 
   &.hidden {
@@ -318,7 +318,7 @@
 
 @media (max-width: 700px) {
   .course-card.wide { grid-column: span 1; }
-  .course-category .category-title { font-size: 1.5rem; }
+  .course-level .level-title { font-size: 1.5rem; }
 }
 
 .courses-sep {

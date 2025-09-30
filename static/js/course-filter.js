@@ -11,7 +11,7 @@
     let clearButton;
     let resultsInfo;
     let courseCards;
-    let courseCategories;
+    let courseLevels;
     
     // State
     let currentFilter = 'all';
@@ -27,7 +27,7 @@
         clearButton = document.getElementById('clear-filters');
         resultsInfo = document.getElementById('results-info');
         courseCards = document.querySelectorAll('.course-card');
-        courseCategories = document.querySelectorAll('.course-category');
+        courseLevels = document.querySelectorAll('.course-level');
         
         if (!searchInput || !filterButtons.length || !courseCards.length) {
             console.warn('Course filter elements not found');
@@ -45,7 +45,7 @@
         // Search input
         searchInput.addEventListener('input', handleSearch);
         
-        // Category filter buttons
+        // Level filter buttons
         filterButtons.forEach(button => {
             button.addEventListener('click', handleFilterClick);
         });
@@ -69,14 +69,14 @@
     function handleFilterClick(e) {
         e.preventDefault();
         
-        const category = e.target.getAttribute('data-category');
-        if (!category) return;
+        const level = e.target.getAttribute('data-level');
+        if (!level) return;
         
         // Update button states
         filterButtons.forEach(btn => btn.classList.remove('active'));
         e.target.classList.add('active');
         
-        currentFilter = category;
+        currentFilter = level;
         
         updateResults();
     }
@@ -103,10 +103,10 @@
             currentSearch = '';
         }
         
-        // Reset category filter
+        // Reset level filter
         filterButtons.forEach(btn => {
             btn.classList.remove('active');
-            if (btn.getAttribute('data-category') === 'all') {
+            if (btn.getAttribute('data-level') === 'all') {
                 btn.classList.add('active');
             }
         });
@@ -130,7 +130,7 @@
         
         // Process each course card
         courseCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
+            const cardLevel = card.getAttribute('data-level');
             const cardField = card.getAttribute('data-field');
             const cardTitle = card.querySelector('h3').textContent.toLowerCase();
             const cardDescription = card.querySelector('p').textContent.toLowerCase();
@@ -139,8 +139,8 @@
             const fieldStripe = card.querySelector('.course-field-stripe .field-name');
             const fieldName = fieldStripe ? fieldStripe.textContent.toLowerCase() : '';
             
-            // Check category filter
-            const categoryMatch = currentFilter === 'all' || cardCategory === currentFilter;
+            // Check level filter
+            const levelMatch = currentFilter === 'all' || cardLevel === currentFilter;
             
             // Check field filter
             const fieldMatch = currentFieldFilter === 'all' || cardField === currentFieldFilter;
@@ -152,7 +152,7 @@
                 fieldName.includes(currentSearch);
             
             // Show/hide card
-            if (categoryMatch && fieldMatch && searchMatch) {
+            if (levelMatch && fieldMatch && searchMatch) {
                 card.classList.remove('hidden');
                 card.classList.add('highlighted');
                 visibleCount++;
@@ -167,16 +167,16 @@
             }
         });
         
-        // Show/hide categories based on visible cards
-        courseCategories.forEach(category => {
-            const categoryName = category.getAttribute('data-category');
-            const cardsInCategory = category.querySelectorAll('.course-card:not(.hidden)');
+        // Show/hide levels based on visible cards
+        courseLevels.forEach(level => {
+            const levelName = level.getAttribute('data-level');
+            const cardsInLevel = level.querySelectorAll('.course-card:not(.hidden)');
             
-            // Show category if it has visible cards or if 'all' filter is active
+            // Show level if it has visible cards or if 'all' filter is active
             if (currentFilter === 'all') {
-                category.classList.toggle('hidden', cardsInCategory.length === 0);
+                level.classList.toggle('hidden', cardsInLevel.length === 0);
             } else {
-                category.classList.toggle('hidden', categoryName !== currentFilter);
+                level.classList.toggle('hidden', levelName !== currentFilter);
             }
         });
         
@@ -197,7 +197,7 @@
                 // Add filter context
                 const activeFilters = [];
                 if (currentFilter !== 'all') {
-                    activeFilters.push(`category: ${getFilterDisplayName(currentFilter)}`);
+                    activeFilters.push(`level: ${getFilterDisplayName(currentFilter)}`);
                 }
                 if (currentFieldFilter !== 'all') {
                     activeFilters.push(`field: ${getFieldDisplayName(currentFieldFilter)}`);
@@ -215,7 +215,7 @@
     }
     
     function getFilterDisplayName(filter) {
-        const button = document.querySelector(`[data-category="${filter}"]`);
+        const button = document.querySelector(`[data-level="${filter}"]`);
         return button ? button.textContent : filter;
     }
     

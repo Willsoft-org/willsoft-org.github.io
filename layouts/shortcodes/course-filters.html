@@ -1,7 +1,7 @@
 <div class="filter-container">
-  <button class="filter-btn active" data-category="all">All Courses</button>
-  {{ range .Site.Data.courses.courseCategories }}
-  <button class="filter-btn" data-category="{{ .id }}">{{ .title }}</button>
+  <button class="filter-btn active" data-level="all">All Courses</button>
+  {{ range .Site.Data.courses.courseLevels }}
+  <button class="filter-btn" data-level="{{ .id }}">{{ .title }}</button>
   {{ end }}
   <button class="clear-btn" id="clear-filters">Clear</button>
 </div>
