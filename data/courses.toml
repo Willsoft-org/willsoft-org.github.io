@@ -11,7 +11,7 @@ accent = "green"
 
 [[courseCategories]]
 id = "research"
-title = "🔬 Extensions/Research"
+title = "🔬 Research"
 accent = "purple"
 
 # Course fields configuration (academic/professional fields)
