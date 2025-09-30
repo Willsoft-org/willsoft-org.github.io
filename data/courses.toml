@@ -86,7 +86,7 @@ field = "pl"
 [[courses]]
 title = "Windows Internals (x86/x64)"
 description = "Kernel → user architecture, processes, threads, memory management, drivers, system calls, scheduling, PE/COFF binaries & tooling."
-category = "advanced"
+category = "foundations"
 field = "os"
 
 [[courses]]
