@@ -134,15 +134,15 @@ duration = 10
 price = 1500
 new = true
 
-# [[courses]]
-# title = "Systems Security"
-# description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
-# level = "advanced"
-# field = "sec"
-# shortcode = "SECA"
-# new = true
-# duration = 8
-# price = 1600
+[[courses]]
+title = "Systems Security"
+description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
+level = "advanced"
+field = "sec"
+shortcode = "SECA"
+new = true
+duration = 8
+price = 1600
 
 [[courses]]
 title = "Compiler Security"
@@ -259,26 +259,26 @@ new = true
 # price = 2100
 
 # Foundations - Operating Systems
-[[courses]]
-title = "Foundations of Operating Systems for Language Runtimes"
-description = "OS features supporting languages: processes, scheduling, memory management, filesystems, and how languages leverage OS abstractions."
-level = "foundations"
-field = "pl"
-shortcode = "PLOSF"
-duration = 2
-price = 1500
-new = true
+# [[courses]]
+# title = "Foundations of Operating Systems for Language Runtimes"
+# description = "OS features supporting languages: processes, scheduling, memory management, filesystems, and how languages leverage OS abstractions."
+# level = "foundations"
+# field = "pl"
+# shortcode = "PLOSF"
+# duration = 2
+# price = 1500
+# new = true
 
 # Foundations - Mathematical
-[[courses]]
-title = "Mathematical Foundations of Programming Languages"
-description = "Lambda calculus, automata theory, Turing machines, denotational/operational semantics with formalism tied to modern PL examples."
-level = "foundations"
-field = "pl"
-shortcode = "PLMATHF"
-duration = 1
-price = 1600
-new = true
+# [[courses]]
+# title = "Mathematical Foundations of Programming Languages"
+# description = "Lambda calculus, automata theory, Turing machines, denotational/operational semantics with formalism tied to modern PL examples."
+# level = "foundations"
+# field = "pl"
+# shortcode = "PLMATHF"
+# duration = 1
+# price = 1600
+# new = true
 
 # Foundations - Program Analysis
 [[courses]]
@@ -310,23 +310,23 @@ new = true
 # duration = 8
 # price = 1000
 
-[[courses]]
-title = "Functional Programming"
-description = "Pure functions, recursion, higher-order functions, immutability taught in Haskell, OCaml, or F#."
-level = "foundations"
-field = "gen-prog"
-shortcode = "FPF"
-duration = 1
-price = 1100
+# [[courses]]
+# title = "Functional Programming"
+# description = "Pure functions, recursion, higher-order functions, immutability taught in Haskell, OCaml, or F#."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "FPF"
+# duration = 1
+# price = 1100
 
-[[courses]]
-title = "Systems Programming with C and Rust"
-description = "Pointers, memory management, low-level OS interaction, safe vs. unsafe code in systems programming."
-level = "foundations"
-field = "gen-prog"
-shortcode = "SYSPF"
-duration = 1
-price = 1400
+# [[courses]]
+# title = "Systems Programming with C and Rust"
+# description = "Pointers, memory management, low-level OS interaction, safe vs. unsafe code in systems programming."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "SYSPF"
+# duration = 1
+# price = 1400
 
 # [[courses]]
 # title = "Web & Application Programming"
@@ -366,14 +366,14 @@ duration = 1
 price = 1500
 
 # Foundations - Logic Programming
-[[courses]]
-title = "Foundations of Logic Programming"
-description = "Prolog, Horn clauses, resolution, SLDNF, and declarative problem solving with unification and backtracking."
-level = "foundations"
-field = "logic"
-shortcode = "LOGF"
-duration = 1
-price = 1300
+# [[courses]]
+# title = "Foundations of Logic Programming"
+# description = "Prolog, Horn clauses, resolution, SLDNF, and declarative problem solving with unification and backtracking."
+# level = "foundations"
+# field = "logic"
+# shortcode = "LOGF"
+# duration = 1
+# price = 1300
 
 # Advanced - Memory Management
 [[courses]]
@@ -554,14 +554,14 @@ price = 2300
 # duration = 2
 # price = 2000
 
-[[courses]]
-title = "Probabilistic & Differentiable Programming Languages"
-description = "Language support for ML/AI: PPLs (TreePPL, Stan, Pyro), differentiable interpreters, and semantics of probability."
-level = "research"
-field = "ai-ml"
-shortcode = "PLPRBR"
-duration = 4
-price = 2200
+# [[courses]]
+# title = "Probabilistic & Differentiable Programming Languages"
+# description = "Language support for ML/AI: PPLs (TreePPL, Stan, Pyro), differentiable interpreters, and semantics of probability."
+# level = "research"
+# field = "ai-ml"
+# shortcode = "PLPRBR"
+# duration = 4
+# price = 2200
 
 [[courses]]
 title = "Automated Bug-Finding & Fuzzing for Compilers"
@@ -581,14 +581,14 @@ price = 2200
 # duration = 8
 # price = 2200
 
-[[courses]]
-title = "Meta-Circular Interpreters & Self-Hosting Compilers"
-description = "The art of bootstrapping languages, writing compilers in their own language, and meta-circular evaluation."
-level = "research"
-field = "pl"
-shortcode = "METAIRCR"
-duration = 1
-price = 1700
+# [[courses]]
+# title = "Meta-Circular Interpreters & Self-Hosting Compilers"
+# description = "The art of bootstrapping languages, writing compilers in their own language, and meta-circular evaluation."
+# level = "research"
+# field = "pl"
+# shortcode = "METAIRCR"
+# duration = 1
+# price = 1700
 
 # [[courses]]
 # title = "Security Protocols in Programming Languages"
@@ -752,12 +752,12 @@ duration = 4
 price = 2300
 new = true
 
-[[courses]]
-title = "Reversible & Relational Programming"
-description = "Languages where computation is symmetric (Janus, Mercury, miniKanren), connecting to logic programming and proof search."
-level = "research"
-field = "logic"
-shortcode = "LOGSYMR"
-duration = 8
-price = 2200
-new = true
+# [[courses]]
+# title = "Reversible & Relational Programming"
+# description = "Languages where computation is symmetric (Janus, Mercury, miniKanren), connecting to logic programming and proof search."
+# level = "research"
+# field = "logic"
+# shortcode = "LOGSYMR"
+# duration = 8
+# price = 2200
+# new = true
