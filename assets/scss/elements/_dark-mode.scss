@@ -121,15 +121,7 @@ body.dark-mode {
 		}
 
 		.footer-tagline {
-			color: $dark-text;
-
-			.typewriter {
-				color: #66bb88;
-			}
-
-			.todo-accent {
-				color: #6699dd;
-			}
+			// Keep original green color for typewriter code
 		}
 
 		.social {
@@ -187,11 +179,12 @@ body.dark-mode {
 		}
 
 		&-purple {
-			border-color: $dark-text;
+			border-color: $dark-border;
 			color: $dark-text;
 
 			&:hover {
 				background-color: rgba(255, 255, 255, 0.1);
+				border-color: $dark-text-secondary;
 			}
 		}
 	}
@@ -231,5 +224,139 @@ body.dark-mode {
 	.hamburger-inner::before,
 	.hamburger-inner::after {
 		background-color: $dark-text;
+	}
+
+	// Courses page components
+	.courses-intro {
+		.course-format-note {
+			color: $dark-text-secondary;
+		}
+	}
+
+	.courses-search-filter {
+		.search-container {
+			#course-search {
+				background-color: $dark-bg-tertiary;
+				border-color: $dark-border;
+				color: $dark-text;
+
+				&::placeholder {
+					color: $dark-text-secondary;
+				}
+
+				&:focus {
+					border-color: $color-accent-blue-light;
+					box-shadow: 0 0 0 3px rgba($color-accent-blue-light, 0.2);
+				}
+			}
+
+			.search-icon {
+				color: $dark-text-secondary;
+			}
+		}
+
+		.filter-container {
+			.filter-btn {
+				background-color: $dark-bg-tertiary;
+				border-color: $dark-border;
+				color: $dark-text;
+
+				&:hover {
+					border-color: $color-accent-blue-light;
+					background-color: rgba($color-accent-blue-light, 0.15);
+				}
+
+				&.active {
+					background-color: $color-accent-blue-light;
+					border-color: $color-accent-blue-light;
+					color: $color-white;
+				}
+			}
+
+			.clear-btn {
+				background-color: transparent;
+				border-color: $dark-border;
+				color: $dark-text-secondary;
+
+				&:hover {
+					border-color: #ff6b6b;
+					color: #ff6b6b;
+				}
+			}
+		}
+
+		.results-info {
+			color: $dark-text-secondary;
+		}
+	}
+
+	.field-filter-container {
+		.filter-label {
+			color: $dark-text;
+		}
+
+		.field-filter-btn {
+			background-color: $dark-bg-tertiary;
+			border-color: $dark-border;
+			color: $dark-text;
+
+			&:hover {
+				border-color: $color-accent-blue-light;
+				background-color: rgba($color-accent-blue-light, 0.15);
+			}
+
+			&.active {
+				background-color: $color-accent-blue-light;
+				border-color: $color-accent-blue-light;
+				color: $color-white;
+			}
+		}
+	}
+
+	.course-card {
+		background-color: $dark-bg-secondary;
+		border-color: $dark-border;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 4px 18px rgba(0,0,0,0.3);
+
+		h3 {
+			color: $dark-text;
+		}
+
+		p {
+			color: $dark-text-secondary;
+		}
+
+		.course-meta {
+			.course-shortcode,
+			.course-duration,
+			.course-price {
+				background-color: $dark-bg-tertiary;
+				color: $dark-text;
+				border: 1px solid $dark-border;
+			}
+		}
+
+		&:hover {
+			border-color: $dark-text-secondary;
+			box-shadow: 0 5px 14px rgba(0,0,0,0.3), 0 9px 30px rgba(0,0,0,0.4);
+		}
+
+		&.highlighted {
+			border-color: $color-accent-blue-light;
+			background-color: rgba($color-accent-blue-light, 0.1);
+		}
+	}
+
+	.courses-sep {
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $dark-border 20%, $dark-border 80%, rgba(255,255,255,0) 100%);
+	}
+}
+
+// Hide desktop dark mode toggle on mobile - only show hamburger menu toggle
+@media screen and (max-width: 860px) {
+	nav .right {
+		#darkModeToggle {
+			display: none !important;
+		}
 	}
 }
