@@ -4,6 +4,18 @@ header {
 	width: 100%;
 	background-color: $color-white;
 	z-index: 99;
+	transition: transform 0.3s ease-in-out;
+
+	// Mobile nav scroll behavior classes
+	@media screen and (max-width: 860px) {
+		&.nav-hidden {
+			transform: translateY(-100%);
+		}
+
+		&.nav-visible {
+			transform: translateY(0);
+		}
+	}
 }
 
 nav {
