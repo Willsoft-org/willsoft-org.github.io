@@ -1,0 +1,235 @@
+@import "../util/colors";
+
+// Dark mode color variables
+$dark-bg: #1e1e1e;
+$dark-bg-secondary: #2d2d2d;
+$dark-bg-tertiary: #3a3a3a;
+$dark-text: #e0e0e0;
+$dark-text-secondary: #b0b0b0;
+$dark-border: #404040;
+
+// Dark mode toggle button styling
+.dark-mode-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+		transition: opacity 0.3s ease;
+	}
+
+	.moon-icon {
+		display: none;
+	}
+
+	.sun-icon {
+		display: block;
+	}
+}
+
+// Mobile hamburger dark mode toggle
+.hamburger-dark-mode-toggle {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 10px;
+	border-top: 1px solid $color-white3;
+	margin-top: 10px;
+}
+
+// Dark mode styles
+body.dark-mode {
+	background-color: $dark-bg;
+	color: $dark-text;
+
+	// Toggle button icons switch
+	.dark-mode-toggle {
+		.moon-icon {
+			display: block;
+		}
+
+		.sun-icon {
+			display: none;
+		}
+	}
+
+	// Header
+	header {
+		background-color: $dark-bg-secondary !important;
+
+		nav {
+			border-bottom-color: $dark-border;
+		}
+
+		#navigationLinks {
+			li a {
+				color: $dark-text;
+
+				&:hover {
+					border-bottom-color: $dark-border;
+				}
+
+				&.selected {
+					border-bottom-color: $dark-text-secondary;
+				}
+			}
+		}
+
+		.willsoft {
+			color: $dark-text !important;
+		}
+	}
+
+	// Hamburger dropdown
+	#hamburgerDropdown {
+		background-color: $dark-bg-secondary;
+		border-bottom-color: $dark-border;
+
+		.links {
+			li {
+				border-bottom-color: $dark-border;
+
+				a {
+					color: $dark-text;
+				}
+			}
+		}
+
+		.hamburger-dark-mode-toggle {
+			border-top-color: $dark-border;
+		}
+	}
+
+	// Footer
+	footer {
+		background-color: $dark-bg-secondary;
+		color: $dark-text-secondary;
+
+		.heading-4 {
+			color: $dark-text;
+		}
+
+		.footer-tagline {
+			color: $dark-text;
+
+			.typewriter {
+				color: #66bb88;
+			}
+
+			.todo-accent {
+				color: #6699dd;
+			}
+		}
+
+		.social {
+			background-color: $dark-bg-tertiary;
+		}
+
+		.copyright {
+			color: $dark-text-secondary;
+		}
+
+		a {
+			color: $dark-text-secondary;
+
+			&:hover {
+				color: $dark-text;
+			}
+		}
+	}
+
+	// Main content
+	main {
+		h1, h2, h3, h4, h5, h6 {
+			color: $dark-text;
+		}
+
+		a {
+			color: #6699dd;
+
+			&:hover {
+				color: #88bbff;
+			}
+		}
+	}
+
+	// Links
+	a {
+		&:link,
+		&:focus,
+		&:hover,
+		&:active,
+		&:visited {
+			color: $dark-text;
+		}
+	}
+
+	// Buttons
+	.btn {
+		&-white {
+			background-color: $dark-bg-tertiary;
+			color: $dark-text !important;
+
+			&:hover {
+				background-color: $dark-border;
+			}
+		}
+
+		&-purple {
+			border-color: $dark-text;
+			color: $dark-text;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+		}
+	}
+
+	// Cookie banner
+	#cookies {
+		background-color: $dark-bg-secondary;
+		color: $dark-text;
+
+		button {
+			background-color: $dark-bg-tertiary;
+			color: $dark-text;
+			border: 1px solid $dark-border;
+
+			&:hover {
+				background-color: $dark-border;
+			}
+		}
+	}
+
+	// Partners display
+	#partners-display {
+		img {
+			filter: saturate(0) brightness(1.5);
+		}
+	}
+
+	// Code blocks and pre
+	pre {
+		background-color: $dark-bg-tertiary;
+		border-color: $dark-border;
+		color: $dark-text;
+	}
+
+	// Hamburger menu
+	.hamburger-inner,
+	.hamburger-inner::before,
+	.hamburger-inner::after {
+		background-color: $dark-text;
+	}
+}
