@@ -171,15 +171,15 @@ shortcode = "FMRTR"
 duration = 8
 price = 2200
 
-[[courses]]
-title = "AI-Assisted Programming & Synthesis"
-description = "LLM-driven developer tooling, proof guidance, code generation & verified synthesis workflows."
-level = "research"
-field = "ai-ml"
-shortcode = "AISYNR"
-new = true
-duration = 6
-price = 2000
+# [[courses]]
+# title = "AI-Assisted Programming & Synthesis"
+# description = "LLM-driven developer tooling, proof guidance, code generation & verified synthesis workflows."
+# level = "research"
+# field = "ai-ml"
+# shortcode = "AISYNR"
+# new = true
+# duration = 6
+# price = 2000
 
 [[courses]]
 title = "E-Graphs & Equality Saturation"
@@ -259,26 +259,26 @@ new = true
 # price = 2100
 
 # Foundations - Operating Systems
-[[courses]]
-title = "Foundations of Operating Systems for Language Runtimes"
-description = "OS features supporting languages: processes, scheduling, memory management, filesystems, and how languages leverage OS abstractions."
-level = "foundations"
-field = "pl"
-shortcode = "PLOSF"
-duration = 2
-price = 1500
-new = true
+# [[courses]]
+# title = "Foundations of Operating Systems for Language Runtimes"
+# description = "OS features supporting languages: processes, scheduling, memory management, filesystems, and how languages leverage OS abstractions."
+# level = "foundations"
+# field = "pl"
+# shortcode = "PLOSF"
+# duration = 2
+# price = 1500
+# new = true
 
 # Foundations - Mathematical
-[[courses]]
-title = "Mathematical Foundations of Programming Languages"
-description = "Lambda calculus, automata theory, Turing machines, denotational/operational semantics with formalism tied to modern PL examples."
-level = "foundations"
-field = "pl"
-shortcode = "PLMATHF"
-duration = 1
-price = 1600
-new = true
+# [[courses]]
+# title = "Mathematical Foundations of Programming Languages"
+# description = "Lambda calculus, automata theory, Turing machines, denotational/operational semantics with formalism tied to modern PL examples."
+# level = "foundations"
+# field = "pl"
+# shortcode = "PLMATHF"
+# duration = 1
+# price = 1600
+# new = true
 
 # Foundations - Program Analysis
 [[courses]]
@@ -292,59 +292,59 @@ price = 1600
 new = true
 
 # Foundations - General Programming Intro
-[[courses]]
-title = "Introduction to Programming"
-description = "Basics of algorithms, data structures, control flow, functions, and modular programming using Python, Java, or C."
-level = "foundations"
-field = "gen-prog"
-shortcode = "PROGF"
-duration = 2
-price = 1100
+# [[courses]]
+# title = "Introduction to Programming"
+# description = "Basics of algorithms, data structures, control flow, functions, and modular programming using Python, Java, or C."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "PROGF"
+# duration = 2
+# price = 1100
 
-[[courses]]
-title = "Object-Oriented Programming"
-description = "Encapsulation, inheritance, polymorphism, and design patterns with practical language examples in Java, C++, or C#."
-level = "foundations"
-field = "gen-prog"
-shortcode = "OOPF"
-duration = 8
-price = 1000
+# [[courses]]
+# title = "Object-Oriented Programming"
+# description = "Encapsulation, inheritance, polymorphism, and design patterns with practical language examples in Java, C++, or C#."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "OOPF"
+# duration = 8
+# price = 1000
 
-[[courses]]
-title = "Functional Programming"
-description = "Pure functions, recursion, higher-order functions, immutability taught in Haskell, OCaml, or F#."
-level = "foundations"
-field = "gen-prog"
-shortcode = "FPF"
-duration = 1
-price = 1100
+# [[courses]]
+# title = "Functional Programming"
+# description = "Pure functions, recursion, higher-order functions, immutability taught in Haskell, OCaml, or F#."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "FPF"
+# duration = 1
+# price = 1100
 
-[[courses]]
-title = "Systems Programming with C and Rust"
-description = "Pointers, memory management, low-level OS interaction, safe vs. unsafe code in systems programming."
-level = "foundations"
-field = "gen-prog"
-shortcode = "SYSPF"
-duration = 1
-price = 1400
+# [[courses]]
+# title = "Systems Programming with C and Rust"
+# description = "Pointers, memory management, low-level OS interaction, safe vs. unsafe code in systems programming."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "SYSPF"
+# duration = 1
+# price = 1400
 
-[[courses]]
-title = "Web & Application Programming"
-description = "Building full-stack applications, HTTP APIs, frontend-backend interaction, and modern web development practices."
-level = "foundations"
-field = "web"
-shortcode = "WEBF"
-duration = 1
-price = 1200
+# [[courses]]
+# title = "Web & Application Programming"
+# description = "Building full-stack applications, HTTP APIs, frontend-backend interaction, and modern web development practices."
+# level = "foundations"
+# field = "web"
+# shortcode = "WEBF"
+# duration = 1
+# price = 1200
 
-[[courses]]
-title = "Software Engineering Practices"
-description = "Testing, version control, CI/CD, design principles, and collaborative development for professional software teams."
-level = "foundations"
-field = "gen-prog"
-shortcode = "SWEF"
-duration = 1
-price = 1000
+# [[courses]]
+# title = "Software Engineering Practices"
+# description = "Testing, version control, CI/CD, design principles, and collaborative development for professional software teams."
+# level = "foundations"
+# field = "gen-prog"
+# shortcode = "SWEF"
+# duration = 1
+# price = 1000
 
 # Foundations - Security
 [[courses]]
@@ -366,14 +366,14 @@ duration = 1
 price = 1500
 
 # Foundations - Logic Programming
-[[courses]]
-title = "Foundations of Logic Programming"
-description = "Prolog, Horn clauses, resolution, SLDNF, and declarative problem solving with unification and backtracking."
-level = "foundations"
-field = "logic"
-shortcode = "LOGF"
-duration = 1
-price = 1300
+# [[courses]]
+# title = "Foundations of Logic Programming"
+# description = "Prolog, Horn clauses, resolution, SLDNF, and declarative problem solving with unification and backtracking."
+# level = "foundations"
+# field = "logic"
+# shortcode = "LOGF"
+# duration = 1
+# price = 1300
 
 # Advanced - Memory Management
 [[courses]]
@@ -498,14 +498,14 @@ shortcode = "TEER"
 duration = 2
 price = 2400
 
-[[courses]]
-title = "Exploit Development in Compilers & Toolchains"
-description = "Hands-on deep dive into exploit primitives in compiler internals and runtime assumptions."
-level = "research"
-field = "sec"
-shortcode = "CEXPR"
-duration = 4
-price = 2300
+# [[courses]]
+# title = "Exploit Development in Compilers & Toolchains"
+# description = "Hands-on deep dive into exploit primitives in compiler internals and runtime assumptions."
+# level = "research"
+# field = "sec"
+# shortcode = "CEXPR"
+# duration = 4
+# price = 2300
 
 [[courses]]
 title = "Secure Compilation & Toolchain Hardening"
@@ -545,23 +545,23 @@ duration = 4
 price = 2300
 
 # Research - Language Design & Theory
-[[courses]]
-title = "Interactive & Visual Programming Languages"
-description = "Study of Scratch, LabView, Max/MSP, and modern research into multimodal/programmer-friendly PLs."
-level = "research"
-field = "education"
-shortcode = "PLIVR"
-duration = 2
-price = 2000
+# [[courses]]
+# title = "Interactive & Visual Programming Languages"
+# description = "Study of Scratch, LabView, Max/MSP, and modern research into multimodal/programmer-friendly PLs."
+# level = "research"
+# field = "education"
+# shortcode = "PLIVR"
+# duration = 2
+# price = 2000
 
-[[courses]]
-title = "Probabilistic & Differentiable Programming Languages"
-description = "Language support for ML/AI: PPLs (TreePPL, Stan, Pyro), differentiable interpreters, and semantics of probability."
-level = "research"
-field = "ai-ml"
-shortcode = "PLPRBR"
-duration = 4
-price = 2200
+# [[courses]]
+# title = "Probabilistic & Differentiable Programming Languages"
+# description = "Language support for ML/AI: PPLs (TreePPL, Stan, Pyro), differentiable interpreters, and semantics of probability."
+# level = "research"
+# field = "ai-ml"
+# shortcode = "PLPRBR"
+# duration = 4
+# price = 2200
 
 [[courses]]
 title = "Automated Bug-Finding & Fuzzing for Compilers"
@@ -572,77 +572,77 @@ shortcode = "PLFZZR"
 duration = 2
 price = 2200
 
-[[courses]]
-title = "Energy-Aware & Real-Time Compilation"
-description = "Compiler/runtime techniques for IoT, embedded, low-power systems, and real-time safety guarantees."
-level = "research"
-field = "pl"
-shortcode = "RTENERGR"
-duration = 8
-price = 2200
+# [[courses]]
+# title = "Energy-Aware & Real-Time Compilation"
+# description = "Compiler/runtime techniques for IoT, embedded, low-power systems, and real-time safety guarantees."
+# level = "research"
+# field = "pl"
+# shortcode = "RTENERGR"
+# duration = 8
+# price = 2200
 
-[[courses]]
-title = "Meta-Circular Interpreters & Self-Hosting Compilers"
-description = "The art of bootstrapping languages, writing compilers in their own language, and meta-circular evaluation."
-level = "research"
-field = "pl"
-shortcode = "METAIRCR"
-duration = 1
-price = 1700
+# [[courses]]
+# title = "Meta-Circular Interpreters & Self-Hosting Compilers"
+# description = "The art of bootstrapping languages, writing compilers in their own language, and meta-circular evaluation."
+# level = "research"
+# field = "pl"
+# shortcode = "METAIRCR"
+# duration = 1
+# price = 1700
 
-[[courses]]
-title = "Security Protocols in Programming Languages"
-description = "Language-level primitives for crypto/security protocols: session types, linear logic, applied Pi-calculus."
-level = "research"
-field = "sec"
-shortcode = "SECPROTR"
-duration = 8
-price = 2300
+# [[courses]]
+# title = "Security Protocols in Programming Languages"
+# description = "Language-level primitives for crypto/security protocols: session types, linear logic, applied Pi-calculus."
+# level = "research"
+# field = "sec"
+# shortcode = "SECPROTR"
+# duration = 8
+# price = 2300
 
-[[courses]]
-title = "Cognitive Dimensions of Language Design"
-description = "Human factors, usability, learnability, and error-proneness in PL design with empirical research."
-level = "research"
-field = "education"
-shortcode = "PLCOGR"
-duration = 1
-price = 2000
+# [[courses]]
+# title = "Cognitive Dimensions of Language Design"
+# description = "Human factors, usability, learnability, and error-proneness in PL design with empirical research."
+# level = "research"
+# field = "education"
+# shortcode = "PLCOGR"
+# duration = 1
+# price = 2000
 
-[[courses]]
-title = "History of Programming Languages"
-description = "Evolution of paradigms from Fortran, Lisp, Simula, ML, Haskell, to Rust with focus on paradigm shifts."
-level = "research"
-field = "education"
-shortcode = "PLHISR"
-duration = 1
-price = 1900
+# [[courses]]
+# title = "History of Programming Languages"
+# description = "Evolution of paradigms from Fortran, Lisp, Simula, ML, Haskell, to Rust with focus on paradigm shifts."
+# level = "research"
+# field = "education"
+# shortcode = "PLHISR"
+# duration = 1
+# price = 1900
 
-[[courses]]
-title = "Philosophy of Programming Languages"
-description = "What makes a good language? Tradeoffs between safety, expressivity, performance, and usability."
-level = "research"
-field = "education"
-shortcode = "PLSOPR"
-duration = 1
-price = 1900
+# [[courses]]
+# title = "Philosophy of Programming Languages"
+# description = "What makes a good language? Tradeoffs between safety, expressivity, performance, and usability."
+# level = "research"
+# field = "education"
+# shortcode = "PLSOPR"
+# duration = 1
+# price = 1900
 
-[[courses]]
-title = "Implementation of Esoteric Languages"
-description = "Brainfuck, Befunge, Malbolge as a playful but deep dive into semantics and compilation challenges."
-level = "advanced"
-field = "education"
-shortcode = "PLESOA"
-duration = 3
-price = 1600
+# [[courses]]
+# title = "Implementation of Esoteric Languages"
+# description = "Brainfuck, Befunge, Malbolge as a playful but deep dive into semantics and compilation challenges."
+# level = "advanced"
+# field = "education"
+# shortcode = "PLESOA"
+# duration = 3
+# price = 1600
 
-[[courses]]
-title = "Education-Oriented Language Design"
-description = "How to design languages for teaching (LOGO, Elm, Hedy), and the pedagogy behind educational PLs."
-level = "research"
-field = "education"
-shortcode = "PLEDUR"
-duration = 1
-price = 1900
+# [[courses]]
+# title = "Education-Oriented Language Design"
+# description = "How to design languages for teaching (LOGO, Elm, Hedy), and the pedagogy behind educational PLs."
+# level = "research"
+# field = "education"
+# shortcode = "PLEDUR"
+# duration = 1
+# price = 1900
 
 # Research - Dependently Typed Programming
 [[courses]]
@@ -732,15 +732,15 @@ duration = 5
 price = 2800
 new = true
 
-[[courses]]
-title = "Abstract Interpretation & Program Logics"
-description = "Theory of static analysis, lattice-based frameworks, abstract domains (intervals, octagons, polyhedra)."
-level = "research"
-field = "pl"
-shortcode = "ABSINTR"
-duration = 5
-price = 2400
-new = true
+# [[courses]]
+# title = "Abstract Interpretation & Program Logics"
+# description = "Theory of static analysis, lattice-based frameworks, abstract domains (intervals, octagons, polyhedra)."
+# level = "research"
+# field = "pl"
+# shortcode = "ABSINTR"
+# duration = 5
+# price = 2400
+# new = true
 
 [[courses]]
 title = "Supercompilation & Partial Evaluation"
@@ -752,12 +752,12 @@ duration = 4
 price = 2300
 new = true
 
-[[courses]]
-title = "Reversible & Relational Programming"
-description = "Languages where computation is symmetric (Janus, Mercury, miniKanren), connecting to logic programming and proof search."
-level = "research"
-field = "logic"
-shortcode = "LOGSYMR"
-duration = 8
-price = 2200
-new = true
+# [[courses]]
+# title = "Reversible & Relational Programming"
+# description = "Languages where computation is symmetric (Janus, Mercury, miniKanren), connecting to logic programming and proof search."
+# level = "research"
+# field = "logic"
+# shortcode = "LOGSYMR"
+# duration = 8
+# price = 2200
+# new = true
