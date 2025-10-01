@@ -15,7 +15,7 @@
 	}
 
 	let lastScrollTop = 0;
-	let scrollThreshold = 5; // Minimum scroll distance to trigger
+	let scrollThreshold = 10; // Minimum scroll distance to trigger
 	let isScrolling = false;
 
 	function handleScroll() {
@@ -27,6 +27,15 @@
 			
 			// Don't hide header when at the very top
 			if (currentScroll <= 0) {
+				header.classList.remove('nav-hidden');
+				header.classList.add('nav-visible');
+				lastScrollTop = currentScroll;
+				isScrolling = false;
+				return;
+			}
+			
+			// Always show header when within twice the header height (~200px) from top
+			if (currentScroll < 200) {
 				header.classList.remove('nav-hidden');
 				header.classList.add('nav-visible');
 				lastScrollTop = currentScroll;
