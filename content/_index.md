@@ -42,12 +42,31 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
     </div>
 </div>
 
-<div id="partners-display">
+<!--<div id="partners-display">
     <img src="/img/partners/ms.png" alt="Microsoft Partners">
     <img src="/img/partners/ibm.png" alt="IBM">
     <img src="/img/partners/yc.png" alt="Y Combinator">
     <img src="/img/partners/kth.png" alt="KTH" style="height:100px;margin:0 20px;">
+</div>-->
+
+<!-- Infinite Partners Carousel -->
+<div class="partners-carousel-section">
+    <h3 class="section-title">Trusted by Industry Leaders</h3>
+    <div class="partners-carousel">
+        <div class="carousel-track">
+            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
+            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
+            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
+            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
+            <!-- Duplicate for seamless loop -->
+            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
+            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
+            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
+            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
+        </div>
+    </div>
 </div>
+
 <div class="tagline-box bg-blue-light adjust-lighter-4 mb20 mt20">
     <p class="title">Everyting IT<sup class="sup-tm">TM</sup></p>
     <p class="body">
@@ -129,24 +148,6 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
             <button class="carousel-dot active" aria-label="Testimonial 1"></button>
             <button class="carousel-dot" aria-label="Testimonial 2"></button>
             <button class="carousel-dot" aria-label="Testimonial 3"></button>
-        </div>
-    </div>
-</div>
-
-<!-- Infinite Partners Carousel -->
-<div class="partners-carousel-section">
-    <h3 class="section-title">Trusted by Industry Leaders</h3>
-    <div class="partners-carousel">
-        <div class="carousel-track">
-            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
-            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
-            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
-            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
-            <!-- Duplicate for seamless loop -->
-            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
-            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
-            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
-            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
         </div>
     </div>
 </div>
