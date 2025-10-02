@@ -1,16 +1,21 @@
+{{ $showDrafts := $.Site.Params.showDraftCourses }}
+{{ $totalVisibleCourses := 0 }}
+
 {{ range .Site.Data.courses.courseLevels }}
   {{ $levelId := .id }}
   {{ $levelTitle := .title }}
   {{ $levelIcon := .icon }}
   {{ $levelAccent := .accent }}
   {{ $coursesInLevel := where $.Site.Data.courses.courses "level" $levelId }}
-  {{ $showDrafts := $.Site.Params.showDraftCourses }}
+  {{ $visibleCoursesInLevel := 0 }}
   
 <div class="course-level courses-left-align" data-accent="{{ $levelAccent }}" data-level="{{ $levelId }}">
   <h2 class="level-title">{{ $levelIcon }} {{ $levelTitle }}</h2>
   <div class="course-grid{{ if eq $levelId "research" }} research{{ end }}">
     {{ range $coursesInLevel }}
     {{ if or (not .draft) $showDrafts }}
+    {{ $visibleCoursesInLevel = add $visibleCoursesInLevel 1 }}
+    {{ $totalVisibleCourses = add $totalVisibleCourses 1 }}
     {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}
     <div class="course-card" data-level="{{ $levelId }}" data-field="{{ .field }}">
       {{ if .new }}
@@ -33,6 +38,15 @@
     </div>
     {{ end }}
     {{ end }}
+    {{ if eq $visibleCoursesInLevel 0 }}
+    <p class="no-courses-message">No courses available at this level yet.</p>
+    {{ end }}
   </div>
+</div>
+{{ end }}
+
+{{ if eq $totalVisibleCourses 0 }}
+<div class="no-courses-global-message courses-left-align">
+  <p>No courses are currently available. Please check back later or <a href="/contact/">contact us</a> for custom training options.</p>
 </div>
 {{ end }}
