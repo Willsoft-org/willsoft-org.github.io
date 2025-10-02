@@ -1,6 +1,6 @@
 <div class="industry-filter-container">
   <button class="industry-filter-btn active" data-industry="all">All Industries</button>
   {{ range .Site.Data.industries.industries }}
-  <button class="industry-filter-btn" data-industry="{{ .id }}">{{ .icon }} {{ .title }}</button>
+  <button class="industry-filter-btn" data-industry="{{ .id }}"><span class="industry-icon">{{ .icon }}</span>{{ .title }}</button>
   {{ end }}
 </div>
