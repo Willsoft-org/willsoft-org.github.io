@@ -1,0 +1,307 @@
+@import "../util/colors";
+
+// Service Pathways Container
+.service-pathways {
+	margin: 60px 0;
+	padding: 40px 0;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 2.2rem;
+	}
+}
+
+// Timeline Container
+.pathways-timeline {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 20px;
+
+	// Connecting line
+	&::before {
+		content: '';
+		position: absolute;
+		top: 30px;
+		left: 50px;
+		right: 50px;
+		height: 4px;
+		background: linear-gradient(90deg, 
+			$color-accent-blue 0%, 
+			$color-accent-green 33%, 
+			$color-accent-yellow 66%, 
+			$color-accent-pink 100%);
+		z-index: 0;
+		transition: all 0.3s ease;
+	}
+}
+
+// Individual Stage
+.pathway-stage {
+	flex: 1;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	max-width: 250px;
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+
+	// Stage circle/icon
+	.stage-icon {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto 20px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		color: white;
+		position: relative;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			border: 3px solid transparent;
+			transition: all 0.3s ease;
+		}
+	}
+
+	// Stage title
+	.stage-title {
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin-bottom: 10px;
+		transition: color 0.3s ease;
+	}
+
+	// Stage description (initially hidden)
+	.stage-description {
+		text-align: center;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.4s ease;
+		margin-top: 10px;
+	}
+
+	// Stage details (expanded on click/hover)
+	.stage-details {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 280px;
+		background: white;
+		border-radius: 12px;
+		padding: 20px;
+		margin-top: 20px;
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+		z-index: 10;
+
+		h4 {
+			margin-top: 0;
+			margin-bottom: 12px;
+			font-size: 1.1rem;
+		}
+
+		ul {
+			margin: 0;
+			padding-left: 20px;
+			list-style: none;
+
+			li {
+				margin-bottom: 8px;
+				position: relative;
+				padding-left: 20px;
+				font-size: 0.9rem;
+
+				&::before {
+					content: '✓';
+					position: absolute;
+					left: 0;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	// Color schemes for each stage
+	&.stage-discovery {
+		.stage-icon {
+			background: linear-gradient(135deg, $color-accent-blue, $color-accent-blue-light);
+		}
+		.stage-title {
+			color: $color-accent-blue;
+		}
+		.stage-details ul li::before {
+			color: $color-accent-blue;
+		}
+	}
+
+	&.stage-design {
+		.stage-icon {
+			background: linear-gradient(135deg, $color-accent-green, #29af6b);
+		}
+		.stage-title {
+			color: $color-accent-green;
+		}
+		.stage-details ul li::before {
+			color: $color-accent-green;
+		}
+	}
+
+	&.stage-build {
+		.stage-icon {
+			background: linear-gradient(135deg, $color-accent-yellow, #f2cb5c);
+		}
+		.stage-title {
+			color: $color-accent-yellow;
+		}
+		.stage-details ul li::before {
+			color: $color-accent-yellow;
+		}
+	}
+
+	&.stage-support {
+		.stage-icon {
+			background: linear-gradient(135deg, $color-accent-pink, $color-accent-pink-light);
+		}
+		.stage-title {
+			color: $color-accent-pink;
+		}
+		.stage-details ul li::before {
+			color: $color-accent-pink;
+		}
+	}
+
+	// Hover and Active States
+	&:hover {
+		.stage-icon::after {
+			border-color: currentColor;
+			transform: scale(1.1);
+		}
+
+		.stage-description {
+			opacity: 1;
+			max-height: 100px;
+		}
+	}
+
+	// Active/Expanded state
+	&.active {
+		.stage-icon {
+			transform: scale(1.15);
+		}
+
+		.stage-details {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+// Mobile Responsive
+@media (max-width: 900px) {
+	.pathways-timeline {
+		flex-direction: column;
+		align-items: center;
+		
+		&::before {
+			top: 30px;
+			left: 50%;
+			right: auto;
+			bottom: 30px;
+			width: 4px;
+			height: auto;
+			background: linear-gradient(180deg, 
+				$color-accent-blue 0%, 
+				$color-accent-green 33%, 
+				$color-accent-yellow 66%, 
+				$color-accent-pink 100%);
+			transform: translateX(-50%);
+		}
+	}
+
+	.pathway-stage {
+		margin-bottom: 80px;
+		max-width: 100%;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.stage-details {
+			position: relative;
+			top: auto;
+			left: auto;
+			transform: none;
+			margin-top: 20px;
+			width: 100%;
+			max-width: 350px;
+		}
+
+		&.active .stage-details {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.service-pathways h2 {
+		font-size: 1.8rem;
+	}
+
+	.pathway-stage {
+		.stage-icon {
+			width: 50px;
+			height: 50px;
+			font-size: 1.25rem;
+		}
+
+		.stage-title {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+// Dark Mode Support
+body.dark-mode {
+	.service-pathways {
+		.pathway-stage {
+			.stage-details {
+				background: #2d2d2d;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+				color: #e0e0e0;
+
+				h4 {
+					color: #e0e0e0;
+				}
+			}
+		}
+	}
+
+	.pathways-timeline::before {
+		// Slightly dimmed gradient in dark mode
+		opacity: 0.8;
+	}
+}

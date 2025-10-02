@@ -350,6 +350,99 @@ body.dark-mode {
 	.courses-sep {
 		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $dark-border 20%, $dark-border 80%, rgba(255,255,255,0) 100%);
 	}
+
+	// Trust-building components
+	.trust-stats {
+		.stat-counter {
+			color: $color-accent-blue-light;
+		}
+
+		.stat-label {
+			color: $dark-text-secondary;
+		}
+	}
+
+	.testimonials-section {
+		background-color: $dark-bg-secondary;
+
+		.section-title {
+			color: $dark-text;
+		}
+	}
+
+	.testimonial-carousel {
+		.testimonial-item {
+			.testimonial-content {
+				background: $dark-bg-tertiary;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+				.quote-text {
+					color: $dark-text;
+				}
+
+				.client-info {
+					.client-name {
+						color: $dark-text;
+					}
+
+					.client-title {
+						color: $dark-text-secondary;
+					}
+				}
+			}
+
+			.company-logo {
+				filter: saturate(0) opacity(0.5) brightness(1.5);
+
+				&:hover {
+					filter: saturate(1) opacity(1) brightness(1.2);
+				}
+			}
+		}
+
+		.carousel-prev,
+		.carousel-next {
+			background: $color-accent-blue-light;
+
+			&:hover {
+				background: lighten($color-accent-blue-light, 10%);
+			}
+		}
+
+		.carousel-dots {
+			.carousel-dot {
+				background: $dark-border;
+
+				&:hover {
+					background: $dark-text-secondary;
+				}
+
+				&.active {
+					background: $color-accent-blue-light;
+				}
+			}
+		}
+	}
+
+	.partners-carousel-section {
+		background: $dark-bg;
+
+		.section-title {
+			color: $dark-text-secondary;
+		}
+
+		.partners-carousel {
+			.carousel-track {
+				.partner-logo {
+					filter: saturate(0) opacity(0.4) brightness(1.5);
+
+					&:hover {
+						filter: saturate(1) opacity(0.8) brightness(1.2);
+					}
+				}
+			}
+		}
+	}
 }
 
 // Hide desktop dark mode toggle on mobile - only show hamburger menu toggle

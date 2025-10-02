@@ -90,6 +90,8 @@
 	<script src="/js/hamburger.js" defer></script>
 	<script src="/js/mobile-nav.js" defer></script>
 	<script src="/js/typewriter.js" defer></script>
+	<script src="/js/counter.js" defer></script>
+	<script src="/js/carousel.js" defer></script>
 	{{/* Course filter script for courses page */}}
 	{{ if eq .Title "Courses" }}
 	<script src="/js/course-filter.js" defer></script>
@@ -97,6 +99,10 @@
 	{{/* Case studies interactive features */}}
 	{{ if or (eq .Section "news") (hasPrefix .RelPermalink "/news/") }}
 	<script src="/js/case-studies.js" defer></script>
+  {{ end }}
+  {{/* Service pathways script for services page */}}
+	{{ if eq .Title "Services" }}
+	<script src="/js/service-pathways.js" defer></script>
 	{{ end }}
 	{{ block "scripts" . }}{{ end }}
 </body>
