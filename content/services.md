@@ -21,78 +21,70 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
   <div class="pathways-timeline">
     <div class="pathway-stage stage-discovery">
       <div class="stage-icon">🔍</div>
-      <div class="stage-content">
-        <div class="stage-title">Research</div>
-        <div class="stage-description">
-          Understanding your needs and goals
-        </div>
-        <div class="stage-details">
-          <h4>Research Phase</h4>
-          <ul>
-            <li>Requirements gathering</li>
-            <li>Stakeholder interviews</li>
-            <li>Market research</li>
-            <li>Feasibility analysis</li>
-            <li>Project scope definition</li>
-          </ul>
-        </div>
+      <div class="stage-title">Research</div>
+      <div class="stage-description">
+        Understanding your needs and goals
+      </div>
+      <div class="stage-details">
+        <h4>Research Phase</h4>
+        <ul>
+          <li>Requirements gathering</li>
+          <li>Stakeholder interviews</li>
+          <li>Market research</li>
+          <li>Feasibility analysis</li>
+          <li>Project scope definition</li>
+        </ul>
       </div>
     </div>
     <div class="pathway-stage stage-design">
       <div class="stage-icon">✏️</div>
-      <div class="stage-content">
-        <div class="stage-title">Design</div>
-        <div class="stage-description">
-          Crafting the perfect solution
-        </div>
-        <div class="stage-details">
-          <h4>Design Phase</h4>
-          <ul>
-            <li>Architecture planning</li>
-            <li>UI/UX design</li>
-            <li>Prototyping</li>
-            <li>Technology selection</li>
-            <li>Design reviews</li>
-          </ul>
-        </div>
+      <div class="stage-title">Design</div>
+      <div class="stage-description">
+        Crafting the perfect solution
+      </div>
+      <div class="stage-details">
+        <h4>Design Phase</h4>
+        <ul>
+          <li>Architecture planning</li>
+          <li>UI/UX design</li>
+          <li>Prototyping</li>
+          <li>Technology selection</li>
+          <li>Design reviews</li>
+        </ul>
       </div>
     </div>
     <div class="pathway-stage stage-build">
       <div class="stage-icon">🔨</div>
-      <div class="stage-content">
-        <div class="stage-title">Build</div>
-        <div class="stage-description">
-          Bringing your vision to life
-        </div>
-        <div class="stage-details">
-          <h4>Build Phase</h4>
-          <ul>
-            <li>Agile development</li>
-            <li>Quality assurance</li>
-            <li>Code reviews</li>
-            <li>Continuous integration</li>
-            <li>Testing & validation</li>
-          </ul>
-        </div>
+      <div class="stage-title">Build</div>
+      <div class="stage-description">
+        Bringing your vision to life
+      </div>
+      <div class="stage-details">
+        <h4>Build Phase</h4>
+        <ul>
+          <li>Agile development</li>
+          <li>Quality assurance</li>
+          <li>Code reviews</li>
+          <li>Continuous integration</li>
+          <li>Testing & validation</li>
+        </ul>
       </div>
     </div>
     <div class="pathway-stage stage-support">
       <div class="stage-icon">🚀</div>
-      <div class="stage-content">
-        <div class="stage-title">Support</div>
-        <div class="stage-description">
-          Ensuring long-term success
-        </div>
-        <div class="stage-details">
-          <h4>Support Phase</h4>
-          <ul>
-            <li>Deployment & launch</li>
-            <li>Monitoring & maintenance</li>
-            <li>Performance optimization</li>
-            <li>User training</li>
-            <li>Ongoing improvements</li>
-          </ul>
-        </div>
+      <div class="stage-title">Support</div>
+      <div class="stage-description">
+        Ensuring long-term success
+      </div>
+      <div class="stage-details">
+        <h4>Support Phase</h4>
+        <ul>
+          <li>Deployment & launch</li>
+          <li>Monitoring & maintenance</li>
+          <li>Performance optimization</li>
+          <li>User training</li>
+          <li>Ongoing improvements</li>
+        </ul>
       </div>
     </div>
   </div>
