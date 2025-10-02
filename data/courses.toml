@@ -71,13 +71,13 @@ color = "#f97316"
 # Course data
 [[courses]]
 title = "Foundations of Programming Languages"
-draft = true
 description = "Core principles of syntax, semantics, paradigms, and type systems, introducing how languages are defined and understood."
 level = "foundations"
 field = "pl"
 shortcode = "PLF"
 duration = 8
 price = 1200
+new = true
 
 [[courses]]
 title = "Foundations of Interpreters & Virtual Machines"
