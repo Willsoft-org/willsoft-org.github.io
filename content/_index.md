@@ -19,12 +19,54 @@ Fortified by strategic software consulting, Willsoft enable businesses to transf
 We are committed to providing high-quality products and services that help our clients achieve their goals.
 Understanding the needs of our clients, we deliver innovative solutions that meet their demands.
 </p>
-<div id="partners-display">
+
+<!-- Trust-Building Stats Section -->
+<div class="trust-stats">
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-counter" data-end="50" data-suffix="+">0+</span>
+            <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-counter" data-end="10" data-suffix="+">0+</span>
+            <span class="stat-label">Years of Expertise</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-counter" data-end="99" data-suffix=".9%">0%</span>
+            <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-counter" data-end="15" data-suffix="+">0+</span>
+            <span class="stat-label">Industry Regions</span>
+        </div>
+    </div>
+</div>
+
+<!--<div id="partners-display">
     <img src="/img/partners/ms.png" alt="Microsoft Partners">
     <img src="/img/partners/ibm.png" alt="IBM">
     <img src="/img/partners/yc.png" alt="Y Combinator">
     <img src="/img/partners/kth.png" alt="KTH" style="height:100px;margin:0 20px;">
+</div>-->
+
+<!-- Infinite Partners Carousel -->
+<div class="partners-carousel-section">
+    <h3 class="section-title">Trusted by Industry Leaders</h3>
+    <div class="partners-carousel">
+        <div class="carousel-track">
+            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
+            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
+            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
+            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
+            <!-- Duplicate for seamless loop -->
+            <img src="/img/partners/ms.png" alt="Microsoft Partners" class="partner-logo">
+            <img src="/img/partners/ibm.png" alt="IBM" class="partner-logo">
+            <img src="/img/partners/yc.png" alt="Y Combinator" class="partner-logo">
+            <img src="/img/partners/kth.png" alt="KTH" class="partner-logo">
+        </div>
+    </div>
 </div>
+
 <div class="tagline-box bg-blue-light adjust-lighter-4 mb20 mt20">
     <p class="title">Everyting IT<sup class="sup-tm">TM</sup></p>
     <p class="body">
@@ -48,6 +90,63 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
         <h3>Our Craft</h3>
         As IT solutions provider, Willsoft delivers comprehensive services in software <b>consulting and customized product development</b>.
         Crafting innovative solutions, designed to empower small and medium-sized enterprises.
+    </div>
+</div>
+
+<!-- Testimonials Carousel -->
+<div class="testimonials-section">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial-item active">
+            <div class="testimonial-content">
+                <p class="quote-text">
+                    Willsoft transformed our digital infrastructure. Their expertise and dedication resulted in a 40% increase in our operational efficiency. Highly recommended!
+                </p>
+                <div class="client-info">
+                    <img src="/img/team/david.jpg" alt="David Anderson" class="client-photo">
+                    <div class="client-details">
+                        <div class="client-name">David Anderson</div>
+                        <div class="client-title">CTO, TechFlow Solutions</div>
+                    </div>
+                </div>
+            </div>
+            <img src="/img/partners/ms.png" alt="Microsoft" class="company-logo">
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-content">
+                <p class="quote-text">
+                    Working with Willsoft was a game-changer for our business. They delivered a robust, scalable solution that exceeded all our expectations.
+                </p>
+                <div class="client-info">
+                    <img src="/img/team/jacob.jpg" alt="Jacob Martinez" class="client-photo">
+                    <div class="client-details">
+                        <div class="client-name">Jacob Martinez</div>
+                        <div class="client-title">CEO, InnovateCorp</div>
+                    </div>
+                </div>
+            </div>
+            <img src="/img/partners/ibm.png" alt="IBM" class="company-logo">
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-content">
+                <p class="quote-text">
+                    The team at Willsoft is exceptional. They understood our needs perfectly and delivered a solution that has become integral to our success.
+                </p>
+                <div class="client-info">
+                    <img src="/img/team/terry.jpg" alt="Terry Wilson" class="client-photo">
+                    <div class="client-details">
+                        <div class="client-name">Terry Wilson</div>
+                        <div class="client-title">Director of IT, Global Ventures</div>
+                    </div>
+                </div>
+            </div>
+            <img src="/img/partners/yc.png" alt="Y Combinator" class="company-logo">
+        </div>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Testimonial 1"></button>
+            <button class="carousel-dot" aria-label="Testimonial 2"></button>
+            <button class="carousel-dot" aria-label="Testimonial 3"></button>
+        </div>
     </div>
 </div>
 
