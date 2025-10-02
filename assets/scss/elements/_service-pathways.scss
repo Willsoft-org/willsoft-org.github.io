@@ -223,11 +223,12 @@
 @media (max-width: 900px) {
 	.pathways-timeline {
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
+		padding: 0 20px 0 60px;
 		
 		&::before {
 			top: 30px;
-			left: 50%;
+			left: 30px;
 			right: auto;
 			bottom: 30px;
 			width: 4px;
@@ -237,31 +238,58 @@
 				$color-accent-green 33%, 
 				$color-accent-yellow 66%, 
 				$color-accent-pink 100%);
-			transform: translateX(-50%);
+			transform: none;
 		}
 	}
 
 	.pathway-stage {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		max-width: 100%;
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
 
-		.stage-details {
-			position: relative;
-			top: auto;
-			left: auto;
-			transform: none;
-			margin-top: 20px;
-			width: 100%;
-			max-width: 350px;
+		.stage-icon {
+			flex-shrink: 0;
+			margin: 0;
 		}
 
-		&.active .stage-details {
-			margin-left: auto;
-			margin-right: auto;
+		.stage-content {
+			flex: 1;
+			min-width: 0;
+		}
+
+		.stage-title {
+			text-align: left;
+			margin-bottom: 8px;
+		}
+
+		.stage-description {
+			text-align: left;
+			opacity: 1;
+			max-height: none;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.stage-details {
+			position: static;
+			transform: none;
+			margin-top: 0;
+			width: 100%;
+			max-width: none;
+			opacity: 1;
+			visibility: visible;
+		}
+
+		&.active .stage-details,
+		.stage-details {
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 }
@@ -271,7 +299,18 @@
 		font-size: 1.8rem;
 	}
 
+	.pathways-timeline {
+		padding: 0 15px 0 50px;
+
+		&::before {
+			left: 25px;
+		}
+	}
+
 	.pathway-stage {
+		gap: 15px;
+		margin-bottom: 30px;
+
 		.stage-icon {
 			width: 50px;
 			height: 50px;
@@ -280,6 +319,14 @@
 
 		.stage-title {
 			font-size: 1.1rem;
+		}
+
+		.stage-details {
+			padding: 15px;
+
+			h4 {
+				font-size: 1rem;
+			}
 		}
 	}
 }
