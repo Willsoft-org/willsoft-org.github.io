@@ -351,7 +351,7 @@ body.dark-mode {
 		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $dark-border 20%, $dark-border 80%, rgba(255,255,255,0) 100%);
 	}
 
-	// Industries section dark mode - Premium style
+	// Industries section dark mode - Tab-based layout
 	.industries-section {
 		h2 {
 			color: $dark-text;
@@ -362,45 +362,26 @@ body.dark-mode {
 		}
 	}
 
-	.industry-filter-container {
-		.industry-filter-btn {
-			background: $dark-bg-secondary;
-			border-color: transparent;
-			color: $dark-text;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+	.industry-tabs {
+		border-bottom-color: rgba(255, 255, 255, 0.08);
 
-			&:before {
-				background: linear-gradient(135deg, rgba($color-accent-blue-light, 0.08) 0%, rgba($color-accent-blue-light, 0.12) 100%);
-			}
+		.industry-tab {
+			color: $dark-text-secondary;
 
 			&:hover {
-				border-color: rgba($color-accent-blue-light, 0.4);
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+				background: rgba($color-accent-blue-light, 0.1);
+				color: $color-accent-blue-light;
 			}
 
 			&.active {
-				background: linear-gradient(135deg, $color-accent-blue-light 0%, lighten($color-accent-blue-light, 5%) 100%);
-				border-color: transparent;
-				color: white;
-				box-shadow: 0 4px 16px rgba($color-accent-blue-light, 0.4), 0 8px 32px rgba($color-accent-blue-light, 0.25);
+				color: $color-accent-blue-light;
+				border-bottom-color: $color-accent-blue-light;
+				background: rgba($color-accent-blue-light, 0.08);
 			}
 		}
 	}
 
-	.industry-card {
-		background: $dark-bg-secondary;
-		border-color: rgba(255, 255, 255, 0.08);
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 20px rgba(0, 0, 0, 0.3);
-
-		&:before {
-			background: linear-gradient(90deg, $color-accent-blue-light 0%, lighten($color-accent-blue-light, 10%) 100%);
-		}
-
-		&:hover {
-			border-color: rgba($color-accent-blue-light, 0.3);
-			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 16px 48px rgba(0, 0, 0, 0.4);
-		}
-
+	.industry-panel {
 		.industry-header {
 			border-bottom-color: rgba(255, 255, 255, 0.08);
 
@@ -446,14 +427,10 @@ body.dark-mode {
 				.tech-tag {
 					background: linear-gradient(135deg, $color-accent-blue-light 0%, lighten($color-accent-blue-light, 5%) 100%);
 					color: white;
-					box-shadow: 0 2px 6px rgba($color-accent-blue-light, 0.3);
+					box-shadow: 0 2px 4px rgba($color-accent-blue-light, 0.3);
 				}
 			}
 		}
-	}
-
-	.industries-results-info {
-		color: #888;
 	}
 }
 

@@ -1,6 +1,10 @@
-<div class="industry-filter-container">
-  <button class="industry-filter-btn active" data-industry="all">All Industries</button>
+<div class="industry-tabs">
+  {{ $first := true }}
   {{ range .Site.Data.industries.industries }}
-  <button class="industry-filter-btn" data-industry="{{ .id }}"><span class="industry-icon">{{ .icon }}</span>{{ .title }}</button>
+  <button class="industry-tab{{ if $first }} active{{ end }}" data-industry="{{ .id }}">
+    <span class="tab-icon">{{ .icon }}</span>
+    <span class="tab-title">{{ .title }}</span>
+  </button>
+  {{ $first = false }}
   {{ end }}
 </div>
