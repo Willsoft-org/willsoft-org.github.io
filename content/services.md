@@ -21,12 +21,12 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
   <div class="pathways-timeline">
     <div class="pathway-stage stage-discovery">
       <div class="stage-icon">🔍</div>
-      <div class="stage-title">Discovery</div>
+      <div class="stage-title">Research</div>
       <div class="stage-description">
         Understanding your needs and goals
       </div>
       <div class="stage-details">
-        <h4>Discovery Phase</h4>
+        <h4>Research Phase</h4>
         <ul>
           <li>Requirements gathering</li>
           <li>Stakeholder interviews</li>

@@ -34,7 +34,7 @@
 			$color-accent-blue 0%, 
 			$color-accent-green 33%, 
 			$color-accent-yellow 66%, 
-			$color-accent-orange 100%);
+			$color-accent-pink 100%);
 		z-index: 0;
 		transition: all 0.3s ease;
 	}
@@ -183,13 +183,13 @@
 
 	&.stage-support {
 		.stage-icon {
-			background: linear-gradient(135deg, $color-accent-orange, #caa02b);
+			background: linear-gradient(135deg, $color-accent-pink, $color-accent-pink-light);
 		}
 		.stage-title {
-			color: $color-accent-orange;
+			color: $color-accent-pink;
 		}
 		.stage-details ul li::before {
-			color: $color-accent-orange;
+			color: $color-accent-pink;
 		}
 	}
 
@@ -236,7 +236,7 @@
 				$color-accent-blue 0%, 
 				$color-accent-green 33%, 
 				$color-accent-yellow 66%, 
-				$color-accent-orange 100%);
+				$color-accent-pink 100%);
 			transform: translateX(-50%);
 		}
 	}
