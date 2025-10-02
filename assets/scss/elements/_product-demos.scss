@@ -1,0 +1,485 @@
+// Product Demos Styling
+
+.product-demos {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+
+	h2 {
+		font-size: 2em;
+		margin: 40px 0 10px 0;
+		color: #333;
+	}
+
+	.product-description {
+		font-size: 1.1em;
+		color: #666;
+		margin-bottom: 20px;
+		line-height: 1.6;
+	}
+}
+
+// Demo Container
+.demo-container {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin-bottom: 40px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.demo-header {
+	background: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	padding: 12px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.demo-title {
+		font-weight: 600;
+		font-size: 1.1em;
+		color: #333;
+	}
+
+	.demo-controls {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+}
+
+.demo-reset,
+.demo-run {
+	background: #6366f1;
+	color: white;
+	border: none;
+	padding: 6px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+	transition: background 0.2s ease;
+
+	&:hover {
+		background: #4f46e5;
+	}
+}
+
+#lento-examples {
+	padding: 6px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: white;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+// ===== GSH Terminal Demo =====
+.terminal-window {
+	background: #1e1e1e;
+	color: #d4d4d4;
+	font-family: 'Courier New', monospace;
+	padding: 20px;
+	min-height: 300px;
+	max-height: 400px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.terminal-output {
+	flex: 1;
+	margin-bottom: 10px;
+}
+
+.terminal-line {
+	margin: 4px 0;
+	line-height: 1.5;
+	
+	&.command {
+		color: #4ec9b0;
+	}
+	
+	&.output {
+		color: #d4d4d4;
+	}
+	
+	&.error {
+		color: #f48771;
+	}
+	
+	&.system {
+		color: #9cdcfe;
+	}
+}
+
+.terminal-prompt {
+	color: #4ec9b0;
+	font-weight: bold;
+}
+
+.terminal-input-line {
+	display: flex;
+	align-items: center;
+}
+
+.terminal-input {
+	flex: 1;
+	background: transparent;
+	border: none;
+	color: #d4d4d4;
+	font-family: 'Courier New', monospace;
+	font-size: 1em;
+	outline: none;
+	
+	&::placeholder {
+		color: #666;
+	}
+}
+
+// ===== Quansy Schema Demo =====
+.schema-workspace {
+	padding: 30px 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 20px;
+	min-height: 350px;
+}
+
+.schema-panel {
+	flex: 1;
+	background: #fafafa;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 20px;
+	min-height: 300px;
+
+	h4 {
+		margin-top: 0;
+		color: #333;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}
+
+.schema-table {
+	background: white;
+	border: 2px solid #6366f1;
+	border-radius: 6px;
+	padding: 12px;
+	margin-bottom: 15px;
+	cursor: move;
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+		transform: translateY(-2px);
+	}
+
+	&.dragging {
+		opacity: 0.5;
+	}
+
+	&.evolved {
+		border-color: #10b981;
+		animation: pulse 0.5s ease;
+	}
+
+	&.migration-complete {
+		animation: none;
+	}
+
+	.table-name {
+		font-weight: bold;
+		color: #6366f1;
+		font-size: 1.1em;
+		margin-bottom: 8px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.table-fields {
+		.field {
+			padding: 4px 0;
+			color: #666;
+			font-size: 0.9em;
+			font-family: 'Courier New', monospace;
+
+			&.new-field {
+				color: #10b981;
+				font-weight: bold;
+				animation: slideIn 0.5s ease;
+			}
+		}
+	}
+}
+
+.migration-arrow {
+	font-size: 3em;
+	color: #6366f1;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.drop-zone {
+	border: 3px dashed #bbb;
+	border-radius: 8px;
+	padding: 60px 20px;
+	text-align: center;
+	color: #999;
+	font-size: 1.1em;
+	transition: all 0.3s ease;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&.drag-over {
+		background: #f0f9ff;
+		border-color: #6366f1;
+		color: #6366f1;
+	}
+}
+
+.migration-log {
+	padding: 20px;
+	background: #fafafa;
+	border-top: 1px solid #ddd;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.migration-entry {
+	padding: 8px 12px;
+	margin-bottom: 8px;
+	background: white;
+	border-left: 4px solid #10b981;
+	border-radius: 4px;
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: all 0.3s ease;
+
+	&.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	strong {
+		color: #10b981;
+	}
+}
+
+// ===== Lento Code Editor Demo =====
+.code-workspace {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0;
+	min-height: 400px;
+}
+
+.code-editor {
+	background: #1e1e1e;
+	border-right: 1px solid #333;
+	display: flex;
+	flex-direction: column;
+
+	textarea {
+		flex: 1;
+		background: #1e1e1e;
+		color: #d4d4d4;
+		border: none;
+		padding: 20px;
+		font-family: 'Courier New', monospace;
+		font-size: 14px;
+		line-height: 1.6;
+		resize: none;
+		outline: none;
+		tab-size: 4;
+
+		&::selection {
+			background: #264f78;
+		}
+	}
+}
+
+.code-output {
+	background: #252526;
+	display: flex;
+	flex-direction: column;
+
+	.output-header {
+		background: #1e1e1e;
+		color: #999;
+		padding: 10px 20px;
+		border-bottom: 1px solid #333;
+		font-size: 0.9em;
+	}
+
+	.output-content {
+		flex: 1;
+		padding: 20px;
+		color: #d4d4d4;
+		font-family: 'Courier New', monospace;
+		font-size: 14px;
+		overflow-y: auto;
+	}
+}
+
+.output-line {
+	margin: 4px 0;
+	line-height: 1.5;
+
+	&.output {
+		color: #d4d4d4;
+	}
+
+	&.system {
+		color: #9cdcfe;
+		font-style: italic;
+	}
+}
+
+// Animations
+@keyframes pulse {
+	0%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+	.schema-workspace {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.migration-arrow {
+		transform: rotate(90deg);
+		margin: 20px 0;
+	}
+
+	.code-workspace {
+		grid-template-columns: 1fr;
+		
+		.code-editor {
+			border-right: none;
+			border-bottom: 1px solid #333;
+		}
+	}
+}
+
+// Dark mode support
+body.dark-mode {
+	.product-demos {
+		h2 {
+			color: #e0e0e0;
+		}
+
+		.product-description {
+			color: #b0b0b0;
+		}
+	}
+
+	.demo-container {
+		background: #2d2d2d;
+		border-color: #404040;
+	}
+
+	.demo-header {
+		background: #1e1e1e;
+		border-bottom-color: #404040;
+
+		.demo-title {
+			color: #e0e0e0;
+		}
+	}
+
+	#lento-examples {
+		background: #2d2d2d;
+		border-color: #404040;
+		color: #e0e0e0;
+	}
+
+	// Schema panel dark mode
+	.schema-panel {
+		background: #1e1e1e;
+		border-color: #404040;
+
+		h4 {
+			color: #e0e0e0;
+		}
+	}
+
+	.schema-table {
+		background: #2d2d2d;
+		border-color: #8b5cf6;
+
+		.table-name {
+			color: #a78bfa;
+		}
+
+		.table-fields .field {
+			color: #b0b0b0;
+
+			&.new-field {
+				color: #34d399;
+			}
+		}
+
+		&.evolved {
+			border-color: #34d399;
+		}
+	}
+
+	.migration-arrow {
+		color: #8b5cf6;
+	}
+
+	.drop-zone {
+		border-color: #555;
+		color: #888;
+
+		&.drag-over {
+			background: #1e293b;
+			border-color: #8b5cf6;
+			color: #a78bfa;
+		}
+	}
+
+	.migration-log {
+		background: #1e1e1e;
+		border-top-color: #404040;
+	}
+
+	.migration-entry {
+		background: #2d2d2d;
+		border-left-color: #34d399;
+
+		strong {
+			color: #34d399;
+		}
+	}
+}
