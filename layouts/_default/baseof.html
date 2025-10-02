@@ -96,7 +96,11 @@
 	{{ if eq .Title "Courses" }}
 	<script src="/js/course-filter.js" defer></script>
 	{{ end }}
-	{{/* Service pathways script for services page */}}
+	{{/* Case studies interactive features */}}
+	{{ if or (eq .Section "news") (hasPrefix .RelPermalink "/news/") }}
+	<script src="/js/case-studies.js" defer></script>
+  {{ end }}
+  {{/* Service pathways script for services page */}}
 	{{ if eq .Title "Services" }}
 	<script src="/js/service-pathways.js" defer></script>
 	{{ end }}
