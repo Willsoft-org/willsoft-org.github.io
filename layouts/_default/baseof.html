@@ -94,6 +94,10 @@
 	{{ if eq .Title "Courses" }}
 	<script src="/js/course-filter.js" defer></script>
 	{{ end }}
+	{{/* Industry filter script for home page */}}
+	{{ if eq .Title "Home" }}
+	<script src="/js/industry-filter.js" defer></script>
+	{{ end }}
 	{{ block "scripts" . }}{{ end }}
 </body>
 

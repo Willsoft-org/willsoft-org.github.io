@@ -59,3 +59,14 @@ Contact us today for more information about how we can help you grow your busine
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact us!</a>
 </div>
+
+<div class="industries-section">
+    <h2>Industries We Serve</h2>
+    <p class="industries-intro">
+        We deliver custom-tailored solutions across multiple industries. Select an industry below to see our expertise, case studies, and relevant projects.
+    </p>
+    
+    {{< industry-filters >}}
+    
+    {{< industries >}}
+</div>

@@ -350,6 +350,97 @@ body.dark-mode {
 	.courses-sep {
 		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $dark-border 20%, $dark-border 80%, rgba(255,255,255,0) 100%);
 	}
+
+	// Industries section dark mode
+	.industries-section {
+		h2 {
+			color: $dark-text;
+		}
+
+		.industries-intro {
+			color: $dark-text-secondary;
+		}
+	}
+
+	.industry-filter-container {
+		.industry-filter-btn {
+			background-color: $dark-bg-tertiary;
+			border-color: $dark-border;
+			color: $dark-text;
+
+			&:hover {
+				border-color: $color-accent-blue-light;
+				background-color: rgba($color-accent-blue-light, 0.15);
+			}
+
+			&.active {
+				background-color: $color-accent-blue-light;
+				border-color: $color-accent-blue-light;
+				color: $color-white;
+			}
+		}
+	}
+
+	.industry-card {
+		background-color: $dark-bg-secondary;
+		border-color: $dark-border;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+		&:hover {
+			border-color: $color-accent-blue-light;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+		}
+
+		.industry-header {
+			.industry-title {
+				color: $dark-text;
+			}
+		}
+
+		.industry-description {
+			color: $dark-text-secondary;
+		}
+
+		.industry-case-study {
+			background: rgba($color-accent-blue-light, 0.1);
+			color: $dark-text-secondary;
+
+			strong {
+				color: $color-accent-blue-light;
+			}
+		}
+
+		.industry-projects {
+			strong {
+				color: $dark-text;
+			}
+
+			ul li {
+				color: $dark-text-secondary;
+
+				&:before {
+					color: $color-accent-blue-light;
+				}
+			}
+		}
+
+		.industry-technologies {
+			strong {
+				color: $dark-text;
+			}
+
+			.tech-tags {
+				.tech-tag {
+					background-color: $color-accent-blue-light;
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+	.industries-results-info {
+		color: $dark-text-secondary;
+	}
 }
 
 // Hide desktop dark mode toggle on mobile - only show hamburger menu toggle

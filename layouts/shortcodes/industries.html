@@ -1,0 +1,32 @@
+<div class="industries-grid">
+  {{ range .Site.Data.industries.industries }}
+  <div class="industry-card" data-industry="{{ .id }}">
+    <div class="industry-header" style="border-left-color: {{ .color }};">
+      <span class="industry-icon">{{ .icon }}</span>
+      <h3 class="industry-title">{{ .title }}</h3>
+    </div>
+    <p class="industry-description">{{ .description }}</p>
+    <div class="industry-case-study">
+      <strong>Case Study:</strong> {{ .caseStudy }}
+    </div>
+    <div class="industry-projects">
+      <strong>Key Projects:</strong>
+      <ul>
+        {{ range .projects }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="industry-technologies">
+      <strong>Technologies:</strong>
+      <div class="tech-tags">
+        {{ range .technologies }}
+        <span class="tech-tag">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<div class="industries-results-info" id="industries-results-info"></div>

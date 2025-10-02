@@ -1,0 +1,31 @@
+# Industry definitions for the Industries section
+
+[[industries]]
+id = "finance"
+title = "Finance / Banking"
+icon = "🏦"
+color = "#2169C7"
+description = "Secure transaction systems, financial software, and banking solutions with robust security and compliance."
+caseStudy = "Built secure payment processing systems with end-to-end encryption and fraud detection"
+projects = ["Secure Transaction Systems", "Banking APIs", "Financial Analytics Platforms"]
+technologies = ["Blockchain", "Encryption", "Compliance Frameworks"]
+
+[[industries]]
+id = "education"
+title = "Education"
+icon = "🎓"
+color = "#246910"
+description = "Educational platforms, e-learning systems, and course management software for institutions and learners."
+caseStudy = "Developed comprehensive course management systems and interactive learning platforms"
+projects = ["E-Learning Platforms", "Course Management Systems", "Educational Software"]
+technologies = ["Interactive Learning", "Assessment Tools", "Student Management"]
+
+[[industries]]
+id = "gaming"
+title = "Gaming / Entertainment"
+icon = "🎮"
+color = "#A7233A"
+description = "Game development, entertainment software, plugins and tools for gaming platforms."
+caseStudy = "Created game engines, Bevy plugins, and Game Save Hub for managing game progress"
+projects = ["Game Save Hub (GSH)", "Bevy Plugins", "Game Engines", "Entertainment Platforms"]
+technologies = ["Rust", "Game Engines", "3D Graphics", "Multiplayer Systems"]
