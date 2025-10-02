@@ -71,6 +71,7 @@ color = "#f97316"
 # Course data
 [[courses]]
 title = "Foundations of Programming Languages"
+draft = true
 description = "Core principles of syntax, semantics, paradigms, and type systems, introducing how languages are defined and understood."
 level = "foundations"
 field = "pl"
@@ -80,6 +81,7 @@ price = 1200
 
 [[courses]]
 title = "Foundations of Interpreters & Virtual Machines"
+draft = true
 description = "How code executes via AST interpreters and bytecode VMs; stack vs. register machines and evaluation strategies."
 level = "foundations"
 field = "pl"
@@ -89,6 +91,7 @@ price = 1500
 
 [[courses]]
 title = "Foundations of Compilers"
+draft = true
 description = "Step-by-step compiler pipeline: lexing, parsing, semantic analysis, IR, optimization and code generation."
 level = "foundations"
 field = "pl"
@@ -98,6 +101,7 @@ price = 1800
 
 [[courses]]
 title = "Advanced Language Theory, Design & Implementation"
+draft = true
 description = "Advanced type systems, macros, effects, concurrency models, error handling, runtime architecture & ergonomics."
 level = "advanced"
 field = "pl"
@@ -108,6 +112,7 @@ price = 2000
 
 [[courses]]
 title = "Advanced VMs & JIT Compilers"
+draft = true
 description = "Virtual machine architectures, tiered & speculative JIT compilation, garbage collection & dynamic runtime optimization."
 level = "advanced"
 field = "pl"
@@ -117,6 +122,7 @@ price = 1800
 
 [[courses]]
 title = "Advanced Compiler Construction & Optimization"
+draft = true
 description = "SSA, data-flow, inlining, loop transforms, register allocation, polyhedral ideas & target-aware lowering."
 level = "advanced"
 field = "pl"
@@ -126,6 +132,7 @@ price = 2000
 
 [[courses]]
 title = "Windows Internals (x86/x64)"
+draft = true
 description = "Kernel → user architecture, processes, threads, memory management, drivers, system calls, scheduling, PE/COFF binaries & tooling."
 level = "foundations"
 field = "os"
@@ -136,6 +143,7 @@ new = true
 
 [[courses]]
 title = "Systems Security"
+draft = true
 description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."
 level = "advanced"
 field = "sec"
@@ -146,6 +154,7 @@ price = 1600
 
 [[courses]]
 title = "Compiler Security"
+draft = true
 description = "Language-based security, memory safety, exploit classes in compilers/runtimes, supply chain risk, mitigations, secure toolchains, formal verification, proofs."
 level = "research"
 field = "sec"
@@ -155,6 +164,7 @@ price = 2200
 
 [[courses]]
 title = "Formal Methods & Proof Assistants"
+draft = true
 description = "Logic foundations, proof automation & verification using Coq, Lean & Agda for language and compiler correctness."
 level = "research"
 field = "fm"
@@ -164,6 +174,7 @@ price = 2400
 
 [[courses]]
 title = "Program Synthesis with Refinement Types"
+draft = true
 description = "Guided synthesis using refinement types, holes, constraint solving & SMT-based search strategies."
 level = "research"
 field = "fm"
@@ -183,6 +194,7 @@ price = 2200
 
 [[courses]]
 title = "E-Graphs & Equality Saturation"
+draft = true
 description = "Algebraic rewrite engines, saturation strategies & global optimization for compilers and synthesizers."
 level = "research"
 field = "pl"
@@ -192,6 +204,7 @@ price = 2000
 
 [[courses]]
 title = "Verified Compilers"
+draft = true
 description = "End-to-end correctness (CompCert, CakeML), mechanized semantics & trusted computing bases."
 level = "research"
 field = "fm"
@@ -202,6 +215,7 @@ new = true
 
 [[courses]]
 title = "Concurrency & Parallelism"
+draft = true
 description = "Actors, CSP, STM, lock-free structures, GPU offload models & safe parallel runtime design."
 level = "advanced"
 field = "parallel"
@@ -211,6 +225,7 @@ price = 2200
 
 [[courses]]
 title = "Metaprogramming & DSLs"
+draft = true
 description = "Hygienic macros, multi-stage evaluation, staging runtimes & intentional language layering."
 level = "research"
 field = "pl"
@@ -221,6 +236,7 @@ new = true
 
 [[courses]]
 title = "WebAssembly Runtimes"
+draft = true
 description = "WASM execution model, embedding, cross-language interop & portability in modern ecosystems."
 level = "research"
 field = "pl"
@@ -231,6 +247,7 @@ new = true
 
 [[courses]]
 title = "GPU/Accelerator Compilation"
+draft = true
 description = "Passes for CUDA/OpenCL, heterogeneous lowering, scheduling, memory hierarchies & performance modeling."
 level = "research"
 field = "parallel"
@@ -241,6 +258,7 @@ new = true
 
 [[courses]]
 title = "HoTT, Dependent & Refinement Types"
+draft = true
 description = "Higher inductive types, path equality, expressive type-level reasoning & program correctness."
 level = "research"
 field = "fm"
@@ -283,6 +301,7 @@ new = true
 # Foundations - Program Analysis
 [[courses]]
 title = "Foundations of Program Analysis"
+draft = true
 description = "Static vs. dynamic analysis, abstract interpretation, symbolic execution, and their role in compilers, verifiers, and security."
 level = "foundations"
 field = "pl"
@@ -349,6 +368,7 @@ new = true
 # Foundations - Security
 [[courses]]
 title = "Introduction to Cybersecurity"
+draft = true
 description = "Core concepts: confidentiality, integrity, availability, threat modeling, and basic cryptography."
 level = "foundations"
 field = "sec"
@@ -358,6 +378,7 @@ price = 1200
 
 [[courses]]
 title = "Reverse Engineering Fundamentals"
+draft = true
 description = "Disassembly, control-flow graphs, lifting to IR, and binary instrumentation for understanding compiled code."
 level = "foundations"
 field = "sec"
@@ -378,6 +399,7 @@ price = 1500
 # Advanced - Memory Management
 [[courses]]
 title = "Garbage Collection & Memory Management"
+draft = true
 description = "Dedicated course on GC algorithms, memory models, region-based allocation, and interaction with type systems."
 level = "advanced"
 field = "pl"
@@ -388,6 +410,7 @@ price = 1800
 # Advanced - Binary Analysis
 [[courses]]
 title = "Binary Analysis & Reverse Engineering"
+draft = true
 description = "ELF/PE/Mach-O parsing, disassembly, lifting to IR, symbolic execution for reverse engineering."
 level = "advanced"
 field = "sec"
@@ -398,6 +421,7 @@ price = 1800
 # Advanced - Security Courses
 [[courses]]
 title = "Static Analysis for Security"
+draft = true
 description = "Abstract interpretation, data-flow, taint analysis, symbolic execution for finding security vulnerabilities."
 level = "advanced"
 field = "sec"
@@ -407,6 +431,7 @@ price = 1700
 
 [[courses]]
 title = "Dynamic Analysis & Sandboxing"
+draft = true
 description = "Instrumentation with Pin/DynamoRIO, tracing system calls, unpacking obfuscated binaries, and runtime analysis."
 level = "advanced"
 field = "sec"
@@ -416,6 +441,7 @@ price = 1700
 
 [[courses]]
 title = "Malware Analysis"
+draft = true
 description = "Real-world malware families, obfuscation techniques, persistence mechanisms, and anti-analysis tricks."
 level = "advanced"
 field = "sec"
@@ -425,6 +451,7 @@ price = 1800
 
 [[courses]]
 title = "Exploit Development"
+draft = true
 description = "Stack smashing, heap exploitation, ROP/JOP, format string exploits, and mitigations like DEP and ASLR."
 level = "advanced"
 field = "sec"
@@ -434,6 +461,7 @@ price = 1800
 
 [[courses]]
 title = "Secure Systems Programming"
+draft = true
 description = "Memory-safe design, fuzzing, secure coding patterns in C/Rust, and defensive programming techniques."
 level = "advanced"
 field = "sec"
@@ -443,6 +471,7 @@ price = 1600
 
 [[courses]]
 title = "Forensics & Incident Response"
+draft = true
 description = "Memory dumps, log analysis, disk forensics, attribution basics, and incident investigation methodologies."
 level = "advanced"
 field = "sec"
@@ -453,6 +482,7 @@ price = 1600
 # Advanced - Logic & Constraints
 [[courses]]
 title = "Constraint & SMT Programming"
+draft = true
 description = "Solvers for constraints over integers, Booleans, or reals. Hands-on with Z3, CVC5, and applications to scheduling, verification, and synthesis."
 level = "advanced"
 field = "logic"
@@ -462,6 +492,7 @@ price = 1700
 
 [[courses]]
 title = "Datalog & Relational Programming"
+draft = true
 description = "Datalog engines, recursion, fixed-point semantics, and applications in program analysis using Soufflé."
 level = "advanced"
 field = "logic"
@@ -472,6 +503,7 @@ price = 1600
 # Advanced - Session Types
 [[courses]]
 title = "Session Types & Protocol Programming"
+draft = true
 description = "Using linear/affine types to enforce communication protocols at compile time. Covers π-calculus and multiparty session types."
 level = "advanced"
 field = "pl"
@@ -482,6 +514,7 @@ price = 1700
 # Research - Security & Systems
 [[courses]]
 title = "Secure Virtualization & Sandboxing"
+draft = true
 description = "JIT hardening, WASM isolation, capability-based systems, and secure runtime design for sandboxed execution."
 level = "research"
 field = "sec"
@@ -491,6 +524,7 @@ price = 2200
 
 [[courses]]
 title = "Trusted Execution Environments & Secure Compilers"
+draft = true
 description = "Compilation for enclaves (Intel SGX, ARM TrustZone), constant-time compilation, and verified cryptographic implementations."
 level = "research"
 field = "sec"
@@ -509,6 +543,7 @@ price = 2400
 
 [[courses]]
 title = "Secure Compilation & Toolchain Hardening"
+draft = true
 description = "How compiler bugs become exploits, verified compilation, reproducible builds, and supply chain security."
 level = "research"
 field = "sec"
@@ -518,6 +553,7 @@ price = 2400
 
 [[courses]]
 title = "Language-Based Security"
+draft = true
 description = "Information-flow control, type systems for security, capability-based languages, and secure programming abstractions."
 level = "research"
 field = "sec"
@@ -527,6 +563,7 @@ price = 2300
 
 [[courses]]
 title = "Automated Binary Decompilation"
+draft = true
 description = "Static decompilation, dynamic binary translation, automatic deobfuscation, E-graphs for reverse engineering, and program lifting techniques."
 level = "research"
 field = "sec"
@@ -537,6 +574,7 @@ price = 2400
 # Research - Proof-Carrying Code
 [[courses]]
 title = "Proof-Carrying Code & Certified Execution"
+draft = true
 description = "How code can carry formal proofs of safety, and how runtimes enforce them with PCC frameworks."
 level = "research"
 field = "fm"
@@ -565,6 +603,7 @@ price = 2300
 
 [[courses]]
 title = "Automated Bug-Finding & Fuzzing for Compilers"
+draft = true
 description = "Superoptimization, CSmith, Greybox fuzzing, differential testing of compiler toolchains."
 level = "research"
 field = "pl"
@@ -647,6 +686,7 @@ price = 2200
 # Research - Dependently Typed Programming
 [[courses]]
 title = "Dependently Typed Programming with Agda & Idris"
+draft = true
 description = "Encoding invariants and proofs in types, verified data structures, and total functional programming."
 level = "research"
 field = "fm"
@@ -658,6 +698,7 @@ price = 2400
 
 [[courses]]
 title = "Certified Programming in Coq/Agda/Lean"
+draft = true
 description = "Building formally verified software by theorem proving algorithms and data structures."
 level = "advanced"
 field = "fm"
@@ -667,6 +708,7 @@ price = 2500
 
 [[courses]]
 title = "Theory of Formal Software Development"
+draft = true
 description = "From specification → proof → implementation using Hoare logic, separation logic, and refinement calculus."
 level = "research"
 field = "fm"
@@ -677,6 +719,7 @@ price = 2400
 # Research - Verified Systems
 [[courses]]
 title = "Verified Operating Systems"
+draft = true
 description = "Case studies like seL4, SeKVM, CertiKOS. Build a small verified kernel using Coq or Lean for mechanized proofs."
 level = "research"
 field = "fm"
@@ -686,6 +729,7 @@ price = 2600
 
 [[courses]]
 title = "Verified Hypervisors & Virtualization"
+draft = true
 description = "Proving isolation, scheduling, and memory safety of hypervisors. Combining systems programming with proof frameworks."
 level = "research"
 field = "fm"
@@ -704,6 +748,7 @@ price = 2700
 
 [[courses]]
 title = "Verified Networking & Protocols"
+draft = true
 description = "Building verified protocol stacks (TCP, TLS) with session types, refinement types, and formal verification."
 level = "research"
 field = "fm"
@@ -714,6 +759,7 @@ price = 2500
 # Research - E-graphs & Reasoning
 [[courses]]
 title = "Egg & Egglog in Practice"
+draft = true
 description = "Hands-on with the Egg library (Rust) and Egglog (declarative equality-saturation DSL). Build optimizers and symbolic reasoning tools."
 level = "research"
 field = "pl"
@@ -724,6 +770,7 @@ new = true
 
 [[courses]]
 title = "Symbolic AI & Automated Reasoning with Rewriting"
+draft = true
 description = "Extending e-graphs beyond compilers: theorem proving, SMT integration, symbolic program analysis."
 level = "research"
 field = "ai-ml"
@@ -744,6 +791,7 @@ new = true
 
 [[courses]]
 title = "Supercompilation & Partial Evaluation"
+draft = true
 description = "Techniques for transforming programs via symbolic execution and equational reasoning related to e-graphs."
 level = "research"
 field = "pl"
