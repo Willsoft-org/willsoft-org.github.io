@@ -142,8 +142,6 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
             </div>
             <img src="/img/partners/yc.png" alt="Y Combinator" class="company-logo">
         </div>
-        <button class="carousel-prev" aria-label="Previous testimonial">‹</button>
-        <button class="carousel-next" aria-label="Next testimonial">›</button>
         <div class="carousel-dots">
             <button class="carousel-dot active" aria-label="Testimonial 1"></button>
             <button class="carousel-dot" aria-label="Testimonial 2"></button>
