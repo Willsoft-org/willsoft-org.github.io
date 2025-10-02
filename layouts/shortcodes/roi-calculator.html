@@ -1,0 +1,66 @@
+<div class="roi-calculator" id="roiCalculator">
+  <div class="calculator-header">
+    <h2>Business Impact Calculator</h2>
+    <p>Estimate your potential savings and performance gains with modern IT solutions</p>
+  </div>
+  
+  <form class="calculator-form">
+    <div class="form-group">
+      <label for="numUsers">Number of Users</label>
+      <input type="number" id="numUsers" name="numUsers" placeholder="e.g., 100" min="1" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="numTransactions">Monthly Transactions</label>
+      <input type="number" id="numTransactions" name="numTransactions" placeholder="e.g., 10000" min="1" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="infraCost">Current Infrastructure Cost ($)</label>
+      <input type="number" id="infraCost" name="infraCost" placeholder="e.g., 5000" min="1" required>
+    </div>
+    
+    <div class="calculator-button" style="grid-column: 1 / -1;">
+      <button type="submit">Calculate ROI</button>
+    </div>
+  </form>
+  
+  <div class="calculator-results" id="calculatorResults">
+    <h3>Your Potential Impact</h3>
+    <div class="results-grid">
+      <div class="result-item highlight">
+        <div class="result-label">Estimated Cost Savings (Annual)</div>
+        <div class="result-value">
+          <span class="result-icon">💰</span>
+          <span id="costSavings">$0</span>
+        </div>
+      </div>
+      
+      <div class="result-item">
+        <div class="result-label">Performance Improvement</div>
+        <div class="result-value">
+          <span class="result-icon">⚡</span>
+          <span id="performanceGain">0%</span>
+        </div>
+      </div>
+      
+      <div class="result-item">
+        <div class="result-label">Efficiency Gain</div>
+        <div class="result-value">
+          <span class="result-icon">📈</span>
+          <span id="efficiencyGain">0%</span>
+        </div>
+      </div>
+      
+      <div class="result-item">
+        <div class="result-label">Return on Investment</div>
+        <div class="result-value">
+          <span class="result-icon">🎯</span>
+          <span id="roiPercent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/roi-calculator.js"></script>
