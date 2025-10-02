@@ -55,6 +55,18 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
 Whether you are looking for a new website or mobile app, we can help!
 Contact us today for more information about how we can help you grow your business!
 </p>
+
+<div class="tagline-box bg-blue-light adjust-lighter-4 mb20 mt20">
+    <p class="title">Solutions in Action</p>
+    <p class="body">
+        Explore our interactive case studies to see how we've helped businesses across finance, healthcare, 
+        and retail industries achieve transformational results with measurable outcomes.
+    </p>
+    <div style="text-align: center; margin-top: 15px;">
+        <a class="btn btn-purple btn-lg pulse" href="/news/">View Case Studies →</a>
+    </div>
+</div>
+
 <div class="fg-white mt10">
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">View Courses</a>
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact us!</a>
