@@ -5,6 +5,8 @@ heroClass = "services"
 title = "Services"
 +++
 
+{{< roi-calculator >}}
+
 <h1>Our Services</h1>
 <p>
 With a focus on advanced technology and personalized service, we aim to simplify your business processes,
