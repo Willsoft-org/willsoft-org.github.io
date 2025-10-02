@@ -242,11 +242,23 @@
 	}
 
 	.pathway-stage {
-		margin-bottom: 20px;
+		margin-bottom: 0;
 		max-width: 100%;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		.stage-icon {
+			margin-bottom: 8px;
+		}
+
+		.stage-title {
+			margin-bottom: 5px;
+		}
+
+		.stage-description {
+			margin-top: 0;
 		}
 
 		.stage-details {
@@ -254,7 +266,7 @@
 			top: auto;
 			left: auto;
 			transform: none;
-			margin-top: 20px;
+			margin-top: 10px;
 			width: 100%;
 			max-width: 350px;
 		}
