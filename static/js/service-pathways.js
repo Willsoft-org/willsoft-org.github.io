@@ -20,6 +20,53 @@
 			return; // No pathways on this page
 		}
 
+		// Function to adjust vertical timeline length on mobile
+		function adjustMobileTimeline() {
+			const timeline = document.querySelector('.pathways-timeline');
+			if (!timeline || window.innerWidth > 900) {
+				return; // Not mobile view
+			}
+
+			const firstIcon = stages[0]?.querySelector('.stage-icon');
+			const lastIcon = stages[stages.length - 1]?.querySelector('.stage-icon');
+			
+			if (!firstIcon || !lastIcon) return;
+
+			// Get positions relative to timeline
+			const timelineRect = timeline.getBoundingClientRect();
+			const firstIconRect = firstIcon.getBoundingClientRect();
+			const lastIconRect = lastIcon.getBoundingClientRect();
+
+			// Calculate icon centers relative to timeline
+			const firstIconCenter = (firstIconRect.top + firstIconRect.height / 2) - timelineRect.top;
+			const lastIconCenter = (lastIconRect.top + lastIconRect.height / 2) - timelineRect.top;
+
+			// Create a style element for the dynamic height
+			let styleEl = document.getElementById('timeline-dynamic-height');
+			if (!styleEl) {
+				styleEl = document.createElement('style');
+				styleEl.id = 'timeline-dynamic-height';
+				document.head.appendChild(styleEl);
+			}
+
+			// Set the line to go from first icon center to last icon center
+			styleEl.textContent = `
+				@media (max-width: 900px) {
+					.pathways-timeline::before {
+						top: ${firstIconCenter}px !important;
+						height: ${lastIconCenter - firstIconCenter}px !important;
+					}
+				}
+			`;
+		}
+
+		// Adjust timeline on load and window resize
+		adjustMobileTimeline();
+		window.addEventListener('resize', adjustMobileTimeline);
+		
+		// Re-adjust after animations complete
+		setTimeout(adjustMobileTimeline, 1000);
+
 		// Add click handlers to each stage
 		stages.forEach(function(stage) {
 			stage.addEventListener('click', function(e) {
