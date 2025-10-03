@@ -1,13 +1,6 @@
 // Case Studies & Interactive Storytelling Styles - Premium Modern Design
 @import "util/colors";
 
-/* Hero color variant for solutions/news */
-.hero.solutions {
-  background: $color-accent-blue;
-  background-image: url(../img/tech-bg.svg),
-    linear-gradient(145deg, $color-accent-blue 20%, $color-accent-blue-light 120%);
-}
-
 // Main case studies intro
 .case-studies-intro {
   text-align: left;
