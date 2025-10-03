@@ -12,6 +12,7 @@
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 15px;
+    text-align: justify;
   }
 
   .course-format-note {
@@ -19,6 +20,7 @@
     line-height: 1.4rem;
     margin-bottom: 40px;
     color: $color-gray-dark;
+    text-align: justify;
   }
 }
 
@@ -404,6 +406,13 @@
 
 /* Hero color variant for courses */
 .hero.courses {
+  background: $color-accent-blue;
+  background-image: url(../img/tech-bg.svg),
+    linear-gradient(145deg, $color-accent-blue 20%, $color-accent-blue-light 120%);
+}
+
+/* Hero color variant for solutions/news */
+.hero.solutions {
   background: $color-accent-blue;
   background-image: url(../img/tech-bg.svg),
     linear-gradient(145deg, $color-accent-blue 20%, $color-accent-blue-light 120%);

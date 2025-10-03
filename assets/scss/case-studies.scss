@@ -1,8 +1,9 @@
 // Case Studies & Interactive Storytelling Styles - Premium Modern Design
+@import "util/colors";
 
 // Main case studies intro
 .case-studies-intro {
-  text-align: center;
+  text-align: left;
   max-width: 900px;
   margin: 0 auto 80px;
   padding: 0 20px;
@@ -13,6 +14,7 @@
     margin-bottom: 24px;
     color: var(--text-primary);
     letter-spacing: -0.02em;
+    text-align: left;
   }
   
   p {
@@ -20,6 +22,7 @@
     color: var(--text-secondary);
     line-height: 1.7;
     font-weight: 400;
+    text-align: justify;
   }
 }
 
