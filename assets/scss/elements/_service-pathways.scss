@@ -27,8 +27,8 @@
 		content: '';
 		position: absolute;
 		top: 30px;
-		left: 50px;
-		right: 50px;
+		left: calc(20px + 30px);
+		right: calc(20px + 30px);
 		height: 4px;
 		background: linear-gradient(90deg, 
 			$color-accent-blue 0%, 
