@@ -260,11 +260,24 @@
 }
 
 .migration-arrow {
-	font-size: 3em;
-	color: #6366f1;
+	/* Center an arrow between schema panels */
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	align-self: center; /* vertically center relative to panels */
+	width: 60px;
+	min-width: 60px; /* reserve space between panels */
+	color: #6366f1;
 	font-weight: bold;
+
+	&::before {
+		content: "\2192"; /* → rightwards arrow */
+		font-size: 2.5rem;
+		line-height: 1;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 .drop-zone {
@@ -414,8 +427,14 @@
 	}
 
 	.migration-arrow {
-		transform: rotate(90deg);
-		margin: 20px 0;
+		width: 100%;
+		min-width: 0;
+		margin: 10px 0 20px 0;
+
+		&::before {
+			content: "\2193"; /* ↓ downwards arrow on mobile */
+			font-size: 2.2rem;
+		}
 	}
 
 	.code-workspace {

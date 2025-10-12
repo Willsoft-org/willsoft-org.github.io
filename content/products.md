@@ -70,7 +70,7 @@ An intelligent schema evolution system that visualizes and manages database migr
 				</div>
 			</div>
 		</div>
-		<div class="migration-arrow">→</div>
+		<div class="migration-arrow" aria-hidden="true"></div>
 		<div class="schema-panel" id="schema-v2">
 			<h4>Schema v2.0</h4>
 			<div class="drop-zone">Drop tables here to evolve</div>
