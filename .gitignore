@@ -5,3 +5,5 @@ hugo
 hugo_extended_*.tar.gz
 LICENSE
 screenshots/
+
+/**/dist/*.css
