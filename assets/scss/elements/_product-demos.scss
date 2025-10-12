@@ -138,19 +138,19 @@
 .terminal-line {
 	margin: 4px 0;
 	line-height: 1.5;
-	
+
 	&.command {
 		color: #4ec9b0;
 	}
-	
+
 	&.output {
 		color: #d4d4d4;
 	}
-	
+
 	&.error {
 		color: #f48771;
 	}
-	
+
 	&.system {
 		color: #9cdcfe;
 	}
@@ -174,7 +174,7 @@
 	font-family: 'Courier New', monospace;
 	font-size: 1em;
 	outline: none;
-	
+
 	&::placeholder {
 		color: #666;
 	}
@@ -264,14 +264,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-self: center; /* vertically center relative to panels */
+	align-self: center;
+	/* vertically center relative to panels */
 	width: 60px;
-	min-width: 60px; /* reserve space between panels */
+	min-width: 60px;
+	/* reserve space between panels */
 	color: #6366f1;
 	font-weight: bold;
 
 	&::before {
-		content: "\2192"; /* → rightwards arrow */
+		content: "\2192";
+		/* → rightwards arrow */
 		font-size: 2.5rem;
 		line-height: 1;
 		display: block;
@@ -400,9 +403,12 @@
 
 // Animations
 @keyframes pulse {
-	0%, 100% {
+
+	0%,
+	100% {
 		transform: scale(1);
 	}
+
 	50% {
 		transform: scale(1.05);
 	}
@@ -413,6 +419,7 @@
 		opacity: 0;
 		transform: translateX(-10px);
 	}
+
 	to {
 		opacity: 1;
 		transform: translateX(0);
@@ -432,14 +439,15 @@
 		margin: 10px 0 20px 0;
 
 		&::before {
-			content: "\2193"; /* ↓ downwards arrow on mobile */
+			content: "\2193";
+			/* ↓ downwards arrow on mobile */
 			font-size: 2.2rem;
 		}
 	}
 
 	.code-workspace {
 		grid-template-columns: 1fr;
-		
+
 		.code-editor {
 			border-right: none;
 			border-bottom: 1px solid #333;
