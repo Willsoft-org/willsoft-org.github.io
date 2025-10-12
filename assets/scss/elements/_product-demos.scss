@@ -197,6 +197,7 @@
 	border-radius: 8px;
 	padding: 20px;
 	min-height: 300px;
+	margin: auto;
 
 	h4 {
 		margin-top: 0;
@@ -271,6 +272,7 @@
 	/* reserve space between panels */
 	color: #6366f1;
 	font-weight: bold;
+	margin-top: 28px;
 
 	&::before {
 		content: "\2192";
