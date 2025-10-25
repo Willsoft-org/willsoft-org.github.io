@@ -14,12 +14,33 @@ heroSub = "Discover how we transform businesses across industries"
     <h2>Real-World Impact, Measurable Results</h2>
     <p>
         Like industry leaders such as Palantir, McKinsey, and Accenture, we believe in showcasing our work through 
-        compelling stories. Explore our interactive case studies to see how we've helped businesses across finance, 
+        compelling stories. Explore our interactive case studies and insights to see how we've helped businesses across finance, 
         healthcare, defense, and retail industries achieve transformational results.
     </p>
 </div>
 
 <div id="cases" class="case-studies-grid">
+<div class="case-study-card" data-industry="insights">
+<div class="case-card-header">
+<span class="industry-tag">Insights</span>
+<h3>Our Stance on AI</h3>
+</div>
+<div class="case-card-body">
+<p>How we use AI to amplify human intelligence, not replace it</p>
+<div class="case-highlights">
+<div class="highlight">
+<span class="highlight-text">Human-Directed</span>
+</div>
+<div class="highlight">
+<span class="highlight-text">Rigorously Tested</span>
+</div>
+</div>
+</div>
+<a href="/news/ai-stance/" class="case-card-link">
+Read Our Position →
+</a>
+</div>
+
 <div class="case-study-card" data-industry="finance">
 <div class="case-card-header">
 <span class="industry-tag">Finance</span>
