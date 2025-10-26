@@ -20,7 +20,7 @@ url = "/projects/"
 weight = 30
 
 [[menu.main]]
-name = "Case Studies"
+name = "News"
 url = "/news/"
 weight = 35
 
