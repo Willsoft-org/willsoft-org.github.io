@@ -17,7 +17,7 @@
     {{ $visibleCoursesInLevel = add $visibleCoursesInLevel 1 }}
     {{ $totalVisibleCourses = add $totalVisibleCourses 1 }}
     {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}
-    {{ $coursePagePath := printf "courses/%s" .shortcode }}
+    {{ $coursePagePath := printf "course/%s" .shortcode }}
     {{ $coursePage := $.Site.GetPage $coursePagePath }}
     {{ $hasDetailPage := ne $coursePage nil }}
     
