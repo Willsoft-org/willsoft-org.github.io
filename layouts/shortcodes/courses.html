@@ -17,12 +17,12 @@
     {{ $visibleCoursesInLevel = add $visibleCoursesInLevel 1 }}
     {{ $totalVisibleCourses = add $totalVisibleCourses 1 }}
     {{ $fieldInfo := (index (where $.Site.Data.courses.courseFields "id" .field) 0) }}
-    {{ $coursePagePath := printf "/courses/%s/" .shortcode }}
+    {{ $coursePagePath := printf "courses/%s" .shortcode }}
     {{ $coursePage := $.Site.GetPage $coursePagePath }}
     {{ $hasDetailPage := ne $coursePage nil }}
     
     {{ if $hasDetailPage }}
-    <a href="{{ $coursePagePath }}" class="course-card-link" data-level="{{ $levelId }}" data-field="{{ .field }}">
+    <a href="{{ $coursePage.RelPermalink }}" class="course-card-link" data-level="{{ $levelId }}" data-field="{{ .field }}">
     {{ end }}
     <div class="course-card{{ if $hasDetailPage }} has-link{{ end }}" data-level="{{ $levelId }}" data-field="{{ .field }}">
       {{ if .new }}
