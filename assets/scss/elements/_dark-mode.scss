@@ -443,6 +443,217 @@ body.dark-mode {
 			}
 		}
 	}
+
+	// Course detail pages dark mode
+	.course-detail-container {
+		.course-sidebar {
+			background-color: $dark-bg-secondary;
+			border-color: $dark-border;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+
+			.course-sidebar-section {
+				border-bottom-color: $dark-border;
+			}
+
+			.sidebar-title {
+				color: $dark-text;
+			}
+
+			.sidebar-item {
+				.sidebar-label {
+					color: $dark-text-secondary;
+				}
+
+				.sidebar-value {
+					color: $dark-text;
+				}
+			}
+
+			.course-level-badge {
+				&.foundations {
+					background-color: rgba($color-accent-blue-light, 0.2);
+					color: lighten($color-accent-blue-light, 10%);
+				}
+
+				&.advanced {
+					background-color: rgba($color-accent-green-2, 0.2);
+					color: lighten($color-accent-green-2, 10%);
+				}
+
+				&.research {
+					background-color: rgba(#d36366, 0.2);
+					color: lighten(#d36366, 10%);
+				}
+			}
+
+			.difficulty-meter {
+				.difficulty-dot {
+					color: $dark-border;
+
+					&.filled {
+						color: $color-accent-blue-light;
+					}
+				}
+			}
+
+			.prerequisites-list {
+				li {
+					color: $dark-text-secondary;
+
+					&:before {
+						color: lighten($color-accent-green-2, 10%);
+					}
+				}
+			}
+		}
+
+		.course-main-content {
+			.course-title {
+				color: $dark-text;
+			}
+
+			.course-new-badge {
+				background-color: $color-accent-blue-light;
+			}
+
+			.course-description {
+				color: $dark-text-secondary;
+			}
+
+			.course-section {
+				h2 {
+					color: $dark-text;
+
+					&:after {
+						background-color: $color-accent-blue-light;
+					}
+				}
+			}
+
+			.course-overview,
+			.course-topics {
+				color: $dark-text-secondary;
+
+				strong, b {
+					color: $dark-text;
+				}
+			}
+
+			.module-card {
+				background-color: $dark-bg-secondary;
+				border-color: $dark-border;
+
+				&:hover {
+					box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+					border-color: $color-accent-blue-light;
+				}
+
+				h3 {
+					color: $dark-text;
+				}
+
+				p {
+					color: $dark-text-secondary;
+				}
+
+				.module-topics {
+					li {
+						color: $dark-text-secondary;
+
+						&:before {
+							color: $color-accent-blue-light;
+						}
+					}
+				}
+			}
+
+			.learning-outcomes {
+				li {
+					color: $dark-text-secondary;
+
+					&:before {
+						color: lighten($color-accent-green-2, 10%);
+					}
+				}
+			}
+
+			.course-tools {
+				.tool-badge {
+					background-color: $dark-bg-tertiary;
+					border-color: $dark-border;
+					color: $dark-text;
+
+					&:hover {
+						background-color: $color-accent-blue-light;
+						border-color: $color-accent-blue-light;
+						color: white;
+					}
+				}
+			}
+
+			.testimonials-section {
+				background-color: $dark-bg-secondary;
+				border-color: $dark-border;
+
+				h2 {
+					color: $dark-text;
+				}
+			}
+
+			.testimonial {
+				background-color: $dark-bg-tertiary;
+				border-color: $dark-border;
+				border-left-color: $color-accent-blue-light;
+
+				.testimonial-text {
+					color: $dark-text-secondary;
+				}
+
+				.testimonial-author {
+					color: $dark-text;
+				}
+			}
+
+			.course-cta {
+				background: linear-gradient(135deg, darken($color-accent-blue, 10%) 0%, $color-accent-blue 100%);
+
+				h2 {
+					color: white;
+				}
+
+				p {
+					color: rgba(white, 0.9);
+				}
+
+				.btn {
+					background-color: white;
+					color: $color-accent-blue;
+
+					&:hover {
+						background-color: rgba(white, 0.9);
+					}
+				}
+			}
+		}
+	}
+
+	// No courses messages
+	.no-courses-global-message {
+		background-color: $dark-bg-secondary;
+		border-color: $dark-border;
+
+		p {
+			color: $dark-text-secondary;
+
+			a {
+				color: $color-accent-blue-light;
+
+				&:hover {
+					color: lighten($color-accent-blue-light, 10%);
+				}
+			}
+		}
+	}
 }
 
 // Hide desktop dark mode toggle on mobile - only show hamburger menu toggle
