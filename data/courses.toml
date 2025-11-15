@@ -142,6 +142,17 @@ price = 1500
 new = true
 
 [[courses]]
+title = "Game Hacking"
+draft = false
+description = "A comprehensive exploration of game reverse engineering, cheat development, and anti-cheat evasion. From ethical considerations and Windows internals to advanced hypervisor-level techniques, kernel drivers, and AI-assisted cheating. Covers both internal and external approaches, memory analysis, pattern scanning, and practical implementation of various cheat types."
+level = "advanced"
+field = "sec"
+shortcode = "GH"
+new = true
+duration = 12
+price = 1800
+
+[[courses]]
 title = "Systems Security"
 draft = true
 description = "Exploits, vulnerabilities, mitigations, memory safety, attack surfaces, threat modeling, ROP, fuzzing, PWN, XSS, and more CTF-style topics."

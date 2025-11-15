@@ -1,0 +1,160 @@
+{{ define "main" }}
+<div class="container course-detail-container">
+  <div class="course-detail-layout">
+    <!-- Sidebar -->
+    <aside class="course-sidebar">
+      <div class="course-sidebar-section">
+        <h3 class="sidebar-title">Course Info</h3>
+        <div class="sidebar-item">
+          <span class="sidebar-label">Short Code</span>
+          <span class="sidebar-value">{{ .Params.shortcode }}</span>
+        </div>
+        <div class="sidebar-item">
+          <span class="sidebar-label">Duration</span>
+          <span class="sidebar-value">{{ .Params.duration }} weeks</span>
+        </div>
+        <div class="sidebar-item">
+          <span class="sidebar-label">Cost</span>
+          <span class="sidebar-value">${{ .Params.price }}/week/person</span>
+        </div>
+        <div class="sidebar-item">
+          <span class="sidebar-label">Level</span>
+          <span class="sidebar-value course-level-badge {{ .Params.level }}">
+            {{ if eq .Params.level "foundations" }}📚 Foundations{{ end }}
+            {{ if eq .Params.level "advanced" }}🚀 Advanced{{ end }}
+            {{ if eq .Params.level "research" }}🔬 Research{{ end }}
+          </span>
+        </div>
+        <div class="sidebar-item">
+          <span class="sidebar-label">Field</span>
+          <span class="sidebar-value">{{ .Params.field_title }}</span>
+        </div>
+        {{ if .Params.difficulty }}
+        <div class="sidebar-item">
+          <span class="sidebar-label">Difficulty</span>
+          <div class="difficulty-meter">
+            {{ range seq .Params.difficulty }}
+            <span class="difficulty-dot filled">●</span>
+            {{ end }}
+            {{ range seq (sub 5 .Params.difficulty) }}
+            <span class="difficulty-dot">○</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      
+      {{ if .Params.prerequisites }}
+      <div class="course-sidebar-section">
+        <h3 class="sidebar-title">Prerequisites</h3>
+        <ul class="prerequisites-list">
+          {{ range .Params.prerequisites }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      <div class="course-sidebar-section">
+        <a href="/contact/" class="btn btn-purple btn-lg btn-block">Enroll Now</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="course-main-content">
+      <h1 class="course-title">{{ .Title }}</h1>
+      
+      {{ if .Params.new }}
+      <span class="course-new-badge">New Course</span>
+      {{ end }}
+
+      <div class="course-description">
+        {{ .Params.description }}
+      </div>
+
+      {{ if .Params.overview }}
+      <section class="course-section">
+        <h2>Course Overview</h2>
+        <div class="course-overview">
+          {{ .Params.overview | markdownify }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if .Params.topics }}
+      <section class="course-section">
+        <h2>What You'll Learn</h2>
+        <div class="course-topics">
+          {{ .Params.topics | markdownify }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if .Params.modules }}
+      <section class="course-section">
+        <h2>Course Modules</h2>
+        <div class="course-modules">
+          {{ range $index, $module := .Params.modules }}
+          <div class="module-card">
+            <h3>Module {{ add $index 1 }}: {{ $module.title }}</h3>
+            <p>{{ $module.description }}</p>
+            {{ if $module.topics }}
+            <ul class="module-topics">
+              {{ range $module.topics }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if .Params.outcomes }}
+      <section class="course-section">
+        <h2>Learning Outcomes</h2>
+        <ul class="learning-outcomes">
+          {{ range .Params.outcomes }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+
+      {{ if .Params.tools }}
+      <section class="course-section">
+        <h2>Tools & Technologies</h2>
+        <div class="course-tools">
+          {{ range .Params.tools }}
+          <span class="tool-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if .Params.testimonials }}
+      <section class="course-section testimonials-section">
+        <h2>Student Testimonials</h2>
+        <div class="testimonials">
+          {{ range .Params.testimonials }}
+          <blockquote class="testimonial">
+            <p class="testimonial-text">"{{ .text }}"</p>
+            <footer class="testimonial-author">
+              — {{ .author }}{{ if .role }}, {{ .role }}{{ end }}
+            </footer>
+          </blockquote>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <section class="course-cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Join this course and advance your skills with expert instruction and hands-on projects.</p>
+        <a href="/contact/" class="btn btn-purple btn-lg">Contact Us to Enroll</a>
+      </section>
+    </main>
+  </div>
+</div>
+{{ end }}
