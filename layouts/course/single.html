@@ -43,7 +43,7 @@
         </div>
         {{ end }}
       </div>
-      
+
       {{ if .Params.prerequisites }}
       <div class="course-sidebar-section">
         <h3 class="sidebar-title">Prerequisites</h3>
@@ -61,9 +61,9 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="course-main-content">
+    <main>
       <h1 class="course-title">{{ .Title }}</h1>
-      
+
       {{ if .Params.new }}
       <span class="course-new-badge">New Course</span>
       {{ end }}
@@ -132,29 +132,29 @@
         </div>
       </section>
       {{ end }}
-
-      {{ if .Params.testimonials }}
-      <section class="course-section testimonials-section">
-        <h2>Student Testimonials</h2>
-        <div class="testimonials">
-          {{ range .Params.testimonials }}
-          <blockquote class="testimonial">
-            <p class="testimonial-text">"{{ .text }}"</p>
-            <footer class="testimonial-author">
-              — {{ .author }}{{ if .role }}, {{ .role }}{{ end }}
-            </footer>
-          </blockquote>
-          {{ end }}
-        </div>
-      </section>
-      {{ end }}
-
-      <section class="course-cta">
-        <h2>Ready to Get Started?</h2>
-        <p>Join this course and advance your skills with expert instruction and hands-on projects.</p>
-        <a href="/contact/" class="btn btn-purple btn-lg">Contact Us to Enroll</a>
-      </section>
     </main>
   </div>
+
+  {{ if .Params.testimonials }}
+  <section class="course-section course-testimonials-section">
+    <h2>Student Testimonials</h2>
+    <div class="testimonials">
+      {{ range .Params.testimonials }}
+      <blockquote class="testimonial">
+        <p class="testimonial-text">"{{ .text }}"</p>
+        <div class="testimonial-author">
+          — {{ .author }}{{ if .role }}, {{ .role }}{{ end }}
+        </div>
+      </blockquote>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="course-cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join this course and advance your skills with expert instruction and hands-on projects.</p>
+    <a href="/contact/" class="btn btn-purple btn-lg">Contact Us to Enroll</a>
+  </section>
 </div>
 {{ end }}
