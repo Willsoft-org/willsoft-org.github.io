@@ -23,7 +23,7 @@ healthcare, and retail industries achieve transformational results.
                 <span class="highlight-badge">Rigorously Tested</span>
             </div>
         </div>
-        <a href="/news/ai-stance/" class="btn btn-blue">Read Our Position</a>
+        <a href="/news/ai-stance/" class="btn btn-lg btn-purple bg-blue-light">Read Our Position</a>
     </div>
     <div class="case-study-card">
         <div class="case-card-header">
@@ -43,7 +43,7 @@ healthcare, and retail industries achieve transformational results.
                 </div>
             </div>
         </div>
-        <a href="/news/finance-banking-transformation/" class="btn btn-blue">View Case Study</a>
+        <a href="/news/finance-banking-transformation/" class="btn btn-lg btn-purple bg-blue-light">View Case Study</a>
     </div>
     <div class="case-study-card">
         <div class="case-card-header">
@@ -63,7 +63,7 @@ healthcare, and retail industries achieve transformational results.
                 </div>
             </div>
         </div>
-        <a href="/news/healthcare-patient-platform/" class="btn btn-blue">View Case Study</a>
+        <a href="/news/healthcare-patient-platform/" class="btn btn-lg btn-purple bg-blue-light">View Case Study</a>
     </div>
     <div class="case-study-card">
         <div class="case-card-header">
@@ -83,6 +83,6 @@ healthcare, and retail industries achieve transformational results.
                 </div>
             </div>
         </div>
-        <a href="/news/retail-ecommerce-platform/" class="btn btn-blue">View Case Study</a>
+        <a href="/news/retail-ecommerce-platform/" class="btn btn-lg btn-purple bg-blue-light">View Case Study</a>
     </div>
 </div>
