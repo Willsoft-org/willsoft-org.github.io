@@ -832,16 +832,5 @@
     margin-bottom: 25px;
     opacity: 0.95;
   }
-
-  .btn {
-    background: white;
-    color: $color-accent-blue;
-    border-color: white;
-
-    &:hover {
-      background: rgba(white, 0.9);
-      transform: translateY(-2px);
-    }
-  }
 }
 
