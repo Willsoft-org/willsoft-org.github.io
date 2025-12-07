@@ -40,6 +40,13 @@
 			linear-gradient(180deg, $color-accent-yellow 30%, $color-accent-yellow-light 130%);
 	}
 
+	&.news {
+		background: $color-accent-purple;
+		background-image: url(../img/tech-bg.svg);
+		background-image: url(../img/tech-bg.svg),
+			linear-gradient(180deg, $color-accent-purple 30%, $color-accent-purple-light 130%);
+	}
+
 	// &.open-source {
 	// 	background: #a72c5f;
 	// 	background-image: url(../img/tech-bg.svg);

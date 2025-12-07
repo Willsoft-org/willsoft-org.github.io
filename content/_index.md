@@ -156,7 +156,7 @@ Contact us today for more information about how we can help you grow your busine
 </p>
 
 <div class="fg-white mt10">
-    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/news/">Case Studies</a>
+    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/news/">News</a>
     <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/courses/">Courses</a>
-    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact us!</a>
+    <a class="btn btn-purple btn-lg pulse bg-blue-light" href="/contact/">Contact</a>
 </div>
