@@ -1,4 +1,10 @@
-{{ define "main" }}
++++
+title = "News"
+heroTitle = "News"
+heroLead = "Recent Projects, Case Studies and Insights"
+heroClass = "news"
++++
+
 <p>
 Explore our case studies and insights to see how we've helped businesses across finance, 
 healthcare, and retail industries achieve transformational results.
@@ -19,7 +25,6 @@ healthcare, and retail industries achieve transformational results.
         </div>
         <a href="/news/ai-stance/" class="btn btn-blue">Read Our Position</a>
     </div>
-    
     <div class="case-study-card">
         <div class="case-card-header">
             <span class="industry-tag">Finance</span>
@@ -40,7 +45,6 @@ healthcare, and retail industries achieve transformational results.
         </div>
         <a href="/news/finance-banking-transformation/" class="btn btn-blue">View Case Study</a>
     </div>
-    
     <div class="case-study-card">
         <div class="case-card-header">
             <span class="industry-tag">Healthcare</span>
@@ -61,7 +65,6 @@ healthcare, and retail industries achieve transformational results.
         </div>
         <a href="/news/healthcare-patient-platform/" class="btn btn-blue">View Case Study</a>
     </div>
-    
     <div class="case-study-card">
         <div class="case-card-header">
             <span class="industry-tag">Retail</span>
@@ -83,4 +86,3 @@ healthcare, and retail industries achieve transformational results.
         <a href="/news/retail-ecommerce-platform/" class="btn btn-blue">View Case Study</a>
     </div>
 </div>
-{{ end }}
