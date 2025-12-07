@@ -441,8 +441,8 @@
 
 .course-detail-layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 40px;
+  grid-template-columns: 210px 1fr;
+  gap: 32px;
   align-items: start;
 
   @media (max-width: 968px) {
@@ -466,7 +466,7 @@
   }
 
   .course-sidebar-section {
-    padding: 24px;
+    padding: 20px;
     border-bottom: 1px solid $color-white4;
 
     &:last-child {
@@ -847,3 +847,4 @@
     }
   }
 }
+
