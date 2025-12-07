@@ -144,7 +144,7 @@ new = true
 [[courses]]
 title = "Game Hacking"
 draft = false
-description = "An ethical exploration of game reverse engineering, cheat development, and anti-cheat evasion. Covering internal vs external with implementation labs."
+description = "An ethical exploration of game reverse engineering, internal vs external development labs, and anti-cheat evasion."
 level = "advanced"
 field = "sec"
 shortcode = "GH"
