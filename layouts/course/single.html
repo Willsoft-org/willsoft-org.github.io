@@ -62,11 +62,13 @@
 
     <!-- Main Content -->
     <main>
-      <h1 class="course-title">{{ .Title }}</h1>
+      <h1 class="course-title">
+        {{ .Title }}
+        {{ if .Params.new }}
+        <span class="course-new-badge">New Course</span>
+        {{ end }}
+      </h1>
 
-      {{ if .Params.new }}
-      <span class="course-new-badge">New Course</span>
-      {{ end }}
 
       <div class="course-description">
         {{ .Params.description }}
@@ -74,7 +76,7 @@
 
       {{ if .Params.overview }}
       <section class="course-section">
-        <h2>Course Overview</h2>
+        <h2>Overview</h2>
         <div class="course-overview">
           {{ .Params.overview | markdownify }}
         </div>
@@ -92,19 +94,23 @@
 
       {{ if .Params.modules }}
       <section class="course-section">
-        <h2>Course Modules</h2>
+        <h2>Modules</h2>
         <div class="course-modules">
           {{ range $index, $module := .Params.modules }}
           <div class="module-card">
-            <h3>Module {{ add $index 1 }}: {{ $module.title }}</h3>
-            <p>{{ $module.description }}</p>
-            {{ if $module.topics }}
-            <ul class="module-topics">
-              {{ range $module.topics }}
-              <li>{{ . }}</li>
+            <details>
+              <summary>
+                Module {{ add $index 1 }}: {{ $module.title }}
+              </summary>
+              <p>{{ $module.description }}</p>
+              {{ if $module.topics }}
+              <ul class="module-topics">
+                {{ range $module.topics }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
               {{ end }}
-            </ul>
-            {{ end }}
+            </details>
           </div>
           {{ end }}
         </div>
@@ -137,7 +143,7 @@
 
   {{ if .Params.testimonials }}
   <section class="course-section course-testimonials-section">
-    <h2>Student Testimonials</h2>
+    <h2>Testimonials</h2>
     <div class="testimonials">
       {{ range .Params.testimonials }}
       <blockquote class="testimonial">
