@@ -5,7 +5,7 @@ heroLead = "IT Consulting and Development"
 heroClass = "landing"
 heroLarge = true
 heroButtons = [
-    { text = "Our Products", href = "/products/", class = "btn btn-white btn-lg btn-scale pulse" },
+    { text = "Our Projects", href = "/projects/", class = "btn btn-white btn-lg btn-scale pulse" },
     { text = "Our Services", href = "/services/", class = "btn btn-purple btn-lg btn-scale btn-normal-weight pulse" }
 ]
 heroSub = "<b>The</b> company to build all your apps and websites with."

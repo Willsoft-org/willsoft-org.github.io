@@ -144,7 +144,7 @@ new = true
 [[courses]]
 title = "Game Hacking"
 draft = false
-description = "A comprehensive exploration of game reverse engineering, cheat development, and anti-cheat evasion. From ethical considerations and Windows internals. Covers both internal and external approaches, memory analysis, pattern scanning, and practical implementation of various cheat types."
+description = "An ethical exploration of game reverse engineering, cheat development, and anti-cheat evasion. Covering internal vs external with implementation labs."
 level = "advanced"
 field = "sec"
 shortcode = "GH"
