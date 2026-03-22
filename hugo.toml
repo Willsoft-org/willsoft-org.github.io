@@ -19,10 +19,10 @@ name = "Projects"
 url = "/projects/"
 weight = 30
 
-[[menu.main]]
-name = "News"
-url = "/news/"
-weight = 35
+# [[menu.main]]
+# name = "News"
+# url = "/news/"
+# weight = 35
 
 # [[menu.main]]
 # name = "Innovation"
