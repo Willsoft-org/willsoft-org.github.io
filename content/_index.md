@@ -73,7 +73,7 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
         Our wide range of expertise from acedemia and collective professional experience allow us to produce software in any
         area, field or category. We are dedicated to delivering innovative IT solutions that meet the diverse needs of our clients.
     </p>
-    <div style="text-align: right"><em>- We can do IT!</em></div>
+    <div style="text-align: right"><em>- We can make IT!</em></div>
 </div>
 <div class="split-container mt32 mb32">
     <div class="content-section">
