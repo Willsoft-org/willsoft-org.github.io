@@ -88,18 +88,6 @@
 		transition: color 0.3s ease;
 	}
 
-	// Stage description (initially hidden)
-	.stage-description {
-		text-align: center;
-		font-size: 0.95rem;
-		line-height: 1.6;
-		opacity: 0;
-		max-height: 0;
-		overflow: hidden;
-		transition: all 0.4s ease;
-		margin-top: 10px;
-	}
-
 	// Stage details (expanded on click/hover)
 	.stage-details {
 		position: absolute;
@@ -121,6 +109,12 @@
 			margin-top: 0;
 			margin-bottom: 12px;
 			font-size: 1.1rem;
+		}
+
+		.stage-summary {
+			margin: 0 0 12px;
+			font-size: 0.95rem;
+			line-height: 1.5;
 		}
 
 		ul {
@@ -198,11 +192,6 @@
 		.stage-icon::after {
 			border-color: currentColor;
 			transform: scale(1.1);
-		}
-
-		.stage-description {
-			opacity: 1;
-			max-height: 100px;
 		}
 	}
 

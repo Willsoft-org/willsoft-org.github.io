@@ -24,11 +24,9 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
     <div class="pathway-stage stage-discovery">
       <div class="stage-icon">🔍</div>
       <div class="stage-title">Research</div>
-      <div class="stage-description">
-        Understanding your needs and goals
-      </div>
       <div class="stage-details">
         <h4>Research Phase</h4>
+        <p class="stage-summary">Understanding your needs and goals</p>
         <ul>
           <li>Requirements gathering</li>
           <li>Stakeholder interviews</li>
@@ -41,11 +39,9 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
     <div class="pathway-stage stage-design">
       <div class="stage-icon">✏️</div>
       <div class="stage-title">Design</div>
-      <div class="stage-description">
-        Crafting the perfect solution
-      </div>
       <div class="stage-details">
         <h4>Design Phase</h4>
+        <p class="stage-summary">Crafting the perfect solution</p>
         <ul>
           <li>Architecture planning</li>
           <li>UI/UX design</li>
@@ -58,11 +54,9 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
     <div class="pathway-stage stage-build">
       <div class="stage-icon">🔨</div>
       <div class="stage-title">Build</div>
-      <div class="stage-description">
-        Bringing your vision to life
-      </div>
       <div class="stage-details">
         <h4>Build Phase</h4>
+        <p class="stage-summary">Bringing your vision to life</p>
         <ul>
           <li>Agile development</li>
           <li>Quality assurance</li>
@@ -75,11 +69,9 @@ enhance your online presence. <b>Let us help you bring your ideas to life.</b>
     <div class="pathway-stage stage-support">
       <div class="stage-icon">🚀</div>
       <div class="stage-title">Support</div>
-      <div class="stage-description">
-        Ensuring long-term success
-      </div>
       <div class="stage-details">
         <h4>Support Phase</h4>
+        <p class="stage-summary">Ensuring long-term success</p>
         <ul>
           <li>Deployment & launch</li>
           <li>Monitoring & maintenance</li>
