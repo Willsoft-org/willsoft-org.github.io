@@ -221,6 +221,10 @@
 
 // Mobile Responsive
 @media (max-width: 900px) {
+	.service-pathways {
+		display: none;
+	}
+
 	.pathways-timeline {
 		flex-direction: column;
 		align-items: center;
