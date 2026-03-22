@@ -3,6 +3,7 @@ title = "Digital Banking Transformation"
 heroTitle = "Digital Banking Transformation"
 heroLead = "Finance Case Study"
 heroClass = "news"
+draft = true
 +++
 
 <div class="case-study-section">

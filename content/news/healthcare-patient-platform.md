@@ -3,6 +3,7 @@ title = "Patient Care Platform"
 heroTitle = "Patient Care Platform"
 heroLead = "Healthcare Case Study"
 heroClass = "news"
+draft = true
 +++
 
 <div class="case-study-section">

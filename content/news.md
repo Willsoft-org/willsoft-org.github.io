@@ -3,6 +3,7 @@ title = "News"
 heroTitle = "News"
 heroLead = "Recent Projects, Case Studies and Insights"
 heroClass = "news"
+draft = true
 +++
 
 <p>

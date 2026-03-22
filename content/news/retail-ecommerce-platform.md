@@ -3,6 +3,7 @@ title = "E-Commerce Revolution"
 heroTitle = "E-Commerce Revolution"
 heroLead = "Retail Case Study"
 heroClass = "news"
+draft = true
 +++
 
 <div class="case-study-section">
