@@ -21,7 +21,7 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
 </p>
 
 <!-- Trust-Building Stats Section -->
-<div class="trust-stats">
+<div class="trust-stats" style="display: none;">
     <div class="stats-container">
         <div class="stat-item">
             <span class="stat-counter" data-end="50" data-suffix="+">0+</span>
