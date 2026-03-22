@@ -50,7 +50,7 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
 </div>-->
 
 <!-- Infinite Partners Carousel -->
-<div class="partners-carousel-section">
+<div class="partners-carousel-section" style="display: none;">
     <h3 class="section-title">Trusted by Industry Leaders</h3>
     <div class="partners-carousel">
         <div class="carousel-track">
@@ -94,7 +94,7 @@ Understanding the needs of our clients, we deliver innovative solutions that mee
 </div>
 
 <!-- Testimonials Carousel -->
-<div class="testimonials-section">
+<div class="testimonials-section" style="display: none;">
     <h2 class="section-title">What Our Clients Say</h2>
     <div class="testimonial-carousel">
         <div class="testimonial-item active">
